@@ -1,0 +1,13 @@
+---
+title: S4X | Result
+
+pageClassName: p-result
+---
+extends shared/_layout
+
+block header
+block footer
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/result/_result

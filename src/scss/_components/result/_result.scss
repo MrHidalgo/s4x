@@ -1,0 +1,229 @@
+// SECTION result :: START
+
+.result {
+	&__wrapper {
+
+		&-header {
+			display: flex;
+			justify-content: flex-end;
+			@include fluid(padding-top, 1440px, 2732px, 35px, 70px);
+			@include fluid(padding-bottom, 1440px, 2732px, 28px, 56px);
+			@include fluid(padding-left padding-right, 1440px, 2732px, 54px, 108px);
+		}
+
+		&-body {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			@include fluid(padding-left padding-right, 1440px, 2732px, 53px, 106px);
+		}
+
+		&-footer {
+			display: flex;
+			justify-content: flex-end;
+			@include fluid(padding-left padding-right, 1440px, 2732px, 20px, 40px);
+			@include fluid(padding-bottom, 1440px, 2732px, 39px, 79px);
+		}
+	}
+
+	&__logo,
+	&__sublogo {
+		display: flex;
+		align-items: flex-start;
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__logo {
+		@include fluid(width, 1440px, 2732px, 192px, 384px);
+	}
+
+	&__sublogo {
+		@include fluid(width, 1440px, 2732px, 31px, 62px);
+	}
+
+	&__box {
+		@include fluid(margin-bottom, 1440px, 2732px, 20px, 40px);
+
+		&--purple {
+			.result__box-slider--top {
+				background-color: #6666ff;
+			}
+			.result__box-slider--bottom {
+				span {
+					background-color: #6666ff;
+				}
+			}
+		}
+
+		&--orange {
+			.result__box-slider--top {
+				background-color: #fcee21;
+			}
+			.result__box-slider--bottom {
+				span {
+					background-color: #fcee21;
+				}
+			}
+		}
+
+		&--red {
+			.result__box-slider--top {
+				background-color: #ff0000;
+			}
+			.result__box-slider--bottom {
+				span {
+					background-color: #ff0000;
+				}
+			}
+		}
+
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+
+			> div {
+				width: 100%;
+				max-width: calc(100% / 3);
+				@include fluid(padding-right, 1440px, 2732px, 15px, 30px);
+			}
+		}
+
+		&-badge,
+		&-title {
+			color: #ffffff;
+			font-weight: bold;
+		}
+
+		&-badge {
+			display: flex;
+			align-items: center;
+
+			i {
+				border-radius: 100%;
+				background-color: #00ff99;
+				@include fluid(width height, 1440px, 2732px, 15px, 30px);
+			}
+
+			span {
+				line-height: 0.85;
+				letter-spacing: -1px;
+				@include fluid(font-size, 1440px, 2732px, 20px, 40px);
+			}
+		}
+
+		&-title {
+			line-height: 1;
+			letter-spacing: -1.9px;
+			@include fluid(padding-bottom, 1440px, 2732px, 11px, 22px);
+			@include fluid(font-size, 1440px, 2732px, 39px, 79px);
+		}
+
+		&-progress {
+			display: flex;
+			@include fluid(min-height, 1440px, 2732px, 35px, 70px);
+
+			> div {
+				&:nth-of-type(1) {
+					flex: 1;
+					@include fluid(padding-right, 1440px, 2732px, 18px, 35px);
+				}
+
+				&:nth-of-type(2) {
+					display: flex;
+					align-items: flex-start;
+					@include fluid(width, 1440px, 2732px, 125px, 250px);
+
+					span,
+					sub {
+						color: #ffffff;
+					}
+
+					span {
+						line-height: 0.7;
+						@include fluid(font-size, 1440px, 2732px, 48px, 96px);
+					}
+
+					sub {
+						position: relative;
+						top: 2px;
+						line-height: 1;
+						text-transform: uppercase;
+						@include fluid(font-size, 1440px, 2732px, 20px, 40px);
+					}
+				}
+			}
+		}
+
+		&-slider {
+			position: relative;
+			width: 100%;
+			min-height: 100%;
+
+			> a {
+				z-index: 2;
+				position: absolute;
+				display: flex;
+				align-items: flex-start;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 0;
+
+				i {
+					line-height: 1;
+					color: #ffffff;
+					@include fluid(font-size, 1440px, 2732px, 45px, 90px);
+				}
+			}
+
+			&--top {
+				z-index: 1;
+				overflow: hidden;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 50%;
+				height: 100%;
+				background-color: green;
+
+				&:after {
+					cursor: pointer;
+					content: '';
+					position: absolute;
+					top: 0;
+					right: 0;
+					height: 100%;
+					background-color: #00ff99;
+					@include fluid(width, 1440px, 2732px, 8px, 16px);
+				}
+			}
+
+			&--bottom {
+				z-index: 0;
+				overflow: hidden;
+				position: absolute;
+				white-space: nowrap;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				font-size: 0;
+
+				span {
+					display: inline-block;
+					height: 100%;
+					background-color: #00ff99;
+					transform: skewX(-35deg);
+					@include fluid(width, 1440px, 2732px, 6px, 12px);
+					@include fluid(margin-right, 1440px, 2732px, 10px, 20px);
+				}
+			}
+		}
+	}
+}
+
+// SECTION result :: END
