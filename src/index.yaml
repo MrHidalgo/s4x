@@ -1,0 +1,9 @@
+ProjectTitle: S4X
+
+PageList:
+- file: index.html
+  titleName: S4X
+  ready: 1
+- file: result.html
+  titleName: S4X | Result
+  ready: 1
