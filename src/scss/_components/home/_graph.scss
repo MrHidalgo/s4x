@@ -9,11 +9,37 @@
 			@include fluid(padding-top, 1366px, 2732px, 31px, 62px);
 			@include fluid(padding-bottom, 1366px, 2732px, 10px, 20px);
 			@include fluid(padding-left padding-right, 1366px, 2732px, 47px, 94px);
+			@include adaptive(767) {
+				flex-wrap: wrap;
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			@include adaptive(575) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 
 			> div {
+				&:nth-of-type(1) {
+					@include adaptive(767) {
+						order: 2;
+						width: 100px !important;
+					}
+				}
+
 				&:nth-of-type(1),
 				&:nth-of-type(3) {
 					@include fluid(width, 1366px, 2732px, 192px, 384px);
+				}
+
+				&:nth-of-type(3) {
+					@include adaptive(767) {
+						order: 1;
+						width: 100%;
+						display: flex;
+						justify-content: center;
+						padding-bottom: 31px;
+					}
 				}
 
 				&:nth-of-type(2) {
@@ -21,6 +47,11 @@
 					width: 100%;
 					min-width: 1px;
 					max-width: 100%;
+					@include adaptive(767) {
+						order: 3;
+						display: flex;
+						justify-content: flex-end;
+					}
 				}
 			}
 		}
@@ -28,6 +59,18 @@
 		&-body {
 			display: flex;
 			@include fluid(padding-left padding-right, 1366px, 2732px, 47px, 94px);
+			@include fluid(padding-bottom, 1366px, 2732px, 50px, 100px);
+			@include adaptive(1199) {
+				flex-wrap: wrap;
+			}
+			@include adaptive(767) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			@include adaptive(575) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 
 			&--left {
 				display: flex;
@@ -35,12 +78,22 @@
 				width: 100%;
 				min-width: 1px;
 				max-width: 100%;
+				@include adaptive(575) {
+					flex-wrap: wrap;
+				}
 
 				> div {
 					&:nth-of-type(1) {
 						display: flex;
 						flex-direction: column;
 						@include fluid(width, 1366px, 2732px, 145px, 290px);
+						@include adaptive(767) {
+							width: 115px;
+						}
+						@include adaptive(575) {
+							order: 2;
+							width: 100%;
+						}
 
 						.graph__wrapper-body--top {
 							display: flex;
@@ -61,12 +114,25 @@
 						min-width: 1px;
 						max-width: 100%;
 						@include fluid(padding-right, 1366px, 2732px, 70px, 140px);
+						@include adaptive(1199) {
+							padding-right: 0;
+						}
+						@include adaptive(575) {
+							order: 1;
+							width: 100%;
+						}
 
 						.graph__wrapper-body--top {
 							@include fluid(padding-bottom, 1366px, 2732px, 23px, 46px);
 						}
 						.graph__wrapper-body--middle {
 							@include fluid(min-height, 1366px, 2732px, 570px, 1140px);
+							@include adaptive(767) {
+								min-height: 500px;
+							}
+							@include adaptive(575) {
+								min-height: 430px;
+							}
 						}
 
 						.graph__wrapper-body--bottom {
@@ -80,6 +146,9 @@
 				@include fluid(width, 1366px, 2732px, 324px, 748px);
 				@include fluid(padding-top, 1366px, 2732px, 42px, 84px);
 				@include fluid(padding-right, 1366px, 2732px, 6px, 12px);
+				@include adaptive(1199) {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -135,6 +204,11 @@
 	&__export {
 		display: flex;
 		flex-direction: column;
+		@include adaptive(575) {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
 
 		&-item {
 			display: flex;
@@ -185,10 +259,17 @@
 	}
 
 	&__btn {
+		overflow: hidden;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		max-width: calc((100% - (30px * 4)) / 5);
+		@include adaptive(767) {
+			max-width: calc((100% - (10px * 4)) / 5);
+		}
+		@include adaptive(575) {
+			max-width: calc((100% - (5px * 4)) / 5);
+		}
 
 		&:hover,
 		&.is-active {
@@ -210,6 +291,17 @@
 			line-height: 1;
 			letter-spacing: -1px;
 			@include fluid(font-size, 1366px, 2732px, 20px, 40px);
+			@include adaptive(1199) {
+				font-size: 16px;
+			}
+			@include adaptive(767) {
+				font-size: 14px;
+			}
+			@include adaptive(575) {
+				padding-top: 5px;
+				font-size: 10px;
+				text-align: center;
+			}
 		}
 
 		&-wrapper {
@@ -224,6 +316,9 @@
 		flex-direction: column;
 		justify-content: center;
 		@include fluid(padding-left, 1366px, 2732px, 15px, 30px);
+		@include adaptive(575) {
+			display: none;
+		}
 
 		&:before {
 			content: '';
@@ -247,15 +342,24 @@
 			align-items: flex-start;
 			line-height: 0.8;
 			@include fluid(font-size, 1366px, 2732px, 55px, 119px);
+			@include adaptive(767) {
+				font-size: 40px;
+			}
 
 			sub {
 				@include fluid(font-size, 1366px, 2732px, 20px, 40px);
+				@include adaptive(767) {
+					font-size: 18px;
+				}
 			}
 		}
 
 		span {
 			line-height: 1;
 			@include fluid(font-size, 1366px, 2732px, 20px, 40px);
+			@include adaptive(767) {
+				font-size: 18px;
+			}
 		}
 	}
 
@@ -273,12 +377,18 @@
 				letter-spacing: -2.5px;
 				color: #ffffff;
 				@include fluid(font-size, 1366px, 2732px, 39px, 79px);
+				@include adaptive(575) {
+					font-size: 30px;
+				}
 			}
 
 			i {
 				line-height: 1;
 				color: #ffffff;
 				@include fluid(font-size, 1366px, 2732px, 30px, 59px);
+				@include adaptive(575) {
+					font-size: 25px;
+				}
 			}
 
 			&:after {
@@ -289,6 +399,9 @@
 				width: 100%;
 				height: 6px;
 				background-color: #fff;
+				@include adaptive(575) {
+					height: 3px;
+				}
 			}
 		}
 
@@ -296,12 +409,18 @@
 			display: flex;
 			flex-wrap: wrap;
 			@include fluid(padding-left, 1366px, 2732px, 18px, 37px);
+			@include adaptive(575) {
+				padding-left: 15px;
+			}
 		}
 
 		&-col {
 			width: 100%;
 			max-width: 50%;
 			@include fluid(margin-bottom, 1366px, 2732px, 33px, 67px);
+			@include adaptive(575) {
+				max-width: 100%;
+			}
 
 			h6,
 			p span {
@@ -314,6 +433,9 @@
 				line-height: 0.9;
 				letter-spacing: -1px;
 				@include fluid(font-size, 1366px, 2732px, 20px, 40px);
+				@include adaptive(575) {
+					font-size: 18px;
+				}
 			}
 
 			p {
@@ -324,6 +446,9 @@
 			span {
 				line-height: 0.9;
 				@include fluid(font-size, 1366px, 2732px, 20px, 40px);
+				@include adaptive(575) {
+					font-size: 18px;
+				}
 
 				span {
 					color: #ff0000;
@@ -406,11 +531,18 @@
 			&--wrapper {
 				display: flex;
 				@include fluid(padding-left, 1366px, 2732px, 18px, 37px);
+				@include adaptive(575) {
+					flex-wrap: wrap;
+					padding-left: 15px;
+				}
 			}
 			&--left,
 			&--right {
 				width: 100%;
 				max-width: 50%;
+				@include adaptive(575) {
+					max-width: 100%;
+				}
 			}
 
 			&--left {
@@ -420,6 +552,9 @@
 			&--right {
 				@include fluid(padding-top, 1366px, 2732px, 17px, 34px);
 				@include fluid(padding-left, 1366px, 2732px, 34px, 68px);
+				@include adaptive(575) {
+					padding-left: 0;
+				}
 			}
 
 			p {
@@ -460,10 +595,22 @@
 		&-title {
 			line-height: 0.8;
 			@include fluid(font-size, 1366px, 2732px, 60px, 119px);
+			@include adaptive(1199) {
+				font-size: 50px;
+			}
+			@include adaptive(767) {
+				font-size: 40px;
+			}
+			@include adaptive(575) {
+				font-size: 30px;
+			}
 		}
 
 		&-progress {
 			@include fluid(min-height, 1366px, 2732px, 70px, 140px);
+			@include adaptive(1199) {
+				min-height: 55px;
+			}
 		}
 
 		&-slider {
@@ -479,8 +626,14 @@
 				span {
 					line-height: 0.7;
 					@include fluid(font-size, 1440px, 2732px, 48px, 96px);
+					@include adaptive(1199) {
+						font-size: 35px;
+					}
+					@include adaptive(767) {
+						font-size: 30px;
+					}
 					@include adaptive(575) {
-						font-size: 40px;
+						font-size: 25px;
 					}
 				}
 
@@ -491,12 +644,24 @@
 					text-transform: uppercase;
 					@include fluid(top, 1440px, 2732px, -8px, -15px);
 					@include fluid(font-size, 1440px, 2732px, 20px, 40px);
+					@include adaptive(1199) {
+						font-size: 16px;
+					}
+					@include adaptive(767) {
+						font-size: 14px;
+					}
 					@include adaptive(575) {
-						font-size: 18px;
+						font-size: 12px;
 					}
 				}
 			}
 		}
+	}
+
+	#graph__node {
+		position: relative;
+		width: 100%;
+		min-height: 100%;
 	}
 }
 
