@@ -112,8 +112,18 @@
 section#result.result
 	.result__wrapper
 		.result__wrapper-header
-			a.result__logo(href="#" class="" title="")
-				img(src="/img/logo-ccm.svg" alt="" title="")
+			div
+			div
+				ul.graph__tabs
+					li.graph__tabs-item
+						a.graph__tabs-btn(href="#" class="" title="")
+					li.graph__tabs-item
+						a.graph__tabs-btn.is-active(href="#" class="" title="")
+					li.graph__tabs-item
+						a.graph__tabs-btn(href="#" class="" title="")
+			div
+				a.result__logo(href="#" class="" title="")
+					img(src="/img/logo-ccm.svg" alt="" title="")
 
 		.result__wrapper-body
 
@@ -140,8 +150,27 @@ section#result.result
 									sub!= "u"
 
 		.result__wrapper-footer
-			a.result__sublogo(href="#" class="" title="")
-				img(src="/img/logo-wtext.svg" alt="" title="")
+			div
+				.graph__btn-wrapper
+					a.graph__btn.is-active(href="#" class="" title="")
+						span!= ""
+						p!= "DAY"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "WEEK"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "MONTH"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "QUARTERLY"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "ANNUALLY"
+
+			div
+				a.graph__info-logo(href="#" class="" title="")
+					img(src="/img/logo-text.svg" alt="" title="")
 
 
 // SECTION result :: END

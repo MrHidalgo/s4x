@@ -5,19 +5,59 @@
 
 		&-header {
 			display: flex;
-			justify-content: flex-end;
-			@include fluid(padding-top, 1440px, 2732px, 35px, 70px);
-			@include fluid(padding-bottom, 1440px, 2732px, 28px, 56px);
-			@include fluid(padding-left padding-right, 1440px, 2732px, 54px, 108px);
+			align-items: center;
+			justify-content: space-between;
+			@include fluid(padding-top, 1366px, 2732px, 31px, 62px);
+			@include fluid(padding-bottom, 1366px, 2732px, 25px, 50px);
+			@include fluid(padding-left padding-right, 1366px, 2732px, 47px, 94px);
 			@include adaptive(767) {
+				flex-wrap: wrap;
 				padding-left: 30px;
 				padding-right: 30px;
+				padding-bottom: 31px;
 			}
 			@include adaptive(575) {
-				justify-content: center;
 				padding-left: 15px;
 				padding-right: 15px;
-				padding-bottom: 35px;
+			}
+
+			> div {
+				&:nth-of-type(1) {
+					@include adaptive(767) {
+						display: none;
+					}
+				}
+
+				&:nth-of-type(1),
+				&:nth-of-type(3) {
+					@include fluid(width, 1366px, 2732px, 192px, 384px);
+				}
+
+				&:nth-of-type(3) {
+					@include adaptive(767) {
+						order: 1;
+						width: 100%;
+						display: flex;
+						justify-content: center;
+						padding-bottom: 31px;
+					}
+				}
+
+				&:nth-of-type(2) {
+					flex: 1;
+					width: 100%;
+					min-width: 1px;
+					max-width: 100%;
+					@include adaptive(767) {
+						order: 3;
+						display: flex;
+						justify-content: flex-end;
+
+						.result & {
+							justify-content: center;
+						}
+					}
+				}
 			}
 		}
 
@@ -38,18 +78,46 @@
 
 		&-footer {
 			display: flex;
-			justify-content: flex-end;
-			@include fluid(padding-left padding-right, 1440px, 2732px, 20px, 40px);
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			@include fluid(padding-left padding-right, 1366px, 2732px, 47px, 94px);
+			@include fluid(padding-top, 1440px, 2732px, 25px, 50px);
 			@include fluid(padding-bottom, 1440px, 2732px, 39px, 79px);
+			@include adaptive(991) {
+				flex-wrap: wrap;
+			}
 			@include adaptive(767) {
 				padding-left: 30px;
 				padding-right: 30px;
 			}
 			@include adaptive(575) {
-				justify-content: center;
-				padding-top: 9px;
+				//justify-content: center;
+				//padding-top: 9px;
 				padding-left: 15px;
 				padding-right: 15px;
+			}
+
+			> div {
+				&:nth-of-type(1) {
+					flex: 1;
+					min-width: 1px;
+					@include fluid(max-width, 1366px, 2732px, 760px, 1366px);
+					@include adaptive(991) {
+						flex: none;
+						width: 100%;
+						max-width: 100%;
+					}
+				}
+				&:nth-of-type(2) {
+					@include fluid(width, 1366px, 2732px, 46px, 92px);
+					@include adaptive(991) {
+						display: flex;
+						justify-content: center;
+						width: 100%;
+						padding-top: 39px;
+					}
+				}
 			}
 		}
 	}
@@ -153,7 +221,7 @@
 
 			i {
 				border-radius: 100%;
-				background-color: #00ff99;
+				background-color: #6666FF;
 				@include fluid(width height, 1440px, 2732px, 15px, 30px);
 				@include adaptive(575) {
 					width: 12px;
