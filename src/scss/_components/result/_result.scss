@@ -9,6 +9,16 @@
 			@include fluid(padding-top, 1440px, 2732px, 35px, 70px);
 			@include fluid(padding-bottom, 1440px, 2732px, 28px, 56px);
 			@include fluid(padding-left padding-right, 1440px, 2732px, 54px, 108px);
+			@include adaptive(767) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			@include adaptive(575) {
+				justify-content: center;
+				padding-left: 15px;
+				padding-right: 15px;
+				padding-bottom: 35px;
+			}
 		}
 
 		&-body {
@@ -16,6 +26,14 @@
 			margin-left: auto;
 			margin-right: auto;
 			@include fluid(padding-left padding-right, 1440px, 2732px, 53px, 106px);
+			@include adaptive(767) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			@include adaptive(575) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 		}
 
 		&-footer {
@@ -23,6 +41,16 @@
 			justify-content: flex-end;
 			@include fluid(padding-left padding-right, 1440px, 2732px, 20px, 40px);
 			@include fluid(padding-bottom, 1440px, 2732px, 39px, 79px);
+			@include adaptive(767) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			@include adaptive(575) {
+				justify-content: center;
+				padding-top: 9px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 		}
 	}
 
@@ -48,6 +76,9 @@
 
 	&__box {
 		@include fluid(margin-bottom, 1440px, 2732px, 20px, 40px);
+		@include adaptive(767) {
+			margin-bottom: 30px;
+		}
 
 		&--purple {
 			.result__box-slider--top {
@@ -90,6 +121,23 @@
 				width: 100%;
 				max-width: calc(100% / 3);
 				@include fluid(padding-right, 1440px, 2732px, 15px, 30px);
+				@include adaptive(1199) {
+					max-width: calc(100% / 2);
+				}
+				@include adaptive(767) {
+					&:nth-of-type(odd) {
+						padding-right: 15px;
+					}
+					&:nth-of-type(even) {
+						padding-left: 15px;
+						padding-right: 0;
+					}
+				}
+				@include adaptive(575) {
+					max-width: 100%;
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
 			}
 		}
 
@@ -107,12 +155,19 @@
 				border-radius: 100%;
 				background-color: #00ff99;
 				@include fluid(width height, 1440px, 2732px, 15px, 30px);
+				@include adaptive(575) {
+					width: 12px;
+					height: 12px;
+				}
 			}
 
 			span {
 				line-height: 0.85;
 				letter-spacing: -1px;
 				@include fluid(font-size, 1440px, 2732px, 20px, 40px);
+				@include adaptive(575) {
+					font-size: 16px;
+				}
 			}
 		}
 
@@ -121,22 +176,38 @@
 			letter-spacing: -1.9px;
 			@include fluid(padding-bottom, 1440px, 2732px, 11px, 22px);
 			@include fluid(font-size, 1440px, 2732px, 39px, 79px);
+			@include adaptive(575) {
+				font-size: 33px;
+			}
 		}
 
 		&-progress {
 			display: flex;
 			@include fluid(min-height, 1440px, 2732px, 35px, 70px);
+			@include adaptive(767) {
+				flex-wrap: wrap;
+			}
 
 			> div {
 				&:nth-of-type(1) {
 					flex: 1;
 					@include fluid(padding-right, 1440px, 2732px, 18px, 35px);
+					@include adaptive(767) {
+						flex: none;
+						margin-bottom: 11px;
+						width: 100%;
+						max-width: 100%;
+						padding-right: 0;
+					}
 				}
 
 				&:nth-of-type(2) {
 					display: flex;
 					align-items: flex-start;
 					@include fluid(width, 1440px, 2732px, 125px, 250px);
+					@include adaptive(767) {
+						width: 100%;
+					}
 
 					span,
 					sub {
@@ -146,6 +217,9 @@
 					span {
 						line-height: 0.7;
 						@include fluid(font-size, 1440px, 2732px, 48px, 96px);
+						@include adaptive(575) {
+							font-size: 40px;
+						}
 					}
 
 					sub {
@@ -154,6 +228,9 @@
 						line-height: 1;
 						text-transform: uppercase;
 						@include fluid(font-size, 1440px, 2732px, 20px, 40px);
+						@include adaptive(575) {
+							font-size: 18px;
+						}
 					}
 				}
 			}
@@ -163,6 +240,9 @@
 			position: relative;
 			width: 100%;
 			min-height: 100%;
+			@include adaptive(767) {
+				min-height: 35px;
+			}
 
 			> a {
 				z-index: 2;
