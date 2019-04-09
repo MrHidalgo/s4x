@@ -1,0 +1,201 @@
+// SECTION :: START
+
+.graph__wrapper-body
+	.graph__wrapper-body--left
+		div
+			.graph__wrapper-body--top
+
+				.graph__point
+					span!= "QUANTITY:"
+					p!= "100 <sub>%</sub>"
+
+			.graph__wrapper-body--bottom
+
+				ul.graph__export
+					li.graph__export-item
+						a.graph__export-btn.graph__export-btn--to(href="#" class="" title="")
+							i.icon-font.icon-export
+					li.graph__export-item
+						a.graph__export-btn.graph__export-btn--pdf(href="#" class="" title="")
+							span!= "PDF"
+					li.graph__export-item
+						a.graph__export-btn.graph__export-btn--excel(href="#" class="" title="")
+							i.icon-font.icon-excel
+
+		div
+			.graph__wrapper-body--top
+
+				.result__box.result__box--purple
+					p.result__box-badge
+						i
+						span!= "ID JHS21SKLX"
+					p.result__box-title!= "M16 x 40"
+
+					.result__box-progress
+						div
+							.result__box-slider
+								.result__box-slider--top(style="width:60%;")
+								a(href="#" class="" title="" style="left:60%;")
+									i.icon-font.icon-resize-width
+									span!= "0978"
+									sub!= "UNITS"
+								.result__box-slider--bottom
+									each val, idx in [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]
+										span
+
+			.graph__wrapper-body--middle
+				#graph__node
+
+			.graph__wrapper-body--bottom
+
+				.graph__btn-wrapper
+					a.graph__btn.is-active(href="#" class="" title="")
+						span!= ""
+						p!= "DAY"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "WEEK"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "MONTH"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "QUARTERLY"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "ANNUALLY"
+
+	.graph__wrapper-body--right
+
+		.graph__info
+			p.graph__info-title
+				span!= "MATERIAL INFO"
+				i.icon-font.icon-arrow-right
+
+			.graph__info-row
+				.graph__info-col
+					h6!= "Single Weight:"
+					p
+						i
+						span!= "198g"
+
+				.graph__info-col
+					h6!= "Full Weight:"
+					p
+						i
+						span!= "2102g"
+
+				.graph__info-col
+					h6!= "Critical Weight:"
+					p
+						i
+						span!= "<span>126</span>g"
+
+			.graph__info-row
+				.graph__info-col
+					h6!= "Material ID:"
+					p
+						i
+						span!= "MK0045"
+
+				.graph__info-col
+					h6!= "Customer ID:"
+					p
+						i
+						span!= "251200"
+
+				.graph__info-col
+					h6!= "Storage ID:"
+					p
+						i
+						span!= "001456"
+
+			p.graph__info-title
+				span!= "STATUS INFO"
+				i.icon-font.icon-arrow-right
+
+			.graph__info-block--wrapper
+				.graph__info-block--left
+
+					.graph__info-block.graph__info-block--done
+						div
+							span
+							span
+							span
+							span
+							span
+						p!= "M16 x 38 "
+						p!= "ID JHS21SKLX"
+
+					.graph__info-block.graph__info-block--warning
+						div
+							span
+							span
+						p!= "M16 x 36"
+						p!= "ID 23SI4965JI"
+
+					.graph__info-block.graph__info-block--error
+						div
+							span
+						p!= "M14 x 40"
+						p!= "ID CV2596KOI"
+
+					.graph__info-block.graph__info-block--done
+						div
+							span
+							span
+							span
+						p!= "M14 x 36"
+						p!= "ID 58KLOHSGG"
+
+					.graph__info-block.graph__info-block--error
+						div
+							span
+						p!= "M12 x 36"
+						p!= "ID DK85962LO"
+
+					.graph__info-block.graph__info-block--done
+						div
+							span
+							span
+							span
+							span
+							span
+						p!= "M10 x 38"
+						p!= "ID NU45896352L"
+
+					.graph__info-block.graph__info-block--warning
+						div
+							span
+							span
+						p!= "M08 x 36"
+						p!= "ID J45ZMHDGTR2"
+
+				.graph__info-block--right
+
+					.graph__info-block.graph__info-block--full.graph__info-block--white
+						div
+							span
+						p!= "PARTS"
+
+					.graph__info-block.graph__info-block--full.graph__info-block--color
+						div
+							span
+						p!= "CRITICAL"
+
+					.graph__info-block.graph__info-block--full.graph__info-block--color
+						div
+							span
+						i.icon-font.icon-sort
+
+					.graph__info-block.graph__info-block--full.graph__info-block--color
+						div
+							span
+						i.icon-font.icon-sort
+
+
+			.graph__info-footer
+				a.graph__info-logo(href="#" class="" title="")
+					img(src="/img/logo-text.svg" alt="" title="")
+
+// SECTION :: END

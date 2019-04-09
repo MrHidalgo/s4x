@@ -27,8 +27,20 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == resize-width {
+	@if $filename == arrow-right {
 		$char: "\E001";
+	}
+	@if $filename == excel {
+		$char: "\E002";
+	}
+	@if $filename == export {
+		$char: "\E003";
+	}
+	@if $filename == resize-width {
+		$char: "\E004";
+	}
+	@if $filename == sort {
+		$char: "\E005";
 	}
 
 	@return $char;
@@ -45,7 +57,23 @@
 	}
 }
 
+.icon-arrow-right {
+	@include icon(arrow-right);
+
+}
+.icon-excel {
+	@include icon(excel);
+
+}
+.icon-export {
+	@include icon(export);
+
+}
 .icon-resize-width {
 	@include icon(resize-width);
+
+}
+.icon-sort {
+	@include icon(sort);
 
 }

@@ -162,6 +162,7 @@
 			}
 
 			span {
+				font-weight: 500;
 				line-height: 0.85;
 				letter-spacing: -1px;
 				@include fluid(font-size, 1440px, 2732px, 20px, 40px);
@@ -174,6 +175,7 @@
 		&-title {
 			line-height: 1;
 			letter-spacing: -1.9px;
+			font-weight: 500;
 			@include fluid(padding-bottom, 1440px, 2732px, 11px, 22px);
 			@include fluid(font-size, 1440px, 2732px, 39px, 79px);
 			@include adaptive(575) {

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.13 103">
+  <title>excel</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="UI_GRID" data-name="UI/GRID">
+      <g id="Layer_7" data-name="Layer 7">
+        <g id="Typo">
+          <g>
+            <path d="M98.64,8.79H61.33V0L0,9.47v83L61.33,103V90H98.64a4.28,4.28,0,0,0,4.49-4V12.83a4.28,4.28,0,0,0-4.49-4m.59,77.82h-38l-.06-7H70.3v-8.1H61.07l0-4.8H70.3v-8.1H61l-.05-4.79H70.3v-8.1H60.88V41H70.3V32.86H60.88V28.07H70.3V20H60.88V12.61H99.23Z" style="fill: #b3b3b3;fill-rule: evenodd"/>
+            <rect x="75.46" y="19.97" width="15.92" height="8.1" style="fill: #b3b3b3"/>
+            <rect x="75.46" y="32.86" width="15.92" height="8.1" style="fill: #b3b3b3"/>
+            <rect x="75.46" y="45.76" width="15.92" height="8.1" style="fill: #b3b3b3"/>
+            <rect x="75.46" y="58.65" width="15.92" height="8.1" style="fill: #b3b3b3"/>
+            <rect x="75.46" y="71.55" width="15.92" height="8.1" style="fill: #b3b3b3"/>
+            <polyline points="16.01 31.88 23.92 31.43 28.88 45.09 34.76 30.86 42.66 30.41 33.06 49.81 42.66 69.25 34.3 68.69 28.66 53.87 23.01 68.12 15.34 67.44 24.25 50.27 16.01 31.88" style="fill-rule: evenodd"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
