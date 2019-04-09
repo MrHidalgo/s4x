@@ -25,7 +25,7 @@
 		div
 			.graph__wrapper-body--top
 
-				.result__box.result__box--purple
+				.result__box.result__box--success
 					p.result__box-badge
 						i
 						span!= "ID JHS21SKLX"
@@ -37,11 +37,12 @@
 								.result__box-slider--top(style="width:60%;")
 								a(href="#" class="" title="" style="left:60%;")
 									i.icon-font.icon-resize-width
-									span!= "0978"
-									sub!= "UNITS"
 								.result__box-slider--bottom
-									each val, idx in [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,3,4,1,2]
+									each val, idx in [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,2,3,4]
 										span
+						div
+							span!= "0978"
+							sub!= "UNITS"
 
 			.graph__wrapper-body--middle
 				#graph__node
@@ -68,9 +69,9 @@
 	.graph__wrapper-body--right
 
 		.graph__info
-			p.graph__info-title
+			p.graph__info-title.graph__info-title--plus
 				span!= "MATERIAL INFO"
-				i.icon-font.icon-arrow-right
+				i!= "+"
 
 			.graph__info-row
 				.graph__info-col

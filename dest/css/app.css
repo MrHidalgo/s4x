@@ -1078,7 +1078,7 @@ picture {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: #ffffff;
+  background-color: #6666FF;
   padding: 2px;
 }
 
@@ -1548,7 +1548,30 @@ picture {
   }
 }
 
-/* line 394, src/scss/_components/home/_graph.scss */
+/* line 395, src/scss/_components/home/_graph.scss */
+.graph__info-title--plus i {
+  position: relative;
+  top: -5px;
+  line-height: 1;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 1366px) {
+  /* line 395, src/scss/_components/home/_graph.scss */
+  .graph__info-title--plus i {
+    font-size: -webkit-calc(40px + 39 * (100vw - 1366px) / 1366);
+    font-size: calc(40px + 39 * (100vw - 1366px) / 1366);
+  }
+}
+
+@media screen and (min-width: 2732px) {
+  /* line 395, src/scss/_components/home/_graph.scss */
+  .graph__info-title--plus i {
+    font-size: 79px;
+  }
+}
+
+/* line 403, src/scss/_components/home/_graph.scss */
 .graph__info-title:after {
   content: '';
   position: absolute;
@@ -1560,13 +1583,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 394, src/scss/_components/home/_graph.scss */
+  /* line 403, src/scss/_components/home/_graph.scss */
   .graph__info-title:after {
     height: 3px;
   }
 }
 
-/* line 408, src/scss/_components/home/_graph.scss */
+/* line 417, src/scss/_components/home/_graph.scss */
 .graph__info-row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1579,7 +1602,7 @@ picture {
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 408, src/scss/_components/home/_graph.scss */
+  /* line 417, src/scss/_components/home/_graph.scss */
   .graph__info-row {
     padding-left: -webkit-calc(18px + 19 * (100vw - 1366px) / 1366);
     padding-left: calc(18px + 19 * (100vw - 1366px) / 1366);
@@ -1587,20 +1610,20 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 408, src/scss/_components/home/_graph.scss */
+  /* line 417, src/scss/_components/home/_graph.scss */
   .graph__info-row {
     padding-left: 37px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 408, src/scss/_components/home/_graph.scss */
+  /* line 417, src/scss/_components/home/_graph.scss */
   .graph__info-row {
     padding-left: 15px;
   }
 }
 
-/* line 417, src/scss/_components/home/_graph.scss */
+/* line 426, src/scss/_components/home/_graph.scss */
 .graph__info-col {
   width: 100%;
   max-width: 50%;
@@ -1608,7 +1631,7 @@ picture {
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 417, src/scss/_components/home/_graph.scss */
+  /* line 426, src/scss/_components/home/_graph.scss */
   .graph__info-col {
     margin-bottom: -webkit-calc(33px + 34 * (100vw - 1366px) / 1366);
     margin-bottom: calc(33px + 34 * (100vw - 1366px) / 1366);
@@ -1616,27 +1639,27 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 417, src/scss/_components/home/_graph.scss */
+  /* line 426, src/scss/_components/home/_graph.scss */
   .graph__info-col {
     margin-bottom: 67px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 417, src/scss/_components/home/_graph.scss */
+  /* line 426, src/scss/_components/home/_graph.scss */
   .graph__info-col {
     max-width: 100%;
   }
 }
 
-/* line 425, src/scss/_components/home/_graph.scss */
+/* line 434, src/scss/_components/home/_graph.scss */
 .graph__info-col h6,
 .graph__info-col p span {
   color: #ffffff;
   font-weight: 500;
 }
 
-/* line 431, src/scss/_components/home/_graph.scss */
+/* line 440, src/scss/_components/home/_graph.scss */
 .graph__info-col h6 {
   text-transform: uppercase;
   line-height: 0.9;
@@ -1645,7 +1668,7 @@ picture {
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 431, src/scss/_components/home/_graph.scss */
+  /* line 440, src/scss/_components/home/_graph.scss */
   .graph__info-col h6 {
     font-size: -webkit-calc(20px + 20 * (100vw - 1366px) / 1366);
     font-size: calc(20px + 20 * (100vw - 1366px) / 1366);
@@ -1653,20 +1676,20 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 431, src/scss/_components/home/_graph.scss */
+  /* line 440, src/scss/_components/home/_graph.scss */
   .graph__info-col h6 {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 431, src/scss/_components/home/_graph.scss */
+  /* line 440, src/scss/_components/home/_graph.scss */
   .graph__info-col h6 {
     font-size: 18px;
   }
 }
 
-/* line 441, src/scss/_components/home/_graph.scss */
+/* line 450, src/scss/_components/home/_graph.scss */
 .graph__info-col p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1678,14 +1701,14 @@ picture {
           align-items: center;
 }
 
-/* line 446, src/scss/_components/home/_graph.scss */
+/* line 455, src/scss/_components/home/_graph.scss */
 .graph__info-col span {
   line-height: 0.9;
   font-size: 20px;
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 446, src/scss/_components/home/_graph.scss */
+  /* line 455, src/scss/_components/home/_graph.scss */
   .graph__info-col span {
     font-size: -webkit-calc(20px + 20 * (100vw - 1366px) / 1366);
     font-size: calc(20px + 20 * (100vw - 1366px) / 1366);
@@ -1693,35 +1716,35 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 446, src/scss/_components/home/_graph.scss */
+  /* line 455, src/scss/_components/home/_graph.scss */
   .graph__info-col span {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 446, src/scss/_components/home/_graph.scss */
+  /* line 455, src/scss/_components/home/_graph.scss */
   .graph__info-col span {
     font-size: 18px;
   }
 }
 
-/* line 453, src/scss/_components/home/_graph.scss */
+/* line 462, src/scss/_components/home/_graph.scss */
 .graph__info-col span span {
   color: #ff0000;
 }
 
-/* line 458, src/scss/_components/home/_graph.scss */
+/* line 467, src/scss/_components/home/_graph.scss */
 .graph__info-col i {
   -webkit-border-radius: 100%;
           border-radius: 100%;
-  background-color: #00ff99;
+  background-color: #6666FF;
   width: 15px;
   height: 15px;
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 458, src/scss/_components/home/_graph.scss */
+  /* line 467, src/scss/_components/home/_graph.scss */
   .graph__info-col i {
     width: -webkit-calc(15px + 15 * (100vw - 1366px) / 1366);
     width: calc(15px + 15 * (100vw - 1366px) / 1366);
@@ -1731,7 +1754,7 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 458, src/scss/_components/home/_graph.scss */
+  /* line 467, src/scss/_components/home/_graph.scss */
   .graph__info-col i {
     width: 30px;
     height: 30px;
@@ -1739,20 +1762,20 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 458, src/scss/_components/home/_graph.scss */
+  /* line 467, src/scss/_components/home/_graph.scss */
   .graph__info-col i {
     width: 12px;
     height: 12px;
   }
 }
 
-/* line 469, src/scss/_components/home/_graph.scss */
+/* line 478, src/scss/_components/home/_graph.scss */
 .graph__info-block {
   margin-bottom: 5px;
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 469, src/scss/_components/home/_graph.scss */
+  /* line 478, src/scss/_components/home/_graph.scss */
   .graph__info-block {
     margin-bottom: -webkit-calc(5px + 5 * (100vw - 1366px) / 1366);
     margin-bottom: calc(5px + 5 * (100vw - 1366px) / 1366);
@@ -1760,13 +1783,13 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 469, src/scss/_components/home/_graph.scss */
+  /* line 478, src/scss/_components/home/_graph.scss */
   .graph__info-block {
     margin-bottom: 10px;
   }
 }
 
-/* line 472, src/scss/_components/home/_graph.scss */
+/* line 481, src/scss/_components/home/_graph.scss */
 .graph__info-block > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1779,7 +1802,7 @@ picture {
   padding-bottom: 3px;
 }
 
-/* line 477, src/scss/_components/home/_graph.scss */
+/* line 486, src/scss/_components/home/_graph.scss */
 .graph__info-block > div span {
   width: 20px;
   height: 10px;
@@ -1787,7 +1810,7 @@ picture {
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 477, src/scss/_components/home/_graph.scss */
+  /* line 486, src/scss/_components/home/_graph.scss */
   .graph__info-block > div span {
     width: -webkit-calc(20px + 20 * (100vw - 1366px) / 1366);
     width: calc(20px + 20 * (100vw - 1366px) / 1366);
@@ -1795,14 +1818,14 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 477, src/scss/_components/home/_graph.scss */
+  /* line 486, src/scss/_components/home/_graph.scss */
   .graph__info-block > div span {
     width: 40px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 477, src/scss/_components/home/_graph.scss */
+  /* line 486, src/scss/_components/home/_graph.scss */
   .graph__info-block > div span {
     height: -webkit-calc(10px + 10 * (100vw - 1366px) / 1366);
     height: calc(10px + 10 * (100vw - 1366px) / 1366);
@@ -1810,14 +1833,14 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 477, src/scss/_components/home/_graph.scss */
+  /* line 486, src/scss/_components/home/_graph.scss */
   .graph__info-block > div span {
     height: 20px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 477, src/scss/_components/home/_graph.scss */
+  /* line 486, src/scss/_components/home/_graph.scss */
   .graph__info-block > div span {
     margin-right: -webkit-calc(5px + 6 * (100vw - 1366px) / 1366);
     margin-right: calc(5px + 6 * (100vw - 1366px) / 1366);
@@ -1825,44 +1848,44 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 477, src/scss/_components/home/_graph.scss */
+  /* line 486, src/scss/_components/home/_graph.scss */
   .graph__info-block > div span {
     margin-right: 11px;
   }
 }
 
-/* line 486, src/scss/_components/home/_graph.scss */
+/* line 495, src/scss/_components/home/_graph.scss */
 .graph__info-block--done > div span {
   background-color: #00FF99;
 }
 
-/* line 493, src/scss/_components/home/_graph.scss */
+/* line 502, src/scss/_components/home/_graph.scss */
 .graph__info-block--warning > div span {
   background-color: #FCEE21;
 }
 
-/* line 500, src/scss/_components/home/_graph.scss */
+/* line 509, src/scss/_components/home/_graph.scss */
 .graph__info-block--error > div span {
   background-color: #FF0000;
 }
 
-/* line 507, src/scss/_components/home/_graph.scss */
+/* line 516, src/scss/_components/home/_graph.scss */
 .graph__info-block--white > div span {
   background-color: #ffffff;
 }
 
-/* line 514, src/scss/_components/home/_graph.scss */
+/* line 523, src/scss/_components/home/_graph.scss */
 .graph__info-block--color > div span {
   background-color: #6666FF;
 }
 
-/* line 519, src/scss/_components/home/_graph.scss */
+/* line 528, src/scss/_components/home/_graph.scss */
 .graph__info-block--full {
   margin-bottom: 16px;
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 519, src/scss/_components/home/_graph.scss */
+  /* line 528, src/scss/_components/home/_graph.scss */
   .graph__info-block--full {
     margin-bottom: -webkit-calc(16px + 17 * (100vw - 1366px) / 1366);
     margin-bottom: calc(16px + 17 * (100vw - 1366px) / 1366);
@@ -1870,13 +1893,13 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 519, src/scss/_components/home/_graph.scss */
+  /* line 528, src/scss/_components/home/_graph.scss */
   .graph__info-block--full {
     margin-bottom: 33px;
   }
 }
 
-/* line 523, src/scss/_components/home/_graph.scss */
+/* line 532, src/scss/_components/home/_graph.scss */
 .graph__info-block--full > div span {
   width: 100%;
   max-width: 122px;
@@ -1884,7 +1907,7 @@ picture {
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 523, src/scss/_components/home/_graph.scss */
+  /* line 532, src/scss/_components/home/_graph.scss */
   .graph__info-block--full > div span {
     max-width: -webkit-calc(122px + 123 * (100vw - 1366px) / 1366);
     max-width: calc(122px + 123 * (100vw - 1366px) / 1366);
@@ -1892,14 +1915,14 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 523, src/scss/_components/home/_graph.scss */
+  /* line 532, src/scss/_components/home/_graph.scss */
   .graph__info-block--full > div span {
     max-width: 245px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 523, src/scss/_components/home/_graph.scss */
+  /* line 532, src/scss/_components/home/_graph.scss */
   .graph__info-block--full > div span {
     height: -webkit-calc(17px + 17 * (100vw - 1366px) / 1366);
     height: calc(17px + 17 * (100vw - 1366px) / 1366);
@@ -1907,13 +1930,13 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 523, src/scss/_components/home/_graph.scss */
+  /* line 532, src/scss/_components/home/_graph.scss */
   .graph__info-block--full > div span {
     height: 34px;
   }
 }
 
-/* line 531, src/scss/_components/home/_graph.scss */
+/* line 540, src/scss/_components/home/_graph.scss */
 .graph__info-block--wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1923,7 +1946,7 @@ picture {
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 531, src/scss/_components/home/_graph.scss */
+  /* line 540, src/scss/_components/home/_graph.scss */
   .graph__info-block--wrapper {
     padding-left: -webkit-calc(18px + 19 * (100vw - 1366px) / 1366);
     padding-left: calc(18px + 19 * (100vw - 1366px) / 1366);
@@ -1931,14 +1954,14 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 531, src/scss/_components/home/_graph.scss */
+  /* line 540, src/scss/_components/home/_graph.scss */
   .graph__info-block--wrapper {
     padding-left: 37px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 531, src/scss/_components/home/_graph.scss */
+  /* line 540, src/scss/_components/home/_graph.scss */
   .graph__info-block--wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1947,26 +1970,26 @@ picture {
   }
 }
 
-/* line 539, src/scss/_components/home/_graph.scss */
+/* line 548, src/scss/_components/home/_graph.scss */
 .graph__info-block--left, .graph__info-block--right {
   width: 100%;
   max-width: 50%;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 539, src/scss/_components/home/_graph.scss */
+  /* line 548, src/scss/_components/home/_graph.scss */
   .graph__info-block--left, .graph__info-block--right {
     max-width: 100%;
   }
 }
 
-/* line 548, src/scss/_components/home/_graph.scss */
+/* line 557, src/scss/_components/home/_graph.scss */
 .graph__info-block--left {
   padding-top: 8px;
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 548, src/scss/_components/home/_graph.scss */
+  /* line 557, src/scss/_components/home/_graph.scss */
   .graph__info-block--left {
     padding-top: -webkit-calc(8px + 7 * (100vw - 1366px) / 1366);
     padding-top: calc(8px + 7 * (100vw - 1366px) / 1366);
@@ -1974,20 +1997,20 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 548, src/scss/_components/home/_graph.scss */
+  /* line 557, src/scss/_components/home/_graph.scss */
   .graph__info-block--left {
     padding-top: 15px;
   }
 }
 
-/* line 552, src/scss/_components/home/_graph.scss */
+/* line 561, src/scss/_components/home/_graph.scss */
 .graph__info-block--right {
   padding-top: 17px;
   padding-left: 34px;
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 552, src/scss/_components/home/_graph.scss */
+  /* line 561, src/scss/_components/home/_graph.scss */
   .graph__info-block--right {
     padding-top: -webkit-calc(17px + 17 * (100vw - 1366px) / 1366);
     padding-top: calc(17px + 17 * (100vw - 1366px) / 1366);
@@ -1995,14 +2018,14 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 552, src/scss/_components/home/_graph.scss */
+  /* line 561, src/scss/_components/home/_graph.scss */
   .graph__info-block--right {
     padding-top: 34px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 552, src/scss/_components/home/_graph.scss */
+  /* line 561, src/scss/_components/home/_graph.scss */
   .graph__info-block--right {
     padding-left: -webkit-calc(34px + 34 * (100vw - 1366px) / 1366);
     padding-left: calc(34px + 34 * (100vw - 1366px) / 1366);
@@ -2010,20 +2033,20 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 552, src/scss/_components/home/_graph.scss */
+  /* line 561, src/scss/_components/home/_graph.scss */
   .graph__info-block--right {
     padding-left: 68px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 552, src/scss/_components/home/_graph.scss */
+  /* line 561, src/scss/_components/home/_graph.scss */
   .graph__info-block--right {
     padding-left: 0;
   }
 }
 
-/* line 560, src/scss/_components/home/_graph.scss */
+/* line 569, src/scss/_components/home/_graph.scss */
 .graph__info-block p {
   color: #ffffff;
   font-weight: 500;
@@ -2033,7 +2056,7 @@ picture {
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 560, src/scss/_components/home/_graph.scss */
+  /* line 569, src/scss/_components/home/_graph.scss */
   .graph__info-block p {
     font-size: -webkit-calc(20px + 20 * (100vw - 1366px) / 1366);
     font-size: calc(20px + 20 * (100vw - 1366px) / 1366);
@@ -2041,13 +2064,13 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 560, src/scss/_components/home/_graph.scss */
+  /* line 569, src/scss/_components/home/_graph.scss */
   .graph__info-block p {
     font-size: 40px;
   }
 }
 
-/* line 568, src/scss/_components/home/_graph.scss */
+/* line 577, src/scss/_components/home/_graph.scss */
 .graph__info-block i {
   color: #ffffff;
   line-height: 1;
@@ -2055,7 +2078,7 @@ picture {
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 568, src/scss/_components/home/_graph.scss */
+  /* line 577, src/scss/_components/home/_graph.scss */
   .graph__info-block i {
     font-size: -webkit-calc(16px + 17 * (100vw - 1366px) / 1366);
     font-size: calc(16px + 17 * (100vw - 1366px) / 1366);
@@ -2063,13 +2086,13 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 568, src/scss/_components/home/_graph.scss */
+  /* line 577, src/scss/_components/home/_graph.scss */
   .graph__info-block i {
     font-size: 33px;
   }
 }
 
-/* line 575, src/scss/_components/home/_graph.scss */
+/* line 584, src/scss/_components/home/_graph.scss */
 .graph__info-footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2082,7 +2105,7 @@ picture {
   width: 100%;
 }
 
-/* line 581, src/scss/_components/home/_graph.scss */
+/* line 590, src/scss/_components/home/_graph.scss */
 .graph__info-logo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2096,7 +2119,7 @@ picture {
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 581, src/scss/_components/home/_graph.scss */
+  /* line 590, src/scss/_components/home/_graph.scss */
   .graph__info-logo {
     width: -webkit-calc(46px + 46 * (100vw - 1366px) / 1366);
     width: calc(46px + 46 * (100vw - 1366px) / 1366);
@@ -2104,27 +2127,32 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 581, src/scss/_components/home/_graph.scss */
+  /* line 590, src/scss/_components/home/_graph.scss */
   .graph__info-logo {
     width: 92px;
   }
 }
 
-/* line 586, src/scss/_components/home/_graph.scss */
+/* line 595, src/scss/_components/home/_graph.scss */
 .graph__info-logo img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 595, src/scss/_components/home/_graph.scss */
+/* line 605, src/scss/_components/home/_graph.scss */
+.graph .result__box-badge i {
+  background-color: #6666ff;
+}
+
+/* line 609, src/scss/_components/home/_graph.scss */
 .graph .result__box-title {
   line-height: 0.8;
   font-size: 60px;
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 595, src/scss/_components/home/_graph.scss */
+  /* line 609, src/scss/_components/home/_graph.scss */
   .graph .result__box-title {
     font-size: -webkit-calc(60px + 59 * (100vw - 1366px) / 1366);
     font-size: calc(60px + 59 * (100vw - 1366px) / 1366);
@@ -2132,40 +2160,40 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 595, src/scss/_components/home/_graph.scss */
+  /* line 609, src/scss/_components/home/_graph.scss */
   .graph .result__box-title {
     font-size: 119px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 595, src/scss/_components/home/_graph.scss */
+  /* line 609, src/scss/_components/home/_graph.scss */
   .graph .result__box-title {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 595, src/scss/_components/home/_graph.scss */
+  /* line 609, src/scss/_components/home/_graph.scss */
   .graph .result__box-title {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 595, src/scss/_components/home/_graph.scss */
+  /* line 609, src/scss/_components/home/_graph.scss */
   .graph .result__box-title {
     font-size: 30px;
   }
 }
 
-/* line 609, src/scss/_components/home/_graph.scss */
+/* line 623, src/scss/_components/home/_graph.scss */
 .graph .result__box-progress {
   min-height: 70px;
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 609, src/scss/_components/home/_graph.scss */
+  /* line 623, src/scss/_components/home/_graph.scss */
   .graph .result__box-progress {
     min-height: -webkit-calc(70px + 70 * (100vw - 1366px) / 1366);
     min-height: calc(70px + 70 * (100vw - 1366px) / 1366);
@@ -2173,78 +2201,94 @@ picture {
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 609, src/scss/_components/home/_graph.scss */
+  /* line 623, src/scss/_components/home/_graph.scss */
   .graph .result__box-progress {
     min-height: 140px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 609, src/scss/_components/home/_graph.scss */
+  /* line 623, src/scss/_components/home/_graph.scss */
   .graph .result__box-progress {
     min-height: 55px;
   }
 }
 
-/* line 617, src/scss/_components/home/_graph.scss */
-.graph .result__box-slider > a {
+/* line 630, src/scss/_components/home/_graph.scss */
+.graph .result__box-progress > div:nth-of-type(2) {
   overflow: hidden;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 150px;
 }
 
-/* line 621, src/scss/_components/home/_graph.scss */
-.graph .result__box-slider > a span,
-.graph .result__box-slider > a sub {
+@media screen and (min-width: 768px) {
+  /* line 630, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) {
+    width: -webkit-calc(150px + 190 * (100vw - 768px) / 1964);
+    width: calc(150px + 190 * (100vw - 768px) / 1964);
+  }
+}
+
+@media screen and (min-width: 2732px) {
+  /* line 630, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) {
+    width: 340px;
+  }
+}
+
+/* line 635, src/scss/_components/home/_graph.scss */
+.graph .result__box-progress > div:nth-of-type(2) span,
+.graph .result__box-progress > div:nth-of-type(2) sub {
   color: #ffffff;
 }
 
-/* line 626, src/scss/_components/home/_graph.scss */
-.graph .result__box-slider > a span {
+/* line 640, src/scss/_components/home/_graph.scss */
+.graph .result__box-progress > div:nth-of-type(2) span {
   line-height: 0.7;
   font-size: 48px;
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 626, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a span {
+  /* line 640, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) span {
     font-size: -webkit-calc(48px + 48 * (100vw - 1440px) / 1292);
     font-size: calc(48px + 48 * (100vw - 1440px) / 1292);
   }
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 626, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a span {
+  /* line 640, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) span {
     font-size: 96px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 626, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a span {
+  /* line 640, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) span {
     font-size: 35px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 626, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a span {
+  /* line 640, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) span {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 626, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a span {
+  /* line 640, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) span {
     font-size: 25px;
   }
 }
 
-/* line 640, src/scss/_components/home/_graph.scss */
-.graph .result__box-slider > a sub {
+/* line 654, src/scss/_components/home/_graph.scss */
+.graph .result__box-progress > div:nth-of-type(2) sub {
   position: relative;
   line-height: 1;
   font-weight: 500;
@@ -2254,61 +2298,68 @@ picture {
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 640, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a sub {
+  /* line 654, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) sub {
     top: -webkit-calc(-8px + -7 * (100vw - 1440px) / 1292);
     top: calc(-8px + -7 * (100vw - 1440px) / 1292);
   }
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 640, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a sub {
+  /* line 654, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) sub {
     top: -15px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 640, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a sub {
+  /* line 654, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) sub {
     font-size: -webkit-calc(20px + 20 * (100vw - 1440px) / 1292);
     font-size: calc(20px + 20 * (100vw - 1440px) / 1292);
   }
 }
 
 @media screen and (min-width: 2732px) {
-  /* line 640, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a sub {
+  /* line 654, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) sub {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 640, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a sub {
+  /* line 654, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) sub {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 640, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a sub {
+  /* line 654, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) sub {
+    top: -3px;
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 640, src/scss/_components/home/_graph.scss */
-  .graph .result__box-slider > a sub {
+  /* line 654, src/scss/_components/home/_graph.scss */
+  .graph .result__box-progress > div:nth-of-type(2) sub {
     font-size: 12px;
   }
 }
 
-/* line 661, src/scss/_components/home/_graph.scss */
+/* line 677, src/scss/_components/home/_graph.scss */
+.graph .result__box-slider > a {
+  overflow: hidden;
+}
+
+/* line 683, src/scss/_components/home/_graph.scss */
 .graph #graph__node {
+  overflow: hidden;
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
 }
 
 /* line 6, src/scss/_components/result/_result.scss */
@@ -2595,32 +2646,32 @@ picture {
 }
 
 /* line 84, src/scss/_components/result/_result.scss */
-.result__box--purple .result__box-slider--top {
-  background-color: #6666ff;
+.result__box--success .result__box-slider--top {
+  background-color: #00FF99;
 }
 
 /* line 88, src/scss/_components/result/_result.scss */
-.result__box--purple .result__box-slider--bottom span {
-  background-color: #6666ff;
+.result__box--success .result__box-slider--bottom span {
+  background-color: #00FF99;
 }
 
 /* line 95, src/scss/_components/result/_result.scss */
-.result__box--orange .result__box-slider--top {
+.result__box--warning .result__box-slider--top {
   background-color: #fcee21;
 }
 
 /* line 99, src/scss/_components/result/_result.scss */
-.result__box--orange .result__box-slider--bottom span {
+.result__box--warning .result__box-slider--bottom span {
   background-color: #fcee21;
 }
 
 /* line 106, src/scss/_components/result/_result.scss */
-.result__box--red .result__box-slider--top {
+.result__box--error .result__box-slider--top {
   background-color: #ff0000;
 }
 
 /* line 110, src/scss/_components/result/_result.scss */
-.result__box--red .result__box-slider--bottom span {
+.result__box--error .result__box-slider--bottom span {
   background-color: #ff0000;
 }
 
@@ -3051,7 +3102,7 @@ picture {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: green;
+  background-color: #00FF99;
 }
 
 /* line 275, src/scss/_components/result/_result.scss */
@@ -3062,7 +3113,7 @@ picture {
   top: 0;
   right: 0;
   height: 100%;
-  background-color: #00ff99;
+  background-color: #6666FF;
   width: 8px;
 }
 
@@ -3102,37 +3153,37 @@ picture {
   -webkit-transform: skewX(-35deg);
       -ms-transform: skewX(-35deg);
           transform: skewX(-35deg);
-  width: 6px;
-  margin-right: 10px;
+  width: 2px;
+  margin-right: 15px;
 }
 
 @media screen and (min-width: 1440px) {
   /* line 298, src/scss/_components/result/_result.scss */
   .result__box-slider--bottom span {
-    width: -webkit-calc(6px + 6 * (100vw - 1440px) / 1292);
-    width: calc(6px + 6 * (100vw - 1440px) / 1292);
+    width: -webkit-calc(2px + 2 * (100vw - 1440px) / 1292);
+    width: calc(2px + 2 * (100vw - 1440px) / 1292);
   }
 }
 
 @media screen and (min-width: 2732px) {
   /* line 298, src/scss/_components/result/_result.scss */
   .result__box-slider--bottom span {
-    width: 12px;
+    width: 4px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   /* line 298, src/scss/_components/result/_result.scss */
   .result__box-slider--bottom span {
-    margin-right: -webkit-calc(10px + 10 * (100vw - 1440px) / 1292);
-    margin-right: calc(10px + 10 * (100vw - 1440px) / 1292);
+    margin-right: -webkit-calc(15px + 15 * (100vw - 1440px) / 1292);
+    margin-right: calc(15px + 15 * (100vw - 1440px) / 1292);
   }
 }
 
 @media screen and (min-width: 2732px) {
   /* line 298, src/scss/_components/result/_result.scss */
   .result__box-slider--bottom span {
-    margin-right: 20px;
+    margin-right: 30px;
   }
 }
 

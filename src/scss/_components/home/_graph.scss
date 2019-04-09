@@ -228,7 +228,7 @@
 			&--to {
 				align-items: center;
 				justify-content: flex-end;
-				background-color: #ffffff;
+				background-color: #6666FF;
 				@include fluid(padding, 1366px, 2732px, 2px, 5px);
 
 				.icon-export {
@@ -391,6 +391,15 @@
 				}
 			}
 
+			&--plus {
+				i {
+					position: relative;
+					top: -5px;
+					line-height: 1;
+					@include fluid(font-size, 1366px, 2732px, 40px, 79px);
+				}
+			}
+
 			&:after {
 				content: '';
 				position: absolute;
@@ -457,7 +466,7 @@
 
 			i {
 				border-radius: 100%;
-				background-color: #00ff99;
+				background-color: #6666FF;
 				@include fluid(width height, 1366px, 2732px, 15px, 30px);
 				@include adaptive(575) {
 					width: 12px;
@@ -592,6 +601,11 @@
 	}
 
 	.result__box {
+		&-badge {
+			i {
+				background-color: #6666ff;
+			}
+		}
 		&-title {
 			line-height: 0.8;
 			@include fluid(font-size, 1366px, 2732px, 60px, 119px);
@@ -611,57 +625,66 @@
 			@include adaptive(1199) {
 				min-height: 55px;
 			}
+
+			> div {
+				&:nth-of-type(2) {
+					overflow: hidden;
+					align-items: center;
+					@include fluid(width, 768px, 2732px, 150px, 340px);
+
+					span,
+					sub {
+						color: #ffffff;
+					}
+
+					span {
+						line-height: 0.7;
+						@include fluid(font-size, 1440px, 2732px, 48px, 96px);
+						@include adaptive(1199) {
+							font-size: 35px;
+						}
+						@include adaptive(767) {
+							font-size: 30px;
+						}
+						@include adaptive(575) {
+							font-size: 25px;
+						}
+					}
+
+					sub {
+						position: relative;
+						line-height: 1;
+						font-weight: 500;
+						text-transform: uppercase;
+						@include fluid(top, 1440px, 2732px, -8px, -15px);
+						@include fluid(font-size, 1440px, 2732px, 20px, 40px);
+						@include adaptive(1199) {
+							font-size: 16px;
+						}
+						@include adaptive(767) {
+							top: -3px;
+							font-size: 14px;
+						}
+						@include adaptive(575) {
+							font-size: 12px;
+						}
+					}
+				}
+			}
 		}
 
 		&-slider {
 			> a{
 				overflow: hidden;
-				align-items: center;
-
-				span,
-				sub {
-					color: #ffffff;
-				}
-
-				span {
-					line-height: 0.7;
-					@include fluid(font-size, 1440px, 2732px, 48px, 96px);
-					@include adaptive(1199) {
-						font-size: 35px;
-					}
-					@include adaptive(767) {
-						font-size: 30px;
-					}
-					@include adaptive(575) {
-						font-size: 25px;
-					}
-				}
-
-				sub {
-					position: relative;
-					line-height: 1;
-					font-weight: 500;
-					text-transform: uppercase;
-					@include fluid(top, 1440px, 2732px, -8px, -15px);
-					@include fluid(font-size, 1440px, 2732px, 20px, 40px);
-					@include adaptive(1199) {
-						font-size: 16px;
-					}
-					@include adaptive(767) {
-						font-size: 14px;
-					}
-					@include adaptive(575) {
-						font-size: 12px;
-					}
-				}
 			}
 		}
 	}
 
 	#graph__node {
+		overflow: hidden;
 		position: relative;
 		width: 100%;
-		min-height: 100%;
+		height: 100%;
 	}
 }
 

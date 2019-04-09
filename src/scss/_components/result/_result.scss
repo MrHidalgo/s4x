@@ -80,18 +80,18 @@
 			margin-bottom: 30px;
 		}
 
-		&--purple {
+		&--success {
 			.result__box-slider--top {
-				background-color: #6666ff;
+				background-color: #00FF99;
 			}
 			.result__box-slider--bottom {
 				span {
-					background-color: #6666ff;
+					background-color: #00FF99;
 				}
 			}
 		}
 
-		&--orange {
+		&--warning {
 			.result__box-slider--top {
 				background-color: #fcee21;
 			}
@@ -102,7 +102,7 @@
 			}
 		}
 
-		&--red {
+		&--error {
 			.result__box-slider--top {
 				background-color: #ff0000;
 			}
@@ -270,7 +270,7 @@
 				left: 0;
 				width: 50%;
 				height: 100%;
-				background-color: green;
+				background-color: #00FF99;
 
 				&:after {
 					cursor: pointer;
@@ -279,7 +279,7 @@
 					top: 0;
 					right: 0;
 					height: 100%;
-					background-color: #00ff99;
+					background-color: #6666FF;
 					@include fluid(width, 1440px, 2732px, 8px, 16px);
 				}
 			}
@@ -300,8 +300,8 @@
 					height: 100%;
 					background-color: #00ff99;
 					transform: skewX(-35deg);
-					@include fluid(width, 1440px, 2732px, 6px, 12px);
-					@include fluid(margin-right, 1440px, 2732px, 10px, 20px);
+					@include fluid(width, 1440px, 2732px, 2px, 4px);
+					@include fluid(margin-right, 1440px, 2732px, 15px, 30px);
 				}
 			}
 		}

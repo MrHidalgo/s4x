@@ -35,16 +35,6 @@ var initPreventBehavior = function initPreventBehavior() {
 };
 
 /**
- * @name initSvg4everybody
- *
- * @description SVG for Everybody adds external spritemaps support to otherwise SVG-capable browsers.
- */
-var initSvg4everybody = function initSvg4everybody() {
-
-  svg4everybody();
-};
-
-/**
  * @name initWebFontLoader
  *
  * @description Loading fonts regardless of the source, then adds a standard set of events you may use to control the loading experience... for more details => https://github.com/typekit/fvd
@@ -80,7 +70,6 @@ var initWebFontLoader = function initWebFontLoader() {
   * =============================================
   * CALLBACK :: start
   * ============================================= */
-
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -94,7 +83,6 @@ var initWebFontLoader = function initWebFontLoader() {
     // default
     initWebFontLoader();
     initPreventBehavior();
-    initSvg4everybody();
     // ==========================================
 
     // lib
