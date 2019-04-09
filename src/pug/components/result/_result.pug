@@ -106,7 +106,112 @@
 			width: '25%',
 			badge: 'ID JHS21SKLX',
 			title: 'M16 x 38',
-			num: '0122'}
+			num: '0122'},{
+			color: 'success',
+			width: '75%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 40',
+			num: '0978'},{
+			color: 'success',
+			width: '75%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 40',
+			num: '0978'},{
+			color: 'success',
+			width: '75%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 40',
+			num: '0978'},{
+			color: 'success',
+			width: '50%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0425'},{
+			color: 'success',
+			width: '50%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0425'},{
+			color: 'success',
+			width: '50%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0425'},{
+			color: 'warning',
+			width: '25%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0122'},{
+			color: 'warning',
+			width: '25%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0122'},{
+			color: 'warning',
+			width: '25%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0122'},{
+			color: 'error',
+			width: '25%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '079'},{
+			color: 'error',
+			width: '25%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '079'},{
+			color: 'error',
+			width: '25%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '079'},{
+			color: 'success',
+			width: '75%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 40',
+			num: '0978'},{
+			color: 'success',
+			width: '75%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 40',
+			num: '0978'},{
+			color: 'success',
+			width: '75%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 40',
+			num: '0978'},{
+			color: 'success',
+			width: '50%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0425'},{
+			color: 'success',
+			width: '50%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0425'},{
+			color: 'success',
+			width: '50%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0425'},{
+			color: 'warning',
+			width: '25%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0122'},{
+			color: 'warning',
+			width: '25%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0122'},{
+			color: 'warning',
+			width: '25%',
+			badge: 'ID JHS21SKLX',
+			title: 'M16 x 38',
+			num: '0122'},
 	];
 
 section#result.result
@@ -127,46 +232,60 @@ section#result.result
 
 		.result__wrapper-body
 
-			.result__box-wrapper
-				each val, idx in resultData
+			.result__box-scroll
+				.result__box-wrapper
 					div
-						.result__box(class!= 'result__box--' + resultData[idx].color)
+						.result__box.result__box--empty
 							p.result__box-badge
 								i
-								span!= resultData[idx].badge
-							p.result__box-title!= resultData[idx].title
-
+								span!= "ID 000000000"
+							p.result__box-title!= "- - - - - -"
 							.result__box-progress
 								div
 									.result__box-slider
-										.result__box-slider--top(style="width:" + resultData[idx].width + ";")
-										a(href="#" class="" title="" style="left:" + resultData[idx].width + ";")
-											i.icon-font.icon-resize-width
-										.result__box-slider--bottom
-											each val, idx in [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]
-												span
+										.result__box-slider--top
 								div
-									span!= resultData[idx].num
-									sub!= "u"
+									span!= "+"
+
+					each val, idx in resultData
+						div
+							.result__box(class!= 'result__box--' + resultData[idx].color)
+								p.result__box-badge
+									i
+									span!= resultData[idx].badge
+								p.result__box-title!= resultData[idx].title
+
+								.result__box-progress
+									div
+										.result__box-slider
+											.result__box-slider--top(style="width:" + resultData[idx].width + ";")
+											a(href="#" class="" title="" style="left:" + resultData[idx].width + ";")
+												i.icon-font.icon-resize-width
+											.result__box-slider--bottom
+												each val, idx in [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]
+													span
+									div
+										span!= resultData[idx].num
+										sub!= "u"
 
 		.result__wrapper-footer
 			div
 				.graph__btn-wrapper
 					a.graph__btn.is-active(href="#" class="" title="")
-						span!= ""
-						p!= "DAY"
+						span
+						p!= "ALL"
 					a.graph__btn(href="#" class="" title="")
-						span!= ""
-						p!= "WEEK"
+						span
+						p!= "CRITICAL"
 					a.graph__btn(href="#" class="" title="")
-						span!= ""
-						p!= "MONTH"
+						span
+						p!= "PART"
 					a.graph__btn(href="#" class="" title="")
-						span!= ""
-						p!= "QUARTERLY"
+						span
+						i.icon-font.icon-sort
 					a.graph__btn(href="#" class="" title="")
-						span!= ""
-						p!= "ANNUALLY"
+						span
+						i.icon-font.icon-sort
 
 			div
 				a.graph__info-logo(href="#" class="" title="")

@@ -92,8 +92,6 @@
 				padding-right: 30px;
 			}
 			@include adaptive(575) {
-				//justify-content: center;
-				//padding-top: 9px;
 				padding-left: 15px;
 				padding-right: 15px;
 			}
@@ -107,6 +105,14 @@
 						flex: none;
 						width: 100%;
 						max-width: 100%;
+					}
+
+					.graph__btn {
+						i {
+							color: #ffffff;
+							line-height: 1;
+							@include fluid(font-size, 1366px, 2732px, 16px, 33px);
+						}
 					}
 				}
 				&:nth-of-type(2) {
@@ -143,6 +149,7 @@
 	}
 
 	&__box {
+		cursor: pointer;
 		@include fluid(margin-bottom, 1440px, 2732px, 20px, 40px);
 		@include adaptive(767) {
 			margin-bottom: 30px;
@@ -181,9 +188,59 @@
 			}
 		}
 
+		&--empty {
+			.result__box-badge {
+				i {
+					background-color: #b3b3b3;
+				}
+				span {
+					color: #B3B3B3;
+				}
+			}
+			.result__box-title {
+				letter-spacing: -2px;
+			}
+			.result__box-slider--top {
+				width: 100%;
+				background-color: #b3b3b3;
+
+				&:after {
+					background-color: #B3B3B3;
+				}
+			}
+		}
+
+		&-scroll {
+			overflow: hidden;
+			overflow-x: auto;
+			@include fluid(max-height, 1440px, 2732px, 745px, 1490px);
+			@include adaptive(767) {
+				width: calc(100% + 30px);
+				margin-left: -15px;
+			}
+
+			&::-webkit-scrollbar {
+				@include fluid(width, 1440px, 2732px, 17px, 35px);
+			}
+			&::-webkit-scrollbar-track {
+				background: #B3B3B3;
+			}
+			&::-webkit-scrollbar-thumb {
+				background: #6666FF;
+			}
+			&::-webkit-scrollbar-thumb:hover {
+				background: rgba(#6666FF, 0.75);
+			}
+		}
+
 		&-wrapper {
 			display: flex;
+			flex-direction: column;
 			flex-wrap: wrap;
+			@include fluid(max-height, 1440px, 2732px, 745px, 1490px);
+			@include adaptive(767) {
+				padding-left: 15px;
+			}
 
 			> div {
 				width: 100%;
@@ -202,9 +259,9 @@
 					}
 				}
 				@include adaptive(575) {
-					max-width: 100%;
+					max-width: calc(100% - 15px);
 					padding-left: 0 !important;
-					padding-right: 0 !important;
+					padding-right: 15px !important;
 				}
 			}
 		}
