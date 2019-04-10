@@ -223,6 +223,12 @@
 			&--pdf {
 				@include fluid(width, 1366px, 2732px, 52px, 105px);
 				@include fluid(height, 1366px, 2732px, 17px, 35px);
+				@include transition(background-color);
+
+				&:hover {
+					background-color: #ffffff;
+					@include transition(background-color);
+				}
 			}
 
 			&--to {
@@ -250,9 +256,17 @@
 			}
 
 			&--excel {
+				&:hover {
+					.icon-excel {
+						color: #ffffff;
+						@include transition(color);
+					}
+				}
+
 				.icon-excel {
 					color: #B3B3B3;
 					@include fluid(font-size, 1366px, 2732px, 51px, 103px);
+					@include transition(color);
 				}
 			}
 		}
