@@ -143,7 +143,7 @@
 			}
 
 			&--right {
-				@include fluid(width, 1366px, 2732px, 324px, 748px);
+				@include fluid(width, 1366px, 2732px, 364px, 748px);
 				@include fluid(padding-top, 1366px, 2732px, 42px, 84px);
 				@include fluid(padding-right, 1366px, 2732px, 6px, 12px);
 				@include adaptive(1199) {
@@ -417,18 +417,16 @@
 		&-row {
 			display: flex;
 			flex-wrap: wrap;
-			@include fluid(padding-left, 1366px, 2732px, 18px, 37px);
-			@include adaptive(575) {
-				padding-left: 15px;
-			}
 		}
 
 		&-col {
 			width: 100%;
 			max-width: 50%;
 			@include fluid(margin-bottom, 1366px, 2732px, 33px, 67px);
+			@include fluid(padding-left, 1366px, 2732px, 18px, 37px);
 			@include adaptive(575) {
 				max-width: 100%;
+				padding-left: 15px;
 			}
 
 			h6,
