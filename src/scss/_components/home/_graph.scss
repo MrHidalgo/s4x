@@ -10,9 +10,6 @@
 			justify-content: space-between;
 			min-height: 85px;
 			padding: 0 47px;
-			//@include fluid(padding-top, 1920px, 2732px, 31px, 62px);
-			//@include fluid(padding-bottom, 1920px, 2732px, 10px, 20px);
-			//@include fluid(padding-left padding-right, 1920px, 2732px, 47px, 94px);
 			@include adaptive(1199) {
 				padding-left: 30px;
 				padding-right: 30px;
@@ -37,7 +34,6 @@
 				&:nth-of-type(1),
 				&:nth-of-type(3) {
 					width: 192px;
-					//@include fluid(width, 1920px, 2732px, 192px, 384px);
 				}
 
 				&:nth-of-type(3) {
@@ -68,8 +64,6 @@
 			display: flex;
 			height: calc(100vh - 85px);
 			padding: 0 47px 15px;
-			//@include fluid(padding-left padding-right, 1920px, 2732px, 47px, 94px);
-			//@include fluid(padding-bottom, 1920px, 2732px, 50px, 100px);
 			@include adaptive(1199) {
 				padding-left: 30px;
 				padding-right: 30px;
@@ -100,7 +94,6 @@
 						display: flex;
 						flex-direction: column;
 						width: 145px;
-						//@include fluid(width, 1920px, 2732px, 145px, 290px);
 						@include adaptive(1199) {
 							width: 80px;
 						}
@@ -118,7 +111,6 @@
 							flex: 1;
 							padding-top: 15px;
 							padding-bottom: 15px;
-							//@include fluid(padding-top padding-bottom, 1920px, 2732px, 25px, 50px);
 							@include adaptive(1199) {
 								justify-content: flex-end;
 
@@ -146,14 +138,11 @@
 						min-width: 1px;
 						max-width: 100%;
 						padding-right: 70px;
-						//@include fluid(padding-right, 1920px, 2732px, 70px, 140px);
 						@include adaptive(1199) {
 							padding-right: 30px;
-							//padding-right: 0;
 						}
 						@include adaptive(1023) {
 							padding-right: 15px;
-							//padding-right: 0;
 						}
 						@include adaptive(767) {
 							padding-right: 0;
@@ -165,12 +154,10 @@
 
 						.graph__wrapper-body--top {
 							padding-bottom: 30px;
-							//@include fluid(padding-bottom, 1920px, 2732px, 23px, 46px);
 						}
 
 						.graph__wrapper-body--middle {
 							height: calc(100% - (160px + 70px));
-							//@include fluid(min-height, 1920px, 2732px, 570px, 1140px);
 							@include adaptive(767) {
 								min-height: 500px;
 							}
@@ -181,7 +168,6 @@
 
 						.graph__wrapper-body--bottom {
 							padding-top: 30px;
-							//@include fluid(padding-top, 1920px, 2732px, 35px, 70px);
 						}
 					}
 				}
@@ -190,17 +176,11 @@
 			&--right {
 				width: 364px;
 				padding-top: 40px;
-				//padding-left: 30px;
-				//@include fluid(width, 1920px, 2732px, 364px, 748px);
-				//@include fluid(padding-top, 1920px, 2732px, 42px, 84px);
-				//@include fluid(padding-right, 1920px, 2732px, 6px, 12px);
 				@include adaptive(1199) {
 					width: 300px;
-					//padding-right: 0;
 				}
 				@include adaptive(991) {
 					width: 250px;
-					//padding-right: 0;
 				}
 				@include adaptive(767) {
 					width: 100%;
@@ -219,7 +199,10 @@
 		i {
 			line-height: 1;
 			color: #ffffff;
-			@include fluid(font-size, 1920px, 2732px, 45px, 90px);
+			font-size: 45px;
+			@include adaptive(575) {
+				font-size: 40px;
+			}
 		}
 	}
 
@@ -235,9 +218,10 @@
 		&-btn {
 			display: flex;
 			background-color: #6666ff;
-			@include fluid(width, 1920px, 2732px, 52px, 105px);
-			@include fluid(height, 1920px, 2732px, 8px, 13px);
-			@include fluid(margin-left margin-right, 1920px, 2732px, 9px, 18px);
+			width: 52px;
+			height: 8px;
+			margin-left: 9px;
+			margin-right: 9px;
 			@include transition(background-color);
 
 			&:hover,
@@ -251,7 +235,7 @@
 	&__logo {
 		display: flex;
 		align-items: flex-start;
-		@include fluid(width, 1920px, 2732px, 192px, 384px);
+		width: 192px;
 
 		img {
 			display: block;
@@ -283,7 +267,6 @@
 			display: flex;
 			align-items: flex-start;
 			margin-bottom: 20px;
-			//@include fluid(margin-bottom, 1920px, 2732px, 20px, 40px);
 			@include adaptive(575) {
 				margin-bottom: 0;
 			}
@@ -292,8 +275,6 @@
 			&--pdf {
 				width: 52px;
 				height: 17px;
-				//@include fluid(width, 1920px, 2732px, 52px, 105px);
-				//@include fluid(height, 1920px, 2732px, 17px, 35px);
 				@include transition(background-color);
 
 				&:hover {
@@ -307,12 +288,10 @@
 				justify-content: flex-end;
 				background-color: #6666FF;
 				padding: 2px;
-				//@include fluid(padding, 1920px, 2732px, 2px, 5px);
 
 				.icon-export {
 					color: #1A1A1A;
 					font-size: 12px;
-					//@include fluid(font-size, 1920px, 2732px, 12px, 25px);
 				}
 			}
 
@@ -325,7 +304,6 @@
 					line-height: 0.9;
 					letter-spacing: -1px;
 					font-size: 20px;
-					//@include fluid(font-size, 1920px, 2732px, 20px, 40px);
 				}
 			}
 
@@ -340,7 +318,6 @@
 				.icon-excel {
 					color: #B3B3B3;
 					font-size: 51px;
-					//@include fluid(font-size, 1920px, 2732px, 51px, 103px);
 					@include transition(color);
 				}
 			}
@@ -375,7 +352,6 @@
 			width: 100%;
 			background-color: #6666ff;
 			height: 17px;
-			//@include fluid(height, 1920px, 2732px, 17px, 34px);
 			@include transition(background-color);
 		}
 
@@ -384,15 +360,11 @@
 			line-height: 1;
 			letter-spacing: -1px;
 			font-size: 20px;
-			//@include fluid(font-size, 1920px, 2732px, 20px, 40px);
 			@include adaptive(1199) {
 				font-size: 16px;
 			}
 			@include adaptive(1023) {
 				font-size: 14px;
-			}
-			@include adaptive(767) {
-				//font-size: 12px;
 			}
 			@include adaptive(575) {
 				padding-top: 5px;
@@ -413,12 +385,8 @@
 		flex-direction: column;
 		justify-content: center;
 		padding-left: 15px;
-		//@include fluid(padding-left, 1920px, 2732px, 15px, 30px);
 		@include adaptive(1199) {
 			transform: rotate(-90deg);
-		}
-		@include adaptive(767) {
-			//transform: rotate(0);
 		}
 		@include adaptive(575) {
 			display: none;
@@ -429,10 +397,9 @@
 			position: absolute;
 			top: 0;
 			left: 0;
+			width: 7px;
 			height: 100%;
 			background-color: #6666ff;
-			width: 7px;
-			//@include fluid(width, 1920px, 2732px, 7px, 13px);
 		}
 
 		p,
@@ -447,7 +414,6 @@
 			align-items: flex-start;
 			line-height: 0.8;
 			font-size: 55px;
-			//@include fluid(font-size, 1920px, 2732px, 55px, 119px);
 			@include adaptive(1023) {
 				font-size: 40px;
 			}
@@ -457,7 +423,6 @@
 
 			sub {
 				font-size: 20px;
-				//@include fluid(font-size, 1920px, 2732px, 20px, 40px);
 				@include adaptive(1023) {
 					font-size: 16px;
 				}
@@ -470,7 +435,6 @@
 		span {
 			line-height: 1;
 			font-size: 20px;
-			//@include fluid(font-size, 1920px, 2732px, 20px, 40px);
 			@include adaptive(1023) {
 				font-size: 16px;
 			}
@@ -486,7 +450,6 @@
 			align-items: center;
 			position: relative;
 			margin-bottom: 30px;
-			//@include fluid(margin-bottom, 1920px, 2732px, 29px, 59px);
 			@media screen and (max-height: 1023px) {
 				margin-bottom: 15px;
 			}
@@ -498,7 +461,6 @@
 				letter-spacing: -2.5px;
 				color: #ffffff;
 				font-size: 35px;
-				//@include fluid(font-size, 1920px, 2732px, 39px, 79px);
 				@include adaptive(1199) {
 					font-size: 32px;
 				}
@@ -514,7 +476,6 @@
 				line-height: 1;
 				color: #ffffff;
 				font-size: 30px;
-				//@include fluid(font-size, 1920px, 2732px, 30px, 59px);
 				@include adaptive(1199) {
 					font-size: 25px;
 				}
@@ -532,7 +493,6 @@
 					top: -5px;
 					line-height: 1;
 					font-size: 40px;
-					//@include fluid(font-size, 1920px, 2732px, 40px, 79px);
 					@include adaptive(1199) {
 						font-size: 33px;
 					}
@@ -570,8 +530,6 @@
 			max-width: 50%;
 			margin-bottom: 33px;
 			padding-left: 18px;
-			//@include fluid(margin-bottom, 1920px, 2732px, 33px, 67px);
-			//@include fluid(padding-left, 1920px, 2732px, 18px, 37px);
 			@include adaptive(575) {
 				max-width: 100%;
 				padding-left: 15px;
@@ -591,7 +549,6 @@
 				line-height: 0.9;
 				letter-spacing: -1px;
 				font-size: 20px;
-				//@include fluid(font-size, 1920px, 2732px, 20px, 40px);
 				@include adaptive(1199) {
 					font-size: 18px;
 				}
@@ -611,7 +568,6 @@
 			span {
 				line-height: 0.9;
 				font-size: 20px;
-				//@include fluid(font-size, 1920px, 2732px, 20px, 40px);
 				@include adaptive(1199) {
 					font-size: 18px;
 				}
@@ -632,7 +588,6 @@
 				background-color: #6666FF;
 				width: 15px;
 				height: 15px;
-				//@include fluid(width height, 1920px, 2732px, 15px, 30px);
 				@include adaptive(575) {
 					width: 12px;
 					height: 12px;
@@ -642,7 +597,6 @@
 
 		&-block {
 			margin-bottom: 5px;
-			//@include fluid(margin-bottom, 1920px, 2732px, 5px, 10px);
 
 			> div {
 				display: flex;
@@ -653,9 +607,6 @@
 					width: 20px;
 					height: 10px;
 					margin-right: 5px;
-					//@include fluid(width, 1920px, 2732px, 20px, 40px);
-					//@include fluid(height, 1920px, 2732px, 10px, 20px);
-					//@include fluid(margin-right, 1920px, 2732px, 5px, 11px);
 				}
 			}
 
@@ -696,15 +647,12 @@
 			}
 			&--full {
 				margin-bottom: 16px;
-				//@include fluid(margin-bottom, 1920px, 2732px, 16px, 33px);
 
 				> div {
 					span {
 						width: 100%;
 						max-width: 122px;
 						height: 17px;
-						//@include fluid(max-width, 1920px, 2732px, 122px, 245px);
-						//@include fluid(height, 1920px, 2732px, 17px, 34px);
 					}
 				}
 			}
@@ -712,7 +660,6 @@
 			&--wrapper {
 				display: flex;
 				padding-left: 18px;
-				//@include fluid(padding-left, 1920px, 2732px, 18px, 37px);
 				@include adaptive(575) {
 					flex-wrap: wrap;
 					padding-left: 15px;
@@ -730,14 +677,11 @@
 
 			&--left {
 				padding-top: 8px;
-				//@include fluid(padding-top, 1920px, 2732px, 8px, 15px);
 			}
 
 			&--right {
 				padding-top: 17px;
 				padding-left: 34px;
-				//@include fluid(padding-top, 1920px, 2732px, 17px, 34px);
-				//@include fluid(padding-left, 1920px, 2732px, 34px, 68px);
 				@include adaptive(575) {
 					padding-left: 0;
 				}
@@ -749,7 +693,6 @@
 				line-height: 0.9;
 				letter-spacing: -1px;
 				font-size: 20px;
-				//@include fluid(font-size, 1920px, 2732px, 20px, 40px);
 				@include adaptive(1199) {
 					font-size: 18px;
 				}
@@ -765,7 +708,6 @@
 				color: #ffffff;
 				line-height: 1;
 				font-size: 16px;
-				//@include fluid(font-size, 1920px, 2732px, 16px, 33px);
 				@include adaptive(767) {
 					font-size: 14px;
 				}
@@ -785,7 +727,6 @@
 			display: flex;
 			align-items: flex-start;
 			width: 40px;
-			//@include fluid(width, 1920px, 2732px, 46px, 92px);
 
 			img {
 				display: block;
@@ -806,7 +747,6 @@
 		&-title {
 			line-height: 0.8;
 			font-size: 50px;
-			//@include fluid(font-size, 1920px, 2732px, 60px, 119px);
 			@include adaptive(1199) {
 				font-size: 40px;
 			}
@@ -821,7 +761,6 @@
 
 		&-progress {
 			min-height: 60px;
-			//@include fluid(min-height, 1920px, 2732px, 70px, 140px);
 			@include adaptive(1199) {
 				min-height: 50px;
 			}
@@ -831,7 +770,6 @@
 					overflow: hidden;
 					align-items: center;
 					width: auto;
-					//@include fluid(width, 768px, 2732px, 150px, 340px);
 					@include adaptive(1023) {
 						width: 90px;
 					}
@@ -844,7 +782,6 @@
 					span {
 						line-height: 0.7;
 						font-size: 48px;
-						//@include fluid(font-size, 1920px, 2732px, 48px, 96px);
 						@include adaptive(1199) {
 							font-size: 35px;
 						}
@@ -864,8 +801,6 @@
 						text-transform: uppercase;
 						top: -8px;
 						font-size: 20px;
-						//@include fluid(top, 1920px, 2732px, -8px, -15px);
-						//@include fluid(font-size, 1920px, 2732px, 20px, 40px);
 						@include adaptive(1199) {
 							font-size: 16px;
 						}
