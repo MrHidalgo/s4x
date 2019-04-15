@@ -666,13 +666,13 @@ picture {
 .graph__arrow i {
   line-height: 1;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 575px) {
   /* line 199, src/scss/_components/home/_graph.scss */
   .graph__arrow i {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 
@@ -1726,7 +1726,7 @@ picture {
 
 /* line 839, src/scss/_components/home/_graph.scss */
 .graph .result__box-slider > a .icon-font {
-  font-size: 42px;
+  font-size: 35px;
 }
 
 /* line 846, src/scss/_components/home/_graph.scss */
@@ -2489,13 +2489,13 @@ picture {
 .result__box-slider > a i {
   line-height: 1;
   color: #ffffff;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 575px) and (orientation: portrait) {
   /* line 455, src/scss/_components/result/_result.scss */
   .result__box-slider > a i {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
