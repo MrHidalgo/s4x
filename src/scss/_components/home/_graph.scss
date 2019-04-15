@@ -22,11 +22,18 @@
 				padding-left: 15px;
 				padding-right: 15px;
 			}
+			@media screen and (max-width: 767px) and (orientation: landscape) {
+				flex-wrap: nowrap;
+			}
 
 			> div {
 				&:nth-of-type(1) {
 					@include adaptive(767) {
 						order: 2;
+						width: 100px !important;
+					}
+					@media screen and (max-width: 767px) and (orientation: landscape) {
+						order: 1;
 						width: 100px !important;
 					}
 				}
@@ -44,6 +51,12 @@
 						justify-content: center;
 						padding-bottom: 15px;
 					}
+					@media screen and (max-width: 767px) and (orientation: landscape) {
+						order: 3;
+						width: 100px;
+						justify-content: flex-end;
+						padding-bottom: 0;
+					}
 				}
 
 				&:nth-of-type(2) {
@@ -55,6 +68,10 @@
 						order: 3;
 						display: flex;
 						justify-content: flex-end;
+					}
+					@media screen and (max-width: 767px) and (orientation: landscape) {
+						order: 2;
+						display: block;
 					}
 				}
 			}
@@ -75,6 +92,9 @@
 				padding-left: 15px;
 				padding-right: 15px;
 			}
+			@media screen and (max-width: 767px) and (orientation: landscape) {
+				flex-wrap: nowrap;
+			}
 
 			&--left {
 				display: flex;
@@ -87,6 +107,12 @@
 				}
 				@include adaptive(575) {
 					flex-wrap: wrap;
+				}
+				@media screen and (max-width: 767px) and (orientation: landscape) {
+					padding-bottom: 0;
+				}
+				@media screen and (max-width: 575px) and (orientation: landscape) {
+					flex-wrap: nowrap;
 				}
 
 				> div {
@@ -103,6 +129,10 @@
 						@include adaptive(575) {
 							order: 2;
 							width: 100%;
+						}
+						@media screen and (max-width: 575px) and (orientation: landscape) {
+							order: unset;
+							width: 50px;
 						}
 
 						.graph__wrapper-body--top {
@@ -122,6 +152,12 @@
 							@include adaptive(1023) {
 								justify-content: center;
 								left: 0;
+							}
+							@media screen and (max-width: 575px) and (orientation: landscape) {
+								min-height: 400px;
+							}
+							@media screen and (max-height: 720px) {
+								min-height: 430px;
 							}
 						}
 
@@ -151,6 +187,13 @@
 							order: 1;
 							width: 100%;
 						}
+						@media screen and (max-width: 767px) and (orientation: landscape) {
+							padding-right: 5px;
+						}
+						@media screen and (max-width: 575px) and (orientation: landscape) {
+							order: unset;
+							padding-right: 5px;
+						}
 
 						.graph__wrapper-body--top {
 							padding-bottom: 30px;
@@ -162,6 +205,9 @@
 								min-height: 500px;
 							}
 							@include adaptive(575) {
+								min-height: 430px;
+							}
+							@media screen and (max-height: 720px) {
 								min-height: 430px;
 							}
 						}
@@ -187,6 +233,12 @@
 				}
 				@media screen and (max-height: 1100px) {
 					padding-top: 0;
+				}
+				@media screen and (max-width: 767px) and (orientation: landscape) {
+					width: 200px;
+				}
+				@media screen and (max-width: 600px) and (orientation: landscape) {
+					width: 150px;
 				}
 			}
 		}
@@ -252,9 +304,13 @@
 			align-items: center;
 			justify-content: space-between;
 		}
+		@media screen and (max-width: 575px) and (orientation: landscape) {
+			flex-direction: column;
+		}
 
 		&-item {
 			display: flex;
+			width: 100%;
 
 			&:last-of-type {
 				.graph__export-btn {
@@ -270,10 +326,14 @@
 			@include adaptive(575) {
 				margin-bottom: 0;
 			}
+			@media screen and (max-width: 575px) and (orientation: landscape) {
+				margin-bottom: 20px;
+			}
 
 			&--to,
 			&--pdf {
-				width: 52px;
+				width: 100%;
+				max-width: 52px;
 				height: 17px;
 				@include transition(background-color);
 
@@ -297,6 +357,10 @@
 
 			&--pdf {
 				background-color: #b3b3b3;
+				@media screen and (max-width: 575px) and (orientation: landscape) {
+					display: flex;
+					align-items: center;
+				}
 
 				span {
 					color: #000;
@@ -304,6 +368,9 @@
 					line-height: 0.9;
 					letter-spacing: -1px;
 					font-size: 20px;
+					@media screen and (max-width: 575px) and (orientation: landscape) {
+						font-size: 16px;
+					}
 				}
 			}
 
@@ -319,6 +386,9 @@
 					color: #B3B3B3;
 					font-size: 51px;
 					@include transition(color);
+					@media screen and (max-width: 575px) and (orientation: landscape) {
+						font-size: 40px;
+					}
 				}
 			}
 		}
@@ -390,6 +460,9 @@
 		}
 		@include adaptive(575) {
 			display: none;
+		}
+		@media screen and (max-width: 575px) and (orientation: landscape) {
+			display: flex;
 		}
 
 		&:before {
@@ -470,6 +543,9 @@
 				@media screen and (max-height: 863px) {
 					font-size: 30px;
 				}
+				@media screen and (max-height: 720px) {
+					font-size: 22px;
+				}
 			}
 
 			i {
@@ -484,6 +560,9 @@
 				}
 				@media screen and (max-height: 863px) {
 					font-size: 25px;
+				}
+				@media screen and (max-height: 720px) {
+					font-size: 20px;
 				}
 			}
 
@@ -503,6 +582,10 @@
 						top: -3px;
 						font-size: 30px;
 					}
+					@media screen and (max-height: 720px) {
+						top: -2px;
+						font-size: 26px;
+					}
 				}
 			}
 
@@ -515,6 +598,9 @@
 				height: 6px;
 				background-color: #fff;
 				@include adaptive(575) {
+					height: 3px;
+				}
+				@media screen and (max-height: 720px) {
 					height: 3px;
 				}
 			}
@@ -558,6 +644,9 @@
 				@media screen and (max-height: 863px) {
 					font-size: 18px;
 				}
+				@media screen and (max-height: 720px) {
+					font-size: 14px;
+				}
 			}
 
 			p {
@@ -577,6 +666,9 @@
 				@media screen and (max-height: 863px) {
 					font-size: 18px;
 				}
+				@media screen and (max-height: 720px) {
+					font-size: 14px;
+				}
 
 				span {
 					color: #ff0000;
@@ -591,6 +683,10 @@
 				@include adaptive(575) {
 					width: 12px;
 					height: 12px;
+				}
+				@media screen and (max-height: 720px) {
+					width: 10px;
+					height: 10px;
 				}
 			}
 		}
@@ -607,6 +703,10 @@
 					width: 20px;
 					height: 10px;
 					margin-right: 5px;
+					@media screen and (max-height: 720px) {
+						width: 15px;
+						height: 7px;
+					}
 				}
 			}
 
@@ -653,6 +753,9 @@
 						width: 100%;
 						max-width: 122px;
 						height: 17px;
+						@media screen and (max-height: 720px) {
+							height: 12px;
+						}
 					}
 				}
 			}
@@ -677,6 +780,9 @@
 
 			&--left {
 				padding-top: 8px;
+				@media screen and (max-height: 1023px) {
+					padding-top: 0;
+				}
 			}
 
 			&--right {
@@ -688,12 +794,22 @@
 				@include adaptive(575) {
 					padding-left: 0;
 				}
+				@media screen and (max-height: 1023px) {
+					padding-top: 0;
+				}
+				@media screen and (max-width: 767px) {
+					padding-bottom: 15px;
+				}
 
 				> div {
 					&:nth-of-type(1) {}
 					&:nth-of-type(2) {
 						display: flex;
 						justify-content: flex-end;
+						@media screen and (max-width: 767px) and (orientation: portrait) {
+							justify-content: center;
+							padding-top: 15px;
+						}
 
 						.graph__info-logo {
 							position: relative;
@@ -720,6 +836,9 @@
 				}
 				@media screen and (max-height: 863px) {
 					font-size: 18px;
+				}
+				@media screen and (max-height: 720px) {
+					font-size: 14px;
 				}
 			}
 
@@ -754,12 +873,27 @@
 
 	.result__box {
 		margin-bottom: 0;
+		@media screen and (max-width: 767px) and (orientation: portrait) {
+			display: block;
+		}
+
+		&-content {
+			@media screen and (max-width: 767px) and (orientation: portrait) {
+				display: block;
+			}
+		}
 
 		&-badge {
 			i {
 				background-color: #6666ff;
 			}
+			span {
+				@media screen and (max-width: 575px) and (orientation: landscape) {
+					font-size: 14px;
+				}
+			}
 		}
+
 		&-title {
 			line-height: 0.8;
 			font-size: 50px;
@@ -773,12 +907,27 @@
 				font-size: 25px;
 				line-height: 1;
 			}
+			@media screen and (max-width: 767px) and (orientation: portrait) {
+				padding-bottom: 11px;
+			}
+			@media screen and (max-width: 575px) and (orientation: landscape) {
+				font-size: 20px;
+			}
 		}
 
 		&-progress {
 			min-height: 60px;
 			@include adaptive(1199) {
 				min-height: 50px;
+			}
+			@media screen and (max-width: 767px) and (orientation: portrait) {
+				min-height: 35px;
+			}
+			@media screen and (max-width: 767px) and (orientation: landscape) {
+				min-height: 35px;
+			}
+			@media screen and (max-width: 575px) and (orientation: landscape) {
+				min-height: 35px;
 			}
 
 			> div {
@@ -788,6 +937,9 @@
 					width: auto;
 					@include adaptive(1023) {
 						width: 90px;
+					}
+					@media screen and (max-width: 575px) and (orientation: landscape) {
+						width: 50px;
 					}
 
 					span,
@@ -808,6 +960,9 @@
 						@include adaptive(575) {
 							font-size: 25px;
 						}
+						@media screen and (max-width: 575px) and (orientation: landscape) {
+							font-size: 20px;
+						}
 					}
 
 					sub {
@@ -827,6 +982,9 @@
 						@include adaptive(575) {
 							font-size: 12px;
 						}
+						@media screen and (max-width: 575px) and (orientation: landscape) {
+							font-size: 8px;
+						}
 					}
 				}
 			}
@@ -838,6 +996,12 @@
 
 				.icon-font {
 					font-size: 35px;
+					@media screen and (max-width: 767px) and (orientation: portrait) {
+						font-size: 24px;
+					}
+					@media screen and (max-width: 575px) and (orientation: landscape) {
+						font-size: 20px;
+					}
 				}
 			}
 		}
