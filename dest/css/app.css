@@ -314,7 +314,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 30, src/scss/_components/home/_graph.scss */
+  /* line 27, src/scss/_components/home/_graph.scss */
   .graph__wrapper-header > div:nth-of-type(1) {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
@@ -324,13 +324,13 @@ picture {
   }
 }
 
-/* line 37, src/scss/_components/home/_graph.scss */
+/* line 34, src/scss/_components/home/_graph.scss */
 .graph__wrapper-header > div:nth-of-type(1), .graph__wrapper-header > div:nth-of-type(3) {
   width: 192px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 43, src/scss/_components/home/_graph.scss */
+  /* line 39, src/scss/_components/home/_graph.scss */
   .graph__wrapper-header > div:nth-of-type(3) {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
@@ -349,7 +349,7 @@ picture {
   }
 }
 
-/* line 53, src/scss/_components/home/_graph.scss */
+/* line 49, src/scss/_components/home/_graph.scss */
 .graph__wrapper-header > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -361,7 +361,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 53, src/scss/_components/home/_graph.scss */
+  /* line 49, src/scss/_components/home/_graph.scss */
   .graph__wrapper-header > div:nth-of-type(2) {
     -webkit-box-ordinal-group: 4;
     -webkit-order: 3;
@@ -378,7 +378,7 @@ picture {
   }
 }
 
-/* line 67, src/scss/_components/home/_graph.scss */
+/* line 63, src/scss/_components/home/_graph.scss */
 .graph__wrapper-body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -390,7 +390,7 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 67, src/scss/_components/home/_graph.scss */
+  /* line 63, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body {
     padding-left: 30px;
     padding-right: 30px;
@@ -398,7 +398,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 67, src/scss/_components/home/_graph.scss */
+  /* line 63, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -407,14 +407,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 67, src/scss/_components/home/_graph.scss */
+  /* line 63, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-/* line 85, src/scss/_components/home/_graph.scss */
+/* line 79, src/scss/_components/home/_graph.scss */
 .graph__wrapper-body--left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -430,14 +430,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 85, src/scss/_components/home/_graph.scss */
+  /* line 79, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left {
     padding-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 85, src/scss/_components/home/_graph.scss */
+  /* line 79, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -445,7 +445,7 @@ picture {
   }
 }
 
-/* line 99, src/scss/_components/home/_graph.scss */
+/* line 93, src/scss/_components/home/_graph.scss */
 .graph__wrapper-body--left > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -460,21 +460,21 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 99, src/scss/_components/home/_graph.scss */
+  /* line 93, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(1) {
     width: 80px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 99, src/scss/_components/home/_graph.scss */
+  /* line 93, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(1) {
     width: 65px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 99, src/scss/_components/home/_graph.scss */
+  /* line 93, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(1) {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
@@ -484,7 +484,7 @@ picture {
   }
 }
 
-/* line 115, src/scss/_components/home/_graph.scss */
+/* line 108, src/scss/_components/home/_graph.scss */
 .graph__wrapper-body--left > div:nth-of-type(1) .graph__wrapper-body--top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -503,14 +503,14 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 115, src/scss/_components/home/_graph.scss */
+  /* line 108, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(1) .graph__wrapper-body--top {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  /* line 125, src/scss/_components/home/_graph.scss */
+  /* line 117, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(1) .graph__wrapper-body--top .graph__point {
     position: relative;
     top: 11px;
@@ -518,7 +518,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 115, src/scss/_components/home/_graph.scss */
+  /* line 108, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(1) .graph__wrapper-body--top {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -528,12 +528,12 @@ picture {
   }
 }
 
-/* line 136, src/scss/_components/home/_graph.scss */
+/* line 128, src/scss/_components/home/_graph.scss */
 .graph__wrapper-body--left > div:nth-of-type(1) .graph__wrapper-body--bottom {
   height: auto;
 }
 
-/* line 141, src/scss/_components/home/_graph.scss */
+/* line 133, src/scss/_components/home/_graph.scss */
 .graph__wrapper-body--left > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -555,28 +555,28 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 141, src/scss/_components/home/_graph.scss */
+  /* line 133, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(2) {
     padding-right: 30px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 141, src/scss/_components/home/_graph.scss */
+  /* line 133, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(2) {
     padding-right: 15px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 141, src/scss/_components/home/_graph.scss */
+  /* line 133, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(2) {
     padding-right: 0;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 141, src/scss/_components/home/_graph.scss */
+  /* line 133, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(2) {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
@@ -586,71 +586,71 @@ picture {
   }
 }
 
-/* line 166, src/scss/_components/home/_graph.scss */
+/* line 155, src/scss/_components/home/_graph.scss */
 .graph__wrapper-body--left > div:nth-of-type(2) .graph__wrapper-body--top {
   padding-bottom: 30px;
 }
 
-/* line 171, src/scss/_components/home/_graph.scss */
+/* line 159, src/scss/_components/home/_graph.scss */
 .graph__wrapper-body--left > div:nth-of-type(2) .graph__wrapper-body--middle {
   height: -webkit-calc(100% - (160px + 70px));
   height: calc(100% - (160px + 70px));
 }
 
 @media screen and (max-width: 767px) {
-  /* line 171, src/scss/_components/home/_graph.scss */
+  /* line 159, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(2) .graph__wrapper-body--middle {
     min-height: 500px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 171, src/scss/_components/home/_graph.scss */
+  /* line 159, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--left > div:nth-of-type(2) .graph__wrapper-body--middle {
     min-height: 430px;
   }
 }
 
-/* line 182, src/scss/_components/home/_graph.scss */
+/* line 169, src/scss/_components/home/_graph.scss */
 .graph__wrapper-body--left > div:nth-of-type(2) .graph__wrapper-body--bottom {
   padding-top: 30px;
 }
 
-/* line 190, src/scss/_components/home/_graph.scss */
+/* line 176, src/scss/_components/home/_graph.scss */
 .graph__wrapper-body--right {
   width: 364px;
   padding-top: 40px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 190, src/scss/_components/home/_graph.scss */
+  /* line 176, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--right {
     width: 300px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  /* line 190, src/scss/_components/home/_graph.scss */
+  /* line 176, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--right {
     width: 250px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 190, src/scss/_components/home/_graph.scss */
+  /* line 176, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--right {
     width: 100%;
   }
 }
 
 @media screen and (max-height: 1100px) {
-  /* line 190, src/scss/_components/home/_graph.scss */
+  /* line 176, src/scss/_components/home/_graph.scss */
   .graph__wrapper-body--right {
     padding-top: 0;
   }
 }
 
-/* line 215, src/scss/_components/home/_graph.scss */
+/* line 195, src/scss/_components/home/_graph.scss */
 .graph__arrow {
   display: -webkit-box;
   display: -webkit-flex;
@@ -662,29 +662,21 @@ picture {
           align-items: flex-start;
 }
 
-/* line 219, src/scss/_components/home/_graph.scss */
+/* line 199, src/scss/_components/home/_graph.scss */
 .graph__arrow i {
   line-height: 1;
   color: #ffffff;
-  font-size: 45px;
+  font-size: 40px;
 }
 
-@media screen and (min-width: 1920px) {
-  /* line 219, src/scss/_components/home/_graph.scss */
+@media screen and (max-width: 575px) {
+  /* line 199, src/scss/_components/home/_graph.scss */
   .graph__arrow i {
-    font-size: -webkit-calc(45px + 45 * (100vw - 1920px) / 812);
-    font-size: calc(45px + 45 * (100vw - 1920px) / 812);
+    font-size: 35px;
   }
 }
 
-@media screen and (min-width: 2732px) {
-  /* line 219, src/scss/_components/home/_graph.scss */
-  .graph__arrow i {
-    font-size: 90px;
-  }
-}
-
-/* line 226, src/scss/_components/home/_graph.scss */
+/* line 209, src/scss/_components/home/_graph.scss */
 .graph__tabs {
   display: -webkit-box;
   display: -webkit-flex;
@@ -700,7 +692,7 @@ picture {
           justify-content: center;
 }
 
-/* line 231, src/scss/_components/home/_graph.scss */
+/* line 214, src/scss/_components/home/_graph.scss */
 .graph__tabs li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -708,7 +700,7 @@ picture {
   display: flex;
 }
 
-/* line 235, src/scss/_components/home/_graph.scss */
+/* line 218, src/scss/_components/home/_graph.scss */
 .graph__tabs-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -724,55 +716,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 1920px) {
-  /* line 235, src/scss/_components/home/_graph.scss */
-  .graph__tabs-btn {
-    width: -webkit-calc(52px + 53 * (100vw - 1920px) / 812);
-    width: calc(52px + 53 * (100vw - 1920px) / 812);
-  }
-}
-
-@media screen and (min-width: 2732px) {
-  /* line 235, src/scss/_components/home/_graph.scss */
-  .graph__tabs-btn {
-    width: 105px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  /* line 235, src/scss/_components/home/_graph.scss */
-  .graph__tabs-btn {
-    height: -webkit-calc(8px + 5 * (100vw - 1920px) / 812);
-    height: calc(8px + 5 * (100vw - 1920px) / 812);
-  }
-}
-
-@media screen and (min-width: 2732px) {
-  /* line 235, src/scss/_components/home/_graph.scss */
-  .graph__tabs-btn {
-    height: 13px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  /* line 235, src/scss/_components/home/_graph.scss */
-  .graph__tabs-btn {
-    margin-left: -webkit-calc(9px + 9 * (100vw - 1920px) / 812);
-    margin-left: calc(9px + 9 * (100vw - 1920px) / 812);
-    margin-right: -webkit-calc(9px + 9 * (100vw - 1920px) / 812);
-    margin-right: calc(9px + 9 * (100vw - 1920px) / 812);
-  }
-}
-
-@media screen and (min-width: 2732px) {
-  /* line 235, src/scss/_components/home/_graph.scss */
-  .graph__tabs-btn {
-    margin-left: 18px;
-    margin-right: 18px;
-  }
-}
-
-/* line 243, src/scss/_components/home/_graph.scss */
+/* line 227, src/scss/_components/home/_graph.scss */
 .graph__tabs-btn:hover, .graph__tabs-btn.is-active {
   background-color: #ffffff;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -780,7 +724,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 251, src/scss/_components/home/_graph.scss */
+/* line 235, src/scss/_components/home/_graph.scss */
 .graph__logo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -793,29 +737,14 @@ picture {
   width: 192px;
 }
 
-@media screen and (min-width: 1920px) {
-  /* line 251, src/scss/_components/home/_graph.scss */
-  .graph__logo {
-    width: -webkit-calc(192px + 192 * (100vw - 1920px) / 812);
-    width: calc(192px + 192 * (100vw - 1920px) / 812);
-  }
-}
-
-@media screen and (min-width: 2732px) {
-  /* line 251, src/scss/_components/home/_graph.scss */
-  .graph__logo {
-    width: 384px;
-  }
-}
-
-/* line 256, src/scss/_components/home/_graph.scss */
+/* line 240, src/scss/_components/home/_graph.scss */
 .graph__logo img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 263, src/scss/_components/home/_graph.scss */
+/* line 247, src/scss/_components/home/_graph.scss */
 .graph__export {
   display: -webkit-box;
   display: -webkit-flex;
@@ -829,7 +758,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 263, src/scss/_components/home/_graph.scss */
+  /* line 247, src/scss/_components/home/_graph.scss */
   .graph__export {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -847,7 +776,7 @@ picture {
   }
 }
 
-/* line 272, src/scss/_components/home/_graph.scss */
+/* line 256, src/scss/_components/home/_graph.scss */
 .graph__export-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -855,12 +784,12 @@ picture {
   display: flex;
 }
 
-/* line 276, src/scss/_components/home/_graph.scss */
+/* line 260, src/scss/_components/home/_graph.scss */
 .graph__export-item:last-of-type .graph__export-btn {
   margin-bottom: 0;
 }
 
-/* line 282, src/scss/_components/home/_graph.scss */
+/* line 266, src/scss/_components/home/_graph.scss */
 .graph__export-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -874,13 +803,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 282, src/scss/_components/home/_graph.scss */
+  /* line 266, src/scss/_components/home/_graph.scss */
   .graph__export-btn {
     margin-bottom: 0;
   }
 }
 
-/* line 291, src/scss/_components/home/_graph.scss */
+/* line 274, src/scss/_components/home/_graph.scss */
 .graph__export-btn--to, .graph__export-btn--pdf {
   width: 52px;
   height: 17px;
@@ -889,7 +818,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 299, src/scss/_components/home/_graph.scss */
+/* line 280, src/scss/_components/home/_graph.scss */
 .graph__export-btn--to:hover, .graph__export-btn--pdf:hover {
   background-color: #ffffff;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -897,7 +826,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 305, src/scss/_components/home/_graph.scss */
+/* line 286, src/scss/_components/home/_graph.scss */
 .graph__export-btn--to {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -911,18 +840,18 @@ picture {
   padding: 2px;
 }
 
-/* line 312, src/scss/_components/home/_graph.scss */
+/* line 292, src/scss/_components/home/_graph.scss */
 .graph__export-btn--to .icon-export {
   color: #1A1A1A;
   font-size: 12px;
 }
 
-/* line 319, src/scss/_components/home/_graph.scss */
+/* line 298, src/scss/_components/home/_graph.scss */
 .graph__export-btn--pdf {
   background-color: #b3b3b3;
 }
 
-/* line 322, src/scss/_components/home/_graph.scss */
+/* line 301, src/scss/_components/home/_graph.scss */
 .graph__export-btn--pdf span {
   color: #000;
   font-weight: 500;
@@ -931,7 +860,7 @@ picture {
   font-size: 20px;
 }
 
-/* line 334, src/scss/_components/home/_graph.scss */
+/* line 312, src/scss/_components/home/_graph.scss */
 .graph__export-btn--excel:hover .icon-excel {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -939,7 +868,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 340, src/scss/_components/home/_graph.scss */
+/* line 318, src/scss/_components/home/_graph.scss */
 .graph__export-btn--excel .icon-excel {
   color: #B3B3B3;
   font-size: 51px;
@@ -948,7 +877,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 350, src/scss/_components/home/_graph.scss */
+/* line 327, src/scss/_components/home/_graph.scss */
 .graph__btn {
   overflow: hidden;
   display: -webkit-box;
@@ -966,7 +895,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 350, src/scss/_components/home/_graph.scss */
+  /* line 327, src/scss/_components/home/_graph.scss */
   .graph__btn {
     max-width: -webkit-calc((100% - (15px * 4)) / 5);
     max-width: calc((100% - (15px * 4)) / 5);
@@ -974,7 +903,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 350, src/scss/_components/home/_graph.scss */
+  /* line 327, src/scss/_components/home/_graph.scss */
   .graph__btn {
     max-width: -webkit-calc((100% - (10px * 4)) / 5);
     max-width: calc((100% - (10px * 4)) / 5);
@@ -982,14 +911,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 350, src/scss/_components/home/_graph.scss */
+  /* line 327, src/scss/_components/home/_graph.scss */
   .graph__btn {
     max-width: -webkit-calc((100% - (5px * 4)) / 5);
     max-width: calc((100% - (5px * 4)) / 5);
   }
 }
 
-/* line 368, src/scss/_components/home/_graph.scss */
+/* line 345, src/scss/_components/home/_graph.scss */
 .graph__btn:hover span, .graph__btn.is-active span {
   background-color: #ffffff;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -997,7 +926,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 374, src/scss/_components/home/_graph.scss */
+/* line 351, src/scss/_components/home/_graph.scss */
 .graph__btn span {
   width: 100%;
   background-color: #6666ff;
@@ -1007,7 +936,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 382, src/scss/_components/home/_graph.scss */
+/* line 358, src/scss/_components/home/_graph.scss */
 .graph__btn p {
   color: #fff;
   line-height: 1;
@@ -1016,21 +945,21 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 382, src/scss/_components/home/_graph.scss */
+  /* line 358, src/scss/_components/home/_graph.scss */
   .graph__btn p {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 382, src/scss/_components/home/_graph.scss */
+  /* line 358, src/scss/_components/home/_graph.scss */
   .graph__btn p {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 382, src/scss/_components/home/_graph.scss */
+  /* line 358, src/scss/_components/home/_graph.scss */
   .graph__btn p {
     padding-top: 5px;
     font-size: 10px;
@@ -1038,7 +967,7 @@ picture {
   }
 }
 
-/* line 404, src/scss/_components/home/_graph.scss */
+/* line 376, src/scss/_components/home/_graph.scss */
 .graph__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1050,7 +979,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 410, src/scss/_components/home/_graph.scss */
+/* line 382, src/scss/_components/home/_graph.scss */
 .graph__point {
   position: relative;
   display: -webkit-box;
@@ -1070,7 +999,7 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 410, src/scss/_components/home/_graph.scss */
+  /* line 382, src/scss/_components/home/_graph.scss */
   .graph__point {
     -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
@@ -1079,24 +1008,24 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 410, src/scss/_components/home/_graph.scss */
+  /* line 382, src/scss/_components/home/_graph.scss */
   .graph__point {
     display: none;
   }
 }
 
-/* line 427, src/scss/_components/home/_graph.scss */
+/* line 395, src/scss/_components/home/_graph.scss */
 .graph__point:before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
+  width: 7px;
   height: 100%;
   background-color: #6666ff;
-  width: 7px;
 }
 
-/* line 438, src/scss/_components/home/_graph.scss */
+/* line 405, src/scss/_components/home/_graph.scss */
 .graph__point p,
 .graph__point span {
   color: #ffffff;
@@ -1104,7 +1033,7 @@ picture {
   letter-spacing: -1px;
 }
 
-/* line 445, src/scss/_components/home/_graph.scss */
+/* line 412, src/scss/_components/home/_graph.scss */
 .graph__point p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1119,59 +1048,59 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 445, src/scss/_components/home/_graph.scss */
+  /* line 412, src/scss/_components/home/_graph.scss */
   .graph__point p {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 445, src/scss/_components/home/_graph.scss */
+  /* line 412, src/scss/_components/home/_graph.scss */
   .graph__point p {
     font-size: 35px;
   }
 }
 
-/* line 458, src/scss/_components/home/_graph.scss */
+/* line 424, src/scss/_components/home/_graph.scss */
 .graph__point p sub {
   font-size: 20px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 458, src/scss/_components/home/_graph.scss */
+  /* line 424, src/scss/_components/home/_graph.scss */
   .graph__point p sub {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 458, src/scss/_components/home/_graph.scss */
+  /* line 424, src/scss/_components/home/_graph.scss */
   .graph__point p sub {
     font-size: 14px;
   }
 }
 
-/* line 470, src/scss/_components/home/_graph.scss */
+/* line 435, src/scss/_components/home/_graph.scss */
 .graph__point span {
   line-height: 1;
   font-size: 20px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 470, src/scss/_components/home/_graph.scss */
+  /* line 435, src/scss/_components/home/_graph.scss */
   .graph__point span {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 470, src/scss/_components/home/_graph.scss */
+  /* line 435, src/scss/_components/home/_graph.scss */
   .graph__point span {
     font-size: 14px;
   }
 }
 
-/* line 484, src/scss/_components/home/_graph.scss */
+/* line 448, src/scss/_components/home/_graph.scss */
 .graph__info-title {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1186,13 +1115,13 @@ picture {
 }
 
 @media screen and (max-height: 1023px) {
-  /* line 484, src/scss/_components/home/_graph.scss */
+  /* line 448, src/scss/_components/home/_graph.scss */
   .graph__info-title {
     margin-bottom: 15px;
   }
 }
 
-/* line 494, src/scss/_components/home/_graph.scss */
+/* line 457, src/scss/_components/home/_graph.scss */
 .graph__info-title span {
   padding-right: 5px;
   font-weight: 500;
@@ -1203,27 +1132,27 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 494, src/scss/_components/home/_graph.scss */
+  /* line 457, src/scss/_components/home/_graph.scss */
   .graph__info-title span {
     font-size: 32px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 494, src/scss/_components/home/_graph.scss */
+  /* line 457, src/scss/_components/home/_graph.scss */
   .graph__info-title span {
     font-size: 29px;
   }
 }
 
 @media screen and (max-height: 863px) {
-  /* line 494, src/scss/_components/home/_graph.scss */
+  /* line 457, src/scss/_components/home/_graph.scss */
   .graph__info-title span {
     font-size: 30px;
   }
 }
 
-/* line 513, src/scss/_components/home/_graph.scss */
+/* line 475, src/scss/_components/home/_graph.scss */
 .graph__info-title i {
   line-height: 1;
   color: #ffffff;
@@ -1231,27 +1160,27 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 513, src/scss/_components/home/_graph.scss */
+  /* line 475, src/scss/_components/home/_graph.scss */
   .graph__info-title i {
     font-size: 25px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 513, src/scss/_components/home/_graph.scss */
+  /* line 475, src/scss/_components/home/_graph.scss */
   .graph__info-title i {
     font-size: 22px;
   }
 }
 
 @media screen and (max-height: 863px) {
-  /* line 513, src/scss/_components/home/_graph.scss */
+  /* line 475, src/scss/_components/home/_graph.scss */
   .graph__info-title i {
     font-size: 25px;
   }
 }
 
-/* line 530, src/scss/_components/home/_graph.scss */
+/* line 491, src/scss/_components/home/_graph.scss */
 .graph__info-title--plus i {
   position: relative;
   top: -5px;
@@ -1260,28 +1189,28 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 530, src/scss/_components/home/_graph.scss */
+  /* line 491, src/scss/_components/home/_graph.scss */
   .graph__info-title--plus i {
     font-size: 33px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 530, src/scss/_components/home/_graph.scss */
+  /* line 491, src/scss/_components/home/_graph.scss */
   .graph__info-title--plus i {
     font-size: 28px;
   }
 }
 
 @media screen and (max-height: 863px) {
-  /* line 530, src/scss/_components/home/_graph.scss */
+  /* line 491, src/scss/_components/home/_graph.scss */
   .graph__info-title--plus i {
     top: -3px;
     font-size: 30px;
   }
 }
 
-/* line 549, src/scss/_components/home/_graph.scss */
+/* line 509, src/scss/_components/home/_graph.scss */
 .graph__info-title:after {
   content: '';
   position: absolute;
@@ -1293,13 +1222,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 549, src/scss/_components/home/_graph.scss */
+  /* line 509, src/scss/_components/home/_graph.scss */
   .graph__info-title:after {
     height: 3px;
   }
 }
 
-/* line 563, src/scss/_components/home/_graph.scss */
+/* line 523, src/scss/_components/home/_graph.scss */
 .graph__info-row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1310,7 +1239,7 @@ picture {
           flex-wrap: wrap;
 }
 
-/* line 568, src/scss/_components/home/_graph.scss */
+/* line 528, src/scss/_components/home/_graph.scss */
 .graph__info-col {
   width: 100%;
   max-width: 50%;
@@ -1319,7 +1248,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 568, src/scss/_components/home/_graph.scss */
+  /* line 528, src/scss/_components/home/_graph.scss */
   .graph__info-col {
     max-width: 100%;
     padding-left: 15px;
@@ -1327,20 +1256,20 @@ picture {
 }
 
 @media screen and (max-height: 899px) {
-  /* line 568, src/scss/_components/home/_graph.scss */
+  /* line 528, src/scss/_components/home/_graph.scss */
   .graph__info-col {
     margin-bottom: 15px;
   }
 }
 
-/* line 583, src/scss/_components/home/_graph.scss */
+/* line 541, src/scss/_components/home/_graph.scss */
 .graph__info-col h6,
 .graph__info-col p span {
   color: #ffffff;
   font-weight: 500;
 }
 
-/* line 589, src/scss/_components/home/_graph.scss */
+/* line 547, src/scss/_components/home/_graph.scss */
 .graph__info-col h6 {
   text-transform: uppercase;
   line-height: 0.9;
@@ -1349,27 +1278,27 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 589, src/scss/_components/home/_graph.scss */
+  /* line 547, src/scss/_components/home/_graph.scss */
   .graph__info-col h6 {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 589, src/scss/_components/home/_graph.scss */
+  /* line 547, src/scss/_components/home/_graph.scss */
   .graph__info-col h6 {
     font-size: 16px;
   }
 }
 
 @media screen and (max-height: 863px) {
-  /* line 589, src/scss/_components/home/_graph.scss */
+  /* line 547, src/scss/_components/home/_graph.scss */
   .graph__info-col h6 {
     font-size: 18px;
   }
 }
 
-/* line 606, src/scss/_components/home/_graph.scss */
+/* line 563, src/scss/_components/home/_graph.scss */
 .graph__info-col p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1381,39 +1310,39 @@ picture {
           align-items: center;
 }
 
-/* line 611, src/scss/_components/home/_graph.scss */
+/* line 568, src/scss/_components/home/_graph.scss */
 .graph__info-col span {
   line-height: 0.9;
   font-size: 20px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 611, src/scss/_components/home/_graph.scss */
+  /* line 568, src/scss/_components/home/_graph.scss */
   .graph__info-col span {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 611, src/scss/_components/home/_graph.scss */
+  /* line 568, src/scss/_components/home/_graph.scss */
   .graph__info-col span {
     font-size: 16px;
   }
 }
 
 @media screen and (max-height: 863px) {
-  /* line 611, src/scss/_components/home/_graph.scss */
+  /* line 568, src/scss/_components/home/_graph.scss */
   .graph__info-col span {
     font-size: 18px;
   }
 }
 
-/* line 625, src/scss/_components/home/_graph.scss */
+/* line 581, src/scss/_components/home/_graph.scss */
 .graph__info-col span span {
   color: #ff0000;
 }
 
-/* line 630, src/scss/_components/home/_graph.scss */
+/* line 586, src/scss/_components/home/_graph.scss */
 .graph__info-col i {
   -webkit-border-radius: 100%;
           border-radius: 100%;
@@ -1423,19 +1352,19 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 630, src/scss/_components/home/_graph.scss */
+  /* line 586, src/scss/_components/home/_graph.scss */
   .graph__info-col i {
     width: 12px;
     height: 12px;
   }
 }
 
-/* line 643, src/scss/_components/home/_graph.scss */
+/* line 598, src/scss/_components/home/_graph.scss */
 .graph__info-block {
   margin-bottom: 5px;
 }
 
-/* line 647, src/scss/_components/home/_graph.scss */
+/* line 601, src/scss/_components/home/_graph.scss */
 .graph__info-block > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1448,51 +1377,51 @@ picture {
   padding-bottom: 3px;
 }
 
-/* line 652, src/scss/_components/home/_graph.scss */
+/* line 606, src/scss/_components/home/_graph.scss */
 .graph__info-block > div span {
   width: 20px;
   height: 10px;
   margin-right: 5px;
 }
 
-/* line 664, src/scss/_components/home/_graph.scss */
+/* line 615, src/scss/_components/home/_graph.scss */
 .graph__info-block--done > div span {
   background-color: #00FF99;
 }
 
-/* line 671, src/scss/_components/home/_graph.scss */
+/* line 622, src/scss/_components/home/_graph.scss */
 .graph__info-block--warning > div span {
   background-color: #FCEE21;
 }
 
-/* line 678, src/scss/_components/home/_graph.scss */
+/* line 629, src/scss/_components/home/_graph.scss */
 .graph__info-block--error > div span {
   background-color: #FF0000;
 }
 
-/* line 685, src/scss/_components/home/_graph.scss */
+/* line 636, src/scss/_components/home/_graph.scss */
 .graph__info-block--white > div span {
   background-color: #ffffff;
 }
 
-/* line 692, src/scss/_components/home/_graph.scss */
+/* line 643, src/scss/_components/home/_graph.scss */
 .graph__info-block--color > div span {
   background-color: #6666FF;
 }
 
-/* line 697, src/scss/_components/home/_graph.scss */
+/* line 648, src/scss/_components/home/_graph.scss */
 .graph__info-block--full {
   margin-bottom: 16px;
 }
 
-/* line 702, src/scss/_components/home/_graph.scss */
+/* line 652, src/scss/_components/home/_graph.scss */
 .graph__info-block--full > div span {
   width: 100%;
   max-width: 122px;
   height: 17px;
 }
 
-/* line 712, src/scss/_components/home/_graph.scss */
+/* line 660, src/scss/_components/home/_graph.scss */
 .graph__info-block--wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1502,7 +1431,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 712, src/scss/_components/home/_graph.scss */
+  /* line 660, src/scss/_components/home/_graph.scss */
   .graph__info-block--wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1511,38 +1440,76 @@ picture {
   }
 }
 
-/* line 722, src/scss/_components/home/_graph.scss */
+/* line 669, src/scss/_components/home/_graph.scss */
 .graph__info-block--left, .graph__info-block--right {
   width: 100%;
   max-width: 50%;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 722, src/scss/_components/home/_graph.scss */
+  /* line 669, src/scss/_components/home/_graph.scss */
   .graph__info-block--left, .graph__info-block--right {
     max-width: 100%;
   }
 }
 
-/* line 731, src/scss/_components/home/_graph.scss */
+/* line 678, src/scss/_components/home/_graph.scss */
 .graph__info-block--left {
   padding-top: 8px;
 }
 
-/* line 736, src/scss/_components/home/_graph.scss */
+/* line 682, src/scss/_components/home/_graph.scss */
 .graph__info-block--right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 17px;
   padding-left: 34px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 736, src/scss/_components/home/_graph.scss */
+  /* line 682, src/scss/_components/home/_graph.scss */
   .graph__info-block--right {
     padding-left: 0;
   }
 }
 
-/* line 746, src/scss/_components/home/_graph.scss */
+/* line 694, src/scss/_components/home/_graph.scss */
+.graph__info-block--right > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 698, src/scss/_components/home/_graph.scss */
+.graph__info-block--right > div:nth-of-type(2) .graph__info-logo {
+  position: relative;
+  top: 15px;
+}
+
+@media screen and (max-height: 1023px) {
+  /* line 698, src/scss/_components/home/_graph.scss */
+  .graph__info-block--right > div:nth-of-type(2) .graph__info-logo {
+    top: 0;
+  }
+}
+
+/* line 709, src/scss/_components/home/_graph.scss */
 .graph__info-block p {
   color: #ffffff;
   font-weight: 500;
@@ -1552,27 +1519,27 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 746, src/scss/_components/home/_graph.scss */
+  /* line 709, src/scss/_components/home/_graph.scss */
   .graph__info-block p {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 746, src/scss/_components/home/_graph.scss */
+  /* line 709, src/scss/_components/home/_graph.scss */
   .graph__info-block p {
     font-size: 16px;
   }
 }
 
 @media screen and (max-height: 863px) {
-  /* line 746, src/scss/_components/home/_graph.scss */
+  /* line 709, src/scss/_components/home/_graph.scss */
   .graph__info-block p {
     font-size: 18px;
   }
 }
 
-/* line 764, src/scss/_components/home/_graph.scss */
+/* line 726, src/scss/_components/home/_graph.scss */
 .graph__info-block i {
   color: #ffffff;
   line-height: 1;
@@ -1580,13 +1547,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 764, src/scss/_components/home/_graph.scss */
+  /* line 726, src/scss/_components/home/_graph.scss */
   .graph__info-block i {
     font-size: 14px;
   }
 }
 
-/* line 775, src/scss/_components/home/_graph.scss */
+/* line 736, src/scss/_components/home/_graph.scss */
 .graph__info-footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1599,14 +1566,7 @@ picture {
   width: 100%;
 }
 
-@media screen and (max-height: 1050px) {
-  /* line 775, src/scss/_components/home/_graph.scss */
-  .graph__info-footer {
-    display: none;
-  }
-}
-
-/* line 784, src/scss/_components/home/_graph.scss */
+/* line 742, src/scss/_components/home/_graph.scss */
 .graph__info-logo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1619,64 +1579,64 @@ picture {
   width: 40px;
 }
 
-/* line 790, src/scss/_components/home/_graph.scss */
+/* line 747, src/scss/_components/home/_graph.scss */
 .graph__info-logo img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 798, src/scss/_components/home/_graph.scss */
+/* line 755, src/scss/_components/home/_graph.scss */
 .graph .result__box {
   margin-bottom: 0;
 }
 
-/* line 802, src/scss/_components/home/_graph.scss */
+/* line 759, src/scss/_components/home/_graph.scss */
 .graph .result__box-badge i {
   background-color: #6666ff;
 }
 
-/* line 806, src/scss/_components/home/_graph.scss */
+/* line 763, src/scss/_components/home/_graph.scss */
 .graph .result__box-title {
   line-height: 0.8;
   font-size: 50px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 806, src/scss/_components/home/_graph.scss */
+  /* line 763, src/scss/_components/home/_graph.scss */
   .graph .result__box-title {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 806, src/scss/_components/home/_graph.scss */
+  /* line 763, src/scss/_components/home/_graph.scss */
   .graph .result__box-title {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 806, src/scss/_components/home/_graph.scss */
+  /* line 763, src/scss/_components/home/_graph.scss */
   .graph .result__box-title {
     font-size: 25px;
     line-height: 1;
   }
 }
 
-/* line 822, src/scss/_components/home/_graph.scss */
+/* line 778, src/scss/_components/home/_graph.scss */
 .graph .result__box-progress {
   min-height: 60px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 822, src/scss/_components/home/_graph.scss */
+  /* line 778, src/scss/_components/home/_graph.scss */
   .graph .result__box-progress {
     min-height: 50px;
   }
 }
 
-/* line 830, src/scss/_components/home/_graph.scss */
+/* line 785, src/scss/_components/home/_graph.scss */
 .graph .result__box-progress > div:nth-of-type(2) {
   overflow: hidden;
   -webkit-box-align: center;
@@ -1687,33 +1647,33 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 830, src/scss/_components/home/_graph.scss */
+  /* line 785, src/scss/_components/home/_graph.scss */
   .graph .result__box-progress > div:nth-of-type(2) {
     width: 90px;
   }
 }
 
-/* line 839, src/scss/_components/home/_graph.scss */
+/* line 793, src/scss/_components/home/_graph.scss */
 .graph .result__box-progress > div:nth-of-type(2) span,
 .graph .result__box-progress > div:nth-of-type(2) sub {
   color: #ffffff;
 }
 
-/* line 844, src/scss/_components/home/_graph.scss */
+/* line 798, src/scss/_components/home/_graph.scss */
 .graph .result__box-progress > div:nth-of-type(2) span {
   line-height: 0.7;
   font-size: 48px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 844, src/scss/_components/home/_graph.scss */
+  /* line 798, src/scss/_components/home/_graph.scss */
   .graph .result__box-progress > div:nth-of-type(2) span {
     font-size: 35px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 844, src/scss/_components/home/_graph.scss */
+  /* line 798, src/scss/_components/home/_graph.scss */
   .graph .result__box-progress > div:nth-of-type(2) span {
     line-height: 1.1;
     font-size: 30px;
@@ -1721,13 +1681,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 844, src/scss/_components/home/_graph.scss */
+  /* line 798, src/scss/_components/home/_graph.scss */
   .graph .result__box-progress > div:nth-of-type(2) span {
     font-size: 25px;
   }
 }
 
-/* line 860, src/scss/_components/home/_graph.scss */
+/* line 813, src/scss/_components/home/_graph.scss */
 .graph .result__box-progress > div:nth-of-type(2) sub {
   position: relative;
   line-height: 1;
@@ -1738,14 +1698,14 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 860, src/scss/_components/home/_graph.scss */
+  /* line 813, src/scss/_components/home/_graph.scss */
   .graph .result__box-progress > div:nth-of-type(2) sub {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 860, src/scss/_components/home/_graph.scss */
+  /* line 813, src/scss/_components/home/_graph.scss */
   .graph .result__box-progress > div:nth-of-type(2) sub {
     top: -3px;
     font-size: 14px;
@@ -1753,18 +1713,23 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 860, src/scss/_components/home/_graph.scss */
+  /* line 813, src/scss/_components/home/_graph.scss */
   .graph .result__box-progress > div:nth-of-type(2) sub {
     font-size: 12px;
   }
 }
 
-/* line 885, src/scss/_components/home/_graph.scss */
+/* line 836, src/scss/_components/home/_graph.scss */
 .graph .result__box-slider > a {
   overflow: hidden;
 }
 
-/* line 891, src/scss/_components/home/_graph.scss */
+/* line 839, src/scss/_components/home/_graph.scss */
+.graph .result__box-slider > a .icon-font {
+  font-size: 42px;
+}
+
+/* line 846, src/scss/_components/home/_graph.scss */
 .graph #graph__node {
   overflow: hidden;
   position: relative;
@@ -1924,7 +1889,7 @@ picture {
   }
 }
 
-@media screen and (max-width: 575px) and (max-height: 479px) {
+@media screen and (max-height: 374px) {
   /* line 70, src/scss/_components/result/_result.scss */
   .result__wrapper-body {
     height: 380px;
@@ -2084,63 +2049,77 @@ picture {
   }
 }
 
-/* line 176, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  /* line 168, src/scss/_components/result/_result.scss */
+  .result__box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* line 183, src/scss/_components/result/_result.scss */
 .result__box--success .result__box-slider--top {
   background-color: #00FF99;
 }
 
-/* line 180, src/scss/_components/result/_result.scss */
+/* line 187, src/scss/_components/result/_result.scss */
 .result__box--success .result__box-slider--bottom span {
   background-color: #00FF99;
 }
 
-/* line 187, src/scss/_components/result/_result.scss */
+/* line 194, src/scss/_components/result/_result.scss */
 .result__box--warning .result__box-slider--top {
   background-color: #fcee21;
 }
 
-/* line 191, src/scss/_components/result/_result.scss */
+/* line 198, src/scss/_components/result/_result.scss */
 .result__box--warning .result__box-slider--bottom span {
   background-color: #fcee21;
 }
 
-/* line 198, src/scss/_components/result/_result.scss */
+/* line 205, src/scss/_components/result/_result.scss */
 .result__box--error .result__box-slider--top {
   background-color: #ff0000;
 }
 
-/* line 202, src/scss/_components/result/_result.scss */
+/* line 209, src/scss/_components/result/_result.scss */
 .result__box--error .result__box-slider--bottom span {
   background-color: #ff0000;
 }
 
-/* line 210, src/scss/_components/result/_result.scss */
+/* line 217, src/scss/_components/result/_result.scss */
 .result__box--empty .result__box-badge i {
   background-color: #b3b3b3;
 }
 
-/* line 213, src/scss/_components/result/_result.scss */
+/* line 220, src/scss/_components/result/_result.scss */
 .result__box--empty .result__box-badge span {
   color: #B3B3B3;
 }
 
-/* line 217, src/scss/_components/result/_result.scss */
+/* line 224, src/scss/_components/result/_result.scss */
 .result__box--empty .result__box-title {
   letter-spacing: -2px;
 }
 
-/* line 220, src/scss/_components/result/_result.scss */
+/* line 227, src/scss/_components/result/_result.scss */
 .result__box--empty .result__box-slider--top {
   width: 100%;
   background-color: #b3b3b3;
 }
 
-/* line 224, src/scss/_components/result/_result.scss */
+/* line 231, src/scss/_components/result/_result.scss */
 .result__box--empty .result__box-slider--top:after {
   background-color: #B3B3B3;
 }
 
-/* line 230, src/scss/_components/result/_result.scss */
+/* line 237, src/scss/_components/result/_result.scss */
 .result__box-scroll {
   overflow: hidden;
   overflow-x: auto;
@@ -2148,51 +2127,42 @@ picture {
   height: calc(100vh - (130px + 85px));
 }
 
-@media screen and (max-width: 767px) {
-  /* line 230, src/scss/_components/result/_result.scss */
-  .result__box-scroll {
-    width: -webkit-calc(100% + 30px);
-    width: calc(100% + 30px);
-    margin-left: -15px;
-  }
-}
-
 @media screen and (max-width: 575px) {
-  /* line 230, src/scss/_components/result/_result.scss */
+  /* line 237, src/scss/_components/result/_result.scss */
   .result__box-scroll {
     height: -webkit-calc(100vh - (170px + 100px));
     height: calc(100vh - (170px + 100px));
   }
 }
 
-@media screen and (max-width: 575px) and (max-height: 479px) {
-  /* line 230, src/scss/_components/result/_result.scss */
+@media screen and (max-height: 374px) {
+  /* line 237, src/scss/_components/result/_result.scss */
   .result__box-scroll {
     height: 380px;
   }
 }
 
-/* line 245, src/scss/_components/result/_result.scss */
+/* line 252, src/scss/_components/result/_result.scss */
 .result__box-scroll::-webkit-scrollbar {
   width: 17px;
 }
 
-/* line 248, src/scss/_components/result/_result.scss */
+/* line 255, src/scss/_components/result/_result.scss */
 .result__box-scroll::-webkit-scrollbar-track {
   background: #B3B3B3;
 }
 
-/* line 251, src/scss/_components/result/_result.scss */
+/* line 258, src/scss/_components/result/_result.scss */
 .result__box-scroll::-webkit-scrollbar-thumb {
   background: #6666FF;
 }
 
-/* line 254, src/scss/_components/result/_result.scss */
+/* line 261, src/scss/_components/result/_result.scss */
 .result__box-scroll::-webkit-scrollbar-thumb:hover {
   background: rgba(102, 102, 255, 0.75);
 }
 
-/* line 259, src/scss/_components/result/_result.scss */
+/* line 266, src/scss/_components/result/_result.scss */
 .result__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2210,15 +2180,8 @@ picture {
   height: calc(100vh - (130px + 85px));
 }
 
-@media screen and (max-width: 767px) {
-  /* line 259, src/scss/_components/result/_result.scss */
-  .result__box-wrapper {
-    padding-left: 15px;
-  }
-}
-
 @media screen and (max-width: 575px) {
-  /* line 259, src/scss/_components/result/_result.scss */
+  /* line 266, src/scss/_components/result/_result.scss */
   .result__box-wrapper {
     height: -webkit-calc(100vh - (170px + 100px));
     height: calc(100vh - (170px + 100px));
@@ -2226,14 +2189,14 @@ picture {
   }
 }
 
-@media screen and (max-width: 575px) and (max-height: 479px) {
-  /* line 259, src/scss/_components/result/_result.scss */
+@media screen and (max-height: 374px) {
+  /* line 266, src/scss/_components/result/_result.scss */
   .result__box-wrapper {
     height: 380px;
   }
 }
 
-/* line 275, src/scss/_components/result/_result.scss */
+/* line 282, src/scss/_components/result/_result.scss */
 .result__box-wrapper > div {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2246,7 +2209,7 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 275, src/scss/_components/result/_result.scss */
+  /* line 282, src/scss/_components/result/_result.scss */
   .result__box-wrapper > div {
     max-width: -webkit-calc(100% / 2);
     max-width: calc(100% / 2);
@@ -2254,29 +2217,42 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 275, src/scss/_components/result/_result.scss */
+  /* line 282, src/scss/_components/result/_result.scss */
   .result__box-wrapper > div {
-    padding-right: 15px;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  /* line 275, src/scss/_components/result/_result.scss */
-  .result__box-wrapper > div {
-    max-width: -webkit-calc(100% - 15px);
-    max-width: calc(100% - 15px);
+    max-width: 100%;
     padding-left: 0 !important;
     padding-right: 15px !important;
   }
 }
 
-/* line 294, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 575px) {
+  /* line 282, src/scss/_components/result/_result.scss */
+  .result__box-wrapper > div {
+    padding-right: 5px !important;
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  /* line 304, src/scss/_components/result/_result.scss */
+  .result__box-content {
+    width: 165px;
+  }
+}
+
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  /* line 304, src/scss/_components/result/_result.scss */
+  .result__box-content {
+    width: 95px;
+  }
+}
+
+/* line 313, src/scss/_components/result/_result.scss */
 .result__box-badge, .result__box-title {
   color: #ffffff;
   font-weight: bold;
 }
 
-/* line 300, src/scss/_components/result/_result.scss */
+/* line 319, src/scss/_components/result/_result.scss */
 .result__box-badge {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2288,7 +2264,7 @@ picture {
           align-items: center;
 }
 
-/* line 304, src/scss/_components/result/_result.scss */
+/* line 323, src/scss/_components/result/_result.scss */
 .result__box-badge i {
   -webkit-border-radius: 100%;
           border-radius: 100%;
@@ -2298,14 +2274,22 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 304, src/scss/_components/result/_result.scss */
+  /* line 323, src/scss/_components/result/_result.scss */
   .result__box-badge i {
     width: 12px;
     height: 12px;
   }
 }
 
-/* line 315, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  /* line 323, src/scss/_components/result/_result.scss */
+  .result__box-badge i {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* line 338, src/scss/_components/result/_result.scss */
 .result__box-badge span {
   font-weight: 500;
   line-height: 0.85;
@@ -2314,13 +2298,20 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 315, src/scss/_components/result/_result.scss */
+  /* line 338, src/scss/_components/result/_result.scss */
   .result__box-badge span {
     font-size: 16px;
   }
 }
 
-/* line 326, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  /* line 338, src/scss/_components/result/_result.scss */
+  .result__box-badge span {
+    font-size: 12px;
+  }
+}
+
+/* line 352, src/scss/_components/result/_result.scss */
 .result__box-title {
   line-height: 1;
   letter-spacing: -1.9px;
@@ -2330,13 +2321,27 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 326, src/scss/_components/result/_result.scss */
+  /* line 352, src/scss/_components/result/_result.scss */
   .result__box-title {
     font-size: 33px;
   }
 }
 
-/* line 337, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  /* line 352, src/scss/_components/result/_result.scss */
+  .result__box-title {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  /* line 352, src/scss/_components/result/_result.scss */
+  .result__box-title {
+    font-size: 22px;
+  }
+}
+
+/* line 369, src/scss/_components/result/_result.scss */
 .result__box-progress {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2346,7 +2351,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 337, src/scss/_components/result/_result.scss */
+  /* line 369, src/scss/_components/result/_result.scss */
   .result__box-progress {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -2354,7 +2359,17 @@ picture {
   }
 }
 
-/* line 345, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  /* line 369, src/scss/_components/result/_result.scss */
+  .result__box-progress {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+/* line 380, src/scss/_components/result/_result.scss */
 .result__box-progress > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2363,21 +2378,7 @@ picture {
   padding-right: 18px;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 345, src/scss/_components/result/_result.scss */
-  .result__box-progress > div:nth-of-type(1) {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    margin-bottom: 11px;
-    width: 100%;
-    max-width: 100%;
-    padding-right: 0;
-  }
-}
-
-/* line 357, src/scss/_components/result/_result.scss */
+/* line 392, src/scss/_components/result/_result.scss */
 .result__box-progress > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2390,33 +2391,45 @@ picture {
   width: 125px;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 357, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  /* line 392, src/scss/_components/result/_result.scss */
   .result__box-progress > div:nth-of-type(2) {
-    width: 100%;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 65px;
   }
 }
 
-/* line 365, src/scss/_components/result/_result.scss */
+/* line 405, src/scss/_components/result/_result.scss */
 .result__box-progress > div:nth-of-type(2) span,
 .result__box-progress > div:nth-of-type(2) sub {
   color: #ffffff;
 }
 
-/* line 370, src/scss/_components/result/_result.scss */
+/* line 410, src/scss/_components/result/_result.scss */
 .result__box-progress > div:nth-of-type(2) span {
   line-height: 0.7;
   font-size: 45px;
 }
 
-@media screen and (max-width: 575px) {
-  /* line 370, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 767px) {
+  /* line 410, src/scss/_components/result/_result.scss */
   .result__box-progress > div:nth-of-type(2) span {
     font-size: 40px;
   }
 }
 
-/* line 378, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  /* line 410, src/scss/_components/result/_result.scss */
+  .result__box-progress > div:nth-of-type(2) span {
+    font-size: 24px;
+  }
+}
+
+/* line 421, src/scss/_components/result/_result.scss */
 .result__box-progress > div:nth-of-type(2) sub {
   position: relative;
   top: -3px;
@@ -2425,14 +2438,21 @@ picture {
   font-size: 20px;
 }
 
-@media screen and (max-width: 575px) {
-  /* line 378, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 767px) {
+  /* line 421, src/scss/_components/result/_result.scss */
   .result__box-progress > div:nth-of-type(2) sub {
     font-size: 18px;
   }
 }
 
-/* line 392, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  /* line 421, src/scss/_components/result/_result.scss */
+  .result__box-progress > div:nth-of-type(2) sub {
+    font-size: 12px;
+  }
+}
+
+/* line 438, src/scss/_components/result/_result.scss */
 .result__box-slider {
   position: relative;
   width: 100%;
@@ -2440,13 +2460,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 392, src/scss/_components/result/_result.scss */
+  /* line 438, src/scss/_components/result/_result.scss */
   .result__box-slider {
     min-height: 35px;
   }
 }
 
-/* line 400, src/scss/_components/result/_result.scss */
+/* line 446, src/scss/_components/result/_result.scss */
 .result__box-slider > a {
   z-index: 2;
   position: absolute;
@@ -2465,14 +2485,21 @@ picture {
   right: 0;
 }
 
-/* line 409, src/scss/_components/result/_result.scss */
+/* line 455, src/scss/_components/result/_result.scss */
 .result__box-slider > a i {
   line-height: 1;
   color: #ffffff;
-  font-size: 45px;
+  font-size: 35px;
 }
 
-/* line 416, src/scss/_components/result/_result.scss */
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  /* line 455, src/scss/_components/result/_result.scss */
+  .result__box-slider > a i {
+    font-size: 20px;
+  }
+}
+
+/* line 465, src/scss/_components/result/_result.scss */
 .result__box-slider--top {
   z-index: 1;
   overflow: hidden;
@@ -2484,7 +2511,7 @@ picture {
   background-color: #00FF99;
 }
 
-/* line 426, src/scss/_components/result/_result.scss */
+/* line 475, src/scss/_components/result/_result.scss */
 .result__box-slider--top:after {
   cursor: pointer;
   content: '';
@@ -2496,7 +2523,7 @@ picture {
   width: 8px;
 }
 
-/* line 438, src/scss/_components/result/_result.scss */
+/* line 487, src/scss/_components/result/_result.scss */
 .result__box-slider--bottom {
   z-index: 0;
   overflow: hidden;
@@ -2509,7 +2536,7 @@ picture {
   font-size: 0;
 }
 
-/* line 449, src/scss/_components/result/_result.scss */
+/* line 498, src/scss/_components/result/_result.scss */
 .result__box-slider--bottom span {
   display: inline-block;
   height: 100%;

@@ -236,10 +236,11 @@ section#result.result
 				.result__box-wrapper
 					div
 						.result__box.result__box--empty
-							p.result__box-badge
-								i
-								span!= "ID 000000000"
-							p.result__box-title!= "- - - - - -"
+							.result__box-content
+								p.result__box-badge
+									i
+									span!= "ID 000000000"
+								p.result__box-title!= "- - - - - -"
 							.result__box-progress
 								div
 									.result__box-slider
@@ -250,10 +251,11 @@ section#result.result
 					each val, idx in resultData
 						div
 							.result__box(class!= 'result__box--' + resultData[idx].color)
-								p.result__box-badge
-									i
-									span!= resultData[idx].badge
-								p.result__box-title!= resultData[idx].title
+								.result__box-content
+									p.result__box-badge
+										i
+										span!= resultData[idx].badge
+									p.result__box-title!= resultData[idx].title
 
 								.result__box-progress
 									div

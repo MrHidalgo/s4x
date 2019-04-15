@@ -82,7 +82,7 @@
 				padding-left: 15px;
 				padding-right: 15px;
 			}
-			@media screen and (max-width: 575px) and (max-height: 479px) {
+			@media screen and (max-height: 374px) {
 				height: 380px;
 			}
 		}
@@ -171,6 +171,13 @@
 		@include adaptive(767) {
 			margin-bottom: 30px;
 		}
+		@media screen and (max-width: 767px) and (orientation: landscape) {
+
+		}
+		@media screen and (max-width: 767px) and (orientation: portrait) {
+			display: flex;
+			align-items: center;
+		}
 
 		&--success {
 			.result__box-slider--top {
@@ -232,13 +239,13 @@
 			overflow-x: auto;
 			height: calc(100vh - (130px + 85px));
 			@include adaptive(767) {
-				width: calc(100% + 30px);
-				margin-left: -15px;
+				//width: calc(100% + 30px);
+				//margin-left: -15px;
 			}
 			@include adaptive(575) {
 				height: calc(100vh - (170px + 100px));
 			}
-			@media screen and (max-width: 575px) and (max-height: 479px) {
+			@media screen and (max-height: 374px) {
 				height: 380px;
 			}
 
@@ -262,13 +269,13 @@
 			flex-wrap: wrap;
 			height: calc(100vh - (130px + 85px));
 			@include adaptive(767) {
-				padding-left: 15px;
+				//padding-left: 15px;
 			}
 			@include adaptive(575) {
 			 	height: calc(100vh - (170px + 100px));
 				padding-top: 30px;
 			}
-			@media screen and (max-width: 575px) and (max-height: 479px) {
+			@media screen and (max-height: 374px) {
 				height: 380px;
 			}
 
@@ -280,14 +287,26 @@
 				@include adaptive(1199) {
 					max-width: calc(100% / 2);
 				}
+				//@include adaptive(767) {
+					//padding-right: 15px;
+				//}
 				@include adaptive(767) {
-					padding-right: 15px;
-				}
-				@include adaptive(575) {
-					max-width: calc(100% - 15px);
+					max-width: 100%;
 					padding-left: 0 !important;
 					padding-right: 15px !important;
 				}
+				@include adaptive(575) {
+					padding-right: 5px !important;
+				}
+			}
+		}
+
+		&-content {
+			@media screen and (max-width: 767px) and (orientation: portrait) {
+				width: 165px;
+			}
+			@media screen and (max-width: 575px) and (orientation: portrait) {
+				width: 95px;
 			}
 		}
 
@@ -310,6 +329,10 @@
 					width: 12px;
 					height: 12px;
 				}
+				@media screen and (max-width: 575px) and (orientation: portrait) {
+					width: 10px;
+					height: 10px;
+				}
 			}
 
 			span {
@@ -319,6 +342,9 @@
 				font-size: 20px;
 				@include adaptive(575) {
 					font-size: 16px;
+				}
+				@media screen and (max-width: 575px) and (orientation: portrait) {
+					font-size: 12px;
 				}
 			}
 		}
@@ -332,6 +358,12 @@
 			@include adaptive(575) {
 				font-size: 33px;
 			}
+			@media screen and (max-width: 767px) and (orientation: portrait) {
+				padding-bottom: 0;
+			}
+			@media screen and (max-width: 575px) and (orientation: portrait) {
+				font-size: 22px;
+			}
 		}
 
 		&-progress {
@@ -340,17 +372,20 @@
 			@include adaptive(767) {
 				flex-wrap: wrap;
 			}
+			@media screen and (max-width: 767px) and (orientation: portrait) {
+				flex: 1;
+			}
 
 			> div {
 				&:nth-of-type(1) {
 					flex: 1;
 					padding-right: 18px;
 					@include adaptive(767) {
-						flex: none;
-						margin-bottom: 11px;
-						width: 100%;
-						max-width: 100%;
-						padding-right: 0;
+						//flex: none;
+						//margin-bottom: 11px;
+						//width: 100%;
+						//max-width: 100%;
+						//padding-right: 0;
 					}
 				}
 
@@ -359,7 +394,12 @@
 					align-items: flex-start;
 					width: 125px;
 					@include adaptive(767) {
-						width: 100%;
+						//width: 100%;
+					}
+					@media screen and (max-width: 575px) and (orientation: portrait) {
+						overflow: hidden;
+						align-items: center;
+						width: 65px;
 					}
 
 					span,
@@ -370,8 +410,11 @@
 					span {
 						line-height: 0.7;
 						font-size: 45px;
-						@include adaptive(575) {
+						@include adaptive(767) {
 							font-size: 40px;
+						}
+						@media screen and (max-width: 575px) and (orientation: portrait) {
+							font-size: 24px;
 						}
 					}
 
@@ -381,8 +424,11 @@
 						line-height: 1;
 						text-transform: uppercase;
 						font-size: 20px;
-						@include adaptive(575) {
+						@include adaptive(767) {
 							font-size: 18px;
+						}
+						@media screen and (max-width: 575px) and (orientation: portrait) {
+							font-size: 12px;
 						}
 					}
 				}
@@ -409,7 +455,10 @@
 				i {
 					line-height: 1;
 					color: #ffffff;
-					font-size: 45px;
+					font-size: 35px;
+					@media screen and (max-width: 575px) and (orientation: portrait) {
+						font-size: 20px;
+					}
 				}
 			}
 

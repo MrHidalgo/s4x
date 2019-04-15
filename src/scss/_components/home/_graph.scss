@@ -199,9 +199,9 @@
 		i {
 			line-height: 1;
 			color: #ffffff;
-			font-size: 45px;
+			font-size: 40px;
 			@include adaptive(575) {
-				font-size: 40px;
+				font-size: 35px;
 			}
 		}
 	}
@@ -680,10 +680,29 @@
 			}
 
 			&--right {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
 				padding-top: 17px;
 				padding-left: 34px;
 				@include adaptive(575) {
 					padding-left: 0;
+				}
+
+				> div {
+					&:nth-of-type(1) {}
+					&:nth-of-type(2) {
+						display: flex;
+						justify-content: flex-end;
+
+						.graph__info-logo {
+							position: relative;
+							top: 15px;
+							@media screen and (max-height: 1023px) {
+								top: 0;
+							}
+						}
+					}
 				}
 			}
 
@@ -718,9 +737,6 @@
 			display: flex;
 			justify-content: flex-end;
 			width: 100%;
-			@media screen and (max-height: 1050px) {
-				display: none;
-			}
 		}
 
 		&-logo {
@@ -819,6 +835,10 @@
 		&-slider {
 			> a{
 				overflow: hidden;
+
+				.icon-font {
+					font-size: 42px;
+				}
 			}
 		}
 	}
