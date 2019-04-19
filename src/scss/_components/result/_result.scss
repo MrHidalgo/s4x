@@ -171,8 +171,8 @@
 		@include adaptive(767) {
 			margin-bottom: 30px;
 		}
-		@media screen and (max-width: 767px) and (orientation: landscape) {
-
+		@include adaptive(1199) {
+			margin-bottom: 12px;
 		}
 		@media screen and (max-width: 767px) and (orientation: portrait) {
 			display: flex;
@@ -215,10 +215,10 @@
 		&--empty {
 			.result__box-badge {
 				i {
-					background-color: #b3b3b3;
+					background-color: #b3b3b3 !important;
 				}
 				span {
-					color: #B3B3B3;
+					color: #B3B3B3 !important;
 				}
 			}
 			.result__box-title {
@@ -238,10 +238,6 @@
 			overflow: hidden;
 			overflow-x: auto;
 			height: calc(100vh - (130px + 85px));
-			@include adaptive(767) {
-				//width: calc(100% + 30px);
-				//margin-left: -15px;
-			}
 			@include adaptive(575) {
 				height: calc(100vh - (170px + 100px));
 			}
@@ -268,9 +264,7 @@
 			flex-direction: column;
 			flex-wrap: wrap;
 			height: calc(100vh - (130px + 85px));
-			@include adaptive(767) {
-				//padding-left: 15px;
-			}
+			padding-bottom: 17px;
 			@include adaptive(575) {
 			 	height: calc(100vh - (170px + 100px));
 				padding-top: 30px;
@@ -280,16 +274,13 @@
 			}
 
 			> div {
-				flex: 1;
+				//flex: 1;
 				width: 100%;
 				max-width: calc((100% / 3) + 5px);
 				padding-right: 30px;
 				@include adaptive(1199) {
 					max-width: calc(100% / 2);
 				}
-				//@include adaptive(767) {
-					//padding-right: 15px;
-				//}
 				@include adaptive(767) {
 					max-width: 100%;
 					padding-left: 0 !important;
@@ -340,6 +331,9 @@
 				line-height: 0.85;
 				letter-spacing: -1px;
 				font-size: 20px;
+				@include adaptive(1199) {
+					font-size: 18px;
+				}
 				@include adaptive(575) {
 					font-size: 16px;
 				}
@@ -355,8 +349,12 @@
 			font-weight: 500;
 			padding-bottom: 11px;
 			font-size: 39px;
+			@include adaptive(1199) {
+				font-size: 35px;
+				padding-bottom: 5px;
+			}
 			@include adaptive(575) {
-				font-size: 33px;
+				font-size: 30px;
 			}
 			@media screen and (max-width: 767px) and (orientation: portrait) {
 				padding-bottom: 0;
@@ -380,22 +378,12 @@
 				&:nth-of-type(1) {
 					flex: 1;
 					padding-right: 18px;
-					@include adaptive(767) {
-						//flex: none;
-						//margin-bottom: 11px;
-						//width: 100%;
-						//max-width: 100%;
-						//padding-right: 0;
-					}
 				}
 
 				&:nth-of-type(2) {
 					display: flex;
 					align-items: flex-start;
 					width: 125px;
-					@include adaptive(767) {
-						//width: 100%;
-					}
 					@media screen and (max-width: 575px) and (orientation: portrait) {
 						overflow: hidden;
 						align-items: center;
@@ -410,8 +398,11 @@
 					span {
 						line-height: 0.7;
 						font-size: 45px;
-						@include adaptive(767) {
+						@include adaptive(1199) {
 							font-size: 40px;
+						}
+						@include adaptive(767) {
+							font-size: 35px;
 						}
 						@media screen and (max-width: 575px) and (orientation: portrait) {
 							font-size: 24px;
