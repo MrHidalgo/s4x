@@ -9,7 +9,10 @@
 	const initCustomScroll = () => {
 		// result__box-scroll
 		const container = document.getElementsByClassName('result__box-scroll')[0];
-		const ps = new PerfectScrollbar(container);
+
+		if(container) {
+			const ps = new PerfectScrollbar(container);
+		}
 	};
 	/*
 	* CALLBACK :: end

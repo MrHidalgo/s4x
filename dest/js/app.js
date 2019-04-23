@@ -73,7 +73,10 @@ var initWebFontLoader = function initWebFontLoader() {
 		var initCustomScroll = function initCustomScroll() {
 				// result__box-scroll
 				var container = document.getElementsByClassName('result__box-scroll')[0];
-				var ps = new PerfectScrollbar(container);
+
+				if (container) {
+						var ps = new PerfectScrollbar(container);
+				}
 		};
 		/*
   * CALLBACK :: end

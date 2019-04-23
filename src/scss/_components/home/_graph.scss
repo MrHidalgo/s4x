@@ -22,7 +22,7 @@
 				padding-left: 15px;
 				padding-right: 15px;
 			}
-			@media screen and (max-width: 767px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				flex-wrap: nowrap;
 				min-height: 45px;
 				padding: 5px 10px;
@@ -94,7 +94,7 @@
 				padding-left: 15px;
 				padding-right: 15px;
 			}
-			@media screen and (max-width: 767px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				flex-wrap: nowrap;
 				height: calc(100vh - 45px);
 				padding-left: 10px;
@@ -136,7 +136,7 @@
 							//order: 2;
 							width: 50px;
 						}
-						@media screen and (max-width: 667px) and (orientation: landscape) {
+						@media screen and (max-width: 812px) and (orientation: landscape) {
 							width: 40px;
 						}
 						@media screen and (max-width: 575px) and (orientation: landscape) {
@@ -207,7 +207,7 @@
 
 						.graph__wrapper-body--top {
 							padding-bottom: 30px;
-							@media screen and (max-width: 667px) and (orientation: landscape) {
+							@media screen and (max-width: 812px) and (orientation: landscape) {
 								padding-bottom: 10px;
 							}
 						}
@@ -223,7 +223,7 @@
 							@media screen and (max-height: 720px) {
 								min-height: 300px;
 							}
-							@media screen and (max-width: 667px) and (orientation: landscape) {
+							@media screen and (max-width: 812px) and (orientation: landscape) {
 								height: calc(100% - (45px + 66px));
 								min-height: calc(100% - (45px + 66px));
 							}
@@ -235,7 +235,7 @@
 
 						.graph__wrapper-body--bottom {
 							padding-top: 30px;
-							@media screen and (max-width: 667px) and (orientation: landscape) {
+							@media screen and (max-width: 812px) and (orientation: landscape) {
 								padding-top: 10px;
 							}
 						}
@@ -282,7 +282,7 @@
 			width: 50px;
 			height: 50px;
 		}
-		@media screen and (max-width: 767px) and (orientation: landscape) {
+		@media screen and (max-width: 812px) and (orientation: landscape) {
 			width: 30px;
 			height: 30px;
 		}
@@ -308,7 +308,7 @@
 			@include adaptive(575) {
 				font-size: 25px;
 			}
-			@media screen and (max-width: 767px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				margin-top: 1px;
 				margin-left: 1px;
 				font-size: 18px;
@@ -333,7 +333,7 @@
 			margin-left: 9px;
 			margin-right: 9px;
 			@include transition(background-color);
-			@media screen and (max-width: 767px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				width: 40px;
 				height: 5px;
 				margin-left: 5px;
@@ -352,6 +352,10 @@
 		display: flex;
 		align-items: flex-start;
 		width: 192px;
+		@media screen and (max-width: 812px) and (orientation: landscape) {
+			margin-left: auto;
+			width: 150px;
+		}
 
 		img {
 			display: block;
@@ -390,7 +394,7 @@
 			@include adaptive(575) {
 				//margin-bottom: 0;
 			}
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				margin-bottom: 10px;
 			}
 			@media screen and (max-width: 575px) and (orientation: landscape) {
@@ -403,7 +407,7 @@
 				max-width: 52px;
 				height: 17px;
 				@include transition(background-color);
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					height: 12px;
 				}
 
@@ -422,7 +426,7 @@
 				.icon-export {
 					color: #1A1A1A;
 					font-size: 12px;
-					@media screen and (max-width: 667px) and (orientation: landscape) {
+					@media screen and (max-width: 812px) and (orientation: landscape) {
 						font-size: 10px;
 					}
 				}
@@ -445,7 +449,7 @@
 						font-size: 16px;
 						line-height: 17px;
 					}
-					@media screen and (max-width: 667px) and (orientation: landscape) {
+					@media screen and (max-width: 812px) and (orientation: landscape) {
 						font-size: 12px;
 						line-height: 15px;
 					}
@@ -467,7 +471,7 @@
 					@media screen and (max-width: 575px) {
 						font-size: 40px;
 					}
-					@media screen and (max-width: 667px) and (orientation: landscape) {
+					@media screen and (max-width: 812px) and (orientation: landscape) {
 						font-size: 40px;
 					}
 				}
@@ -504,7 +508,7 @@
 			background-color: #6666ff;
 			height: 17px;
 			@include transition(background-color);
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				height: 12px;
 			}
 			@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -531,7 +535,7 @@
 			@include adaptive(374) {
 				font-size: 9px;
 			}
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				font-size: 12px;
 			}
 			@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -559,7 +563,7 @@
 			//display: none;
 			padding-left: 7px;
 		}
-		@media screen and (max-width: 667px) and (orientation: landscape) {
+		@media screen and (max-width: 812px) and (orientation: landscape) {
 			padding-left: 5px;
 		}
 		@media screen and (max-width: 575px) and (orientation: landscape) {
@@ -577,7 +581,7 @@
 			@include adaptive(575) {
 				width: 3px;
 			}
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				width: 3px;
 			}
 		}
@@ -603,7 +607,7 @@
 			@include adaptive(575) {
 				font-size: 25px;
 			}
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				font-size: 20px;
 			}
 
@@ -618,7 +622,7 @@
 				@include adaptive(575) {
 					font-size: 10px;
 				}
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					font-size: 9px;
 				}
 			}
@@ -636,7 +640,7 @@
 			@include adaptive(575) {
 				font-size: 10px;
 			}
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				font-size: 9px;
 			}
 		}
@@ -654,7 +658,7 @@
 			@media screen and (max-height: 1023px) {
 				margin-bottom: 15px;
 			}
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				margin-bottom: 5px;
 			}
 			@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -680,7 +684,7 @@
 				@media screen and (max-height: 720px) {
 					font-size: 22px;
 				}
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					font-size: 14px;
 					letter-spacing: -1px;
 				}
@@ -705,7 +709,7 @@
 				@media screen and (max-height: 720px) {
 					font-size: 20px;
 				}
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					font-size: 12px;
 				}
 				@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -733,7 +737,7 @@
 						top: -2px;
 						font-size: 26px;
 					}
-					@media screen and (max-width: 667px) and (orientation: landscape) {
+					@media screen and (max-width: 812px) and (orientation: landscape) {
 						font-size: 16px;
 					}
 					@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -756,7 +760,7 @@
 				@media screen and (max-height: 720px) {
 					height: 3px;
 				}
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					height: 2px;
 				}
 				@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -782,7 +786,7 @@
 			@media screen and (max-height: 899px) {
 				margin-bottom: 15px;
 			}
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				max-width: 50%;
 				margin-bottom: 3px;
 				padding-left: 3px;
@@ -814,7 +818,7 @@
 				@media screen and (max-height: 720px) {
 					font-size: 14px;
 				}
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					font-size: 10px;
 				}
 				@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -842,7 +846,7 @@
 				@media screen and (max-height: 720px) {
 					font-size: 14px;
 				}
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					font-size: 10px;
 				}
 				@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -867,7 +871,7 @@
 					width: 10px;
 					height: 10px;
 				}
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					width: 7px !important;
 					height: 7px !important;
 				}
@@ -880,7 +884,7 @@
 
 		&-block {
 			margin-bottom: 5px;
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				margin-bottom: 3px;
 			}
 
@@ -888,7 +892,7 @@
 				display: flex;
 				align-items: center;
 				padding-bottom: 3px;
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					padding-bottom: 3px;
 				}
 
@@ -900,7 +904,7 @@
 						width: 15px;
 						height: 7px;
 					}
-					@media screen and (max-width: 667px) and (orientation: landscape) {
+					@media screen and (max-width: 812px) and (orientation: landscape) {
 						height: 2px;
 					}
 					@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -947,7 +951,7 @@
 			}
 			&--full {
 				margin-bottom: 16px;
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					margin-bottom: 5px;
 				}
 
@@ -959,7 +963,7 @@
 						@media screen and (max-height: 720px) {
 							height: 12px;
 						}
-						@media screen and (max-width: 667px) and (orientation: landscape) {
+						@media screen and (max-width: 812px) and (orientation: landscape) {
 							height: 8px !important;
 						}
 						@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -976,7 +980,7 @@
 					//flex-wrap: wrap;
 					padding-left: 15px;
 				}
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					padding-left: 5px;
 				}
 			}
@@ -1012,7 +1016,7 @@
 				@media screen and (max-width: 767px) {
 					//padding-bottom: 15px;
 				}
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					padding-left: 10px;
 				}
 
@@ -1054,7 +1058,7 @@
 				@media screen and (max-height: 720px) {
 					font-size: 14px;
 				}
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					font-size: 10px;
 				}
 				@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -1069,7 +1073,7 @@
 				@include adaptive(767) {
 					font-size: 14px;
 				}
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					font-size: 10px;
 				}
 				@media screen and (max-width: 568px) and (orientation: landscape) {
@@ -1095,7 +1099,7 @@
 				position: relative;
 				bottom: -80px;
 			}
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				position: absolute;
 				right: 0;
 				bottom: 0;
@@ -1128,13 +1132,13 @@
 		&-badge {
 			i {
 				background-color: #6666ff;
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					width: 10px;
 					height: 10px;
 				}
 			}
 			span {
-				@media screen and (max-width: 667px) and (orientation: landscape) {
+				@media screen and (max-width: 812px) and (orientation: landscape) {
 					font-size: 12px;
 				}
 			}
@@ -1156,7 +1160,7 @@
 			@media screen and (max-width: 767px) and (orientation: portrait) {
 				padding-bottom: 11px;
 			}
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				font-size: 16px;
 			}
 		}
@@ -1172,7 +1176,7 @@
 			@media screen and (max-width: 767px) and (orientation: landscape) {
 				min-height: 35px;
 			}
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				min-height: 25px;
 			}
 
@@ -1214,7 +1218,7 @@
 						@include adaptive(575) {
 							font-size: 25px;
 						}
-						@media screen and (max-width: 667px) and (orientation: landscape) {
+						@media screen and (max-width: 812px) and (orientation: landscape) {
 							font-size: 18px;
 						}
 					}
@@ -1236,7 +1240,7 @@
 						@include adaptive(575) {
 							font-size: 12px;
 						}
-						@media screen and (max-width: 667px) and (orientation: landscape) {
+						@media screen and (max-width: 812px) and (orientation: landscape) {
 							font-size: 8px;
 						}
 					}
@@ -1245,7 +1249,7 @@
 		}
 
 		&-slider {
-			@media screen and (max-width: 667px) and (orientation: landscape) {
+			@media screen and (max-width: 812px) and (orientation: landscape) {
 				min-height: 25px;
 			}
 
@@ -1257,7 +1261,7 @@
 					@media screen and (max-width: 767px) and (orientation: portrait) {
 						font-size: 24px;
 					}
-					@media screen and (max-width: 667px) and (orientation: landscape) {
+					@media screen and (max-width: 812px) and (orientation: landscape) {
 						font-size: 20px;
 					}
 				}
