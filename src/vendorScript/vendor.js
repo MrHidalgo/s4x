@@ -3,6 +3,6 @@
 * Include :
 *
 * - bower-webfontloader;
-* - svg4everybody;
+* - perfect-scrollbar.min.js;
 *
 * */

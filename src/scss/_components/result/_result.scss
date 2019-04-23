@@ -20,11 +20,14 @@
 				padding-top: 15px;
 				padding-bottom: 15px;
 			}
-			@include adaptive(575) {
+			@media screen and (max-width: 575px) and (orientation: portrait) {
 				flex-wrap: wrap;
 				height: auto;
 				padding-left: 15px;
 				padding-right: 15px;
+			}
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				height: 50px;
 			}
 
 			> div {
@@ -40,7 +43,7 @@
 				}
 
 				&:nth-of-type(3) {
-					@include adaptive(575) {
+					@media screen and (max-width: 575px) and (orientation: portrait) {
 						order: 1;
 						width: 100%;
 						display: flex;
@@ -54,7 +57,7 @@
 					width: 100%;
 					min-width: 1px;
 					max-width: 100%;
-					@include adaptive(575) {
+					@media screen and (max-width: 575px) and (orientation: portrait) {
 						order: 3;
 						display: flex;
 						justify-content: flex-end;
@@ -78,12 +81,18 @@
 				padding-right: 30px;
 			}
 			@include adaptive(575) {
-				height: calc(100vh - (170px + 100px));
+				height: calc(100vh - (115px + 100px));
 				padding-left: 15px;
 				padding-right: 15px;
 			}
 			@media screen and (max-height: 374px) {
-				height: 380px;
+				//height: 380px;
+			}
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				height: calc(100vh - (50px + 75px));
+			}
+			@media screen and (max-width: 568px) and (orientation: landscape) {
+				height: calc(100vh - (50px + 50px));
 			}
 		}
 
@@ -98,10 +107,16 @@
 				padding-left: 30px;
 				padding-right: 30px;
 			}
-			@include adaptive(575) {
+			@media screen and (max-width: 575px) and (orientation: portrait) {
 				flex-wrap: wrap;
 				height: auto;
 				padding: 15px;
+			}
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				height: 75px;
+			}
+			@media screen and (max-width: 568px) and (orientation: landscape) {
+				height: 50px;
 			}
 
 			> div {
@@ -110,7 +125,7 @@
 					min-width: 1px;
 					max-width: 760px;
 					padding-right: 30px;
-					@include adaptive(575) {
+					@media screen and (max-width: 575px) and (orientation: portrait) {
 						flex: none;
 						width: 100%;
 						max-width: 100%;
@@ -138,11 +153,25 @@
 				}
 				&:nth-of-type(2) {
 					width: 40px;
-					@include adaptive(575) {
+					@media screen and (max-width: 575px) and (orientation: portrait) {
 						display: flex;
 						justify-content: center;
 						width: 100%;
-						padding-top: 30px;
+						padding-top: 15px;
+					}
+
+					.graph__info-logo {
+						position: static;
+						bottom: 0;
+						@media screen and (max-width: 812px) and (orientation: landscape) {
+							width: 30px;
+						}
+						@media screen and (max-width: 568px) and (orientation: landscape) {
+							width: 20px;
+						}
+						@media screen and (max-width: 575px) and (orientation: portrait) {
+							width: 20px;
+						}
 					}
 				}
 			}
@@ -177,6 +206,9 @@
 		@media screen and (max-width: 767px) and (orientation: portrait) {
 			display: flex;
 			align-items: center;
+		}
+		@media screen and (max-width: 812px) and (orientation: landscape) {
+			margin-bottom: 5px;
 		}
 
 		&--success {
@@ -237,15 +269,22 @@
 		&-scroll {
 			overflow: hidden;
 			overflow-x: auto;
+			position: relative;
 			height: calc(100vh - (130px + 85px));
 			@include adaptive(575) {
-				height: calc(100vh - (170px + 100px));
+				height: calc(100vh - (115px + 100px));
 			}
 			@media screen and (max-height: 374px) {
-				height: 380px;
+				//height: 380px;
+			}
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				height: calc(100vh - (50px + 75px));
+			}
+			@media screen and (max-width: 568px) and (orientation: landscape) {
+				height: calc(100vh - (50px + 50px));
 			}
 
-			&::-webkit-scrollbar {
+			/*&::-webkit-scrollbar {
 				width: 17px;
 			}
 			&::-webkit-scrollbar-track {
@@ -256,7 +295,7 @@
 			}
 			&::-webkit-scrollbar-thumb:hover {
 				background: rgba(#6666FF, 0.75);
-			}
+			}*/
 		}
 
 		&-wrapper {
@@ -266,11 +305,20 @@
 			height: calc(100vh - (130px + 85px));
 			padding-bottom: 17px;
 			@include adaptive(575) {
-			 	height: calc(100vh - (170px + 100px));
-				padding-top: 30px;
+			 	height: calc(100vh - (115px + 100px));
+				padding-top: 10px;
+				padding-bottom: 10px;
 			}
 			@media screen and (max-height: 374px) {
-				height: 380px;
+				//height: 380px;
+			}
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				height: calc(100vh - (50px + 75px));
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+			@media screen and (max-width: 568px) and (orientation: landscape) {
+				height: calc(100vh - (50px + 50px));
 			}
 
 			> div {
@@ -288,6 +336,10 @@
 				}
 				@include adaptive(575) {
 					padding-right: 5px !important;
+				}
+				@media screen and (max-width: 812px) and (orientation: landscape) {
+					max-width: calc((100% / 2) + 5px);
+					padding-right: 10px;
 				}
 			}
 		}
@@ -324,6 +376,10 @@
 					width: 10px;
 					height: 10px;
 				}
+				@media screen and (max-width: 812px) and (orientation: landscape) {
+					width: 12px;
+					height: 12px;
+				}
 			}
 
 			span {
@@ -338,6 +394,12 @@
 					font-size: 16px;
 				}
 				@media screen and (max-width: 575px) and (orientation: portrait) {
+					font-size: 12px;
+				}
+				@media screen and (max-width: 812px) and (orientation: landscape) {
+					font-size: 14px;
+				}
+				@media screen and (max-width: 568px) and (orientation: landscape) {
 					font-size: 12px;
 				}
 			}
@@ -362,6 +424,12 @@
 			@media screen and (max-width: 575px) and (orientation: portrait) {
 				font-size: 22px;
 			}
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				font-size: 24px;
+			}
+			@media screen and (max-width: 568px) and (orientation: landscape) {
+				font-size: 20px;
+			}
 		}
 
 		&-progress {
@@ -373,11 +441,20 @@
 			@media screen and (max-width: 767px) and (orientation: portrait) {
 				flex: 1;
 			}
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				min-height: 30px;
+			}
+			@media screen and (max-width: 667px) and (orientation: landscape) {
+				min-height: 25px;
+			}
 
 			> div {
 				&:nth-of-type(1) {
 					flex: 1;
 					padding-right: 18px;
+					@media screen and (max-width: 812px) and (orientation: landscape) {
+						padding-right: 10px;
+					}
 				}
 
 				&:nth-of-type(2) {
@@ -388,6 +465,9 @@
 						overflow: hidden;
 						align-items: center;
 						width: 65px;
+					}
+					@media screen and (max-width: 812px) and (orientation: landscape) {
+						width: 90px;
 					}
 
 					span,
@@ -407,6 +487,9 @@
 						@media screen and (max-width: 575px) and (orientation: portrait) {
 							font-size: 24px;
 						}
+						@media screen and (max-width: 812px) and (orientation: landscape) {
+							font-size: 26px;
+						}
 					}
 
 					sub {
@@ -421,6 +504,9 @@
 						@media screen and (max-width: 575px) and (orientation: portrait) {
 							font-size: 12px;
 						}
+						@media screen and (max-width: 812px) and (orientation: landscape) {
+							font-size: 14px;
+						}
 					}
 				}
 			}
@@ -432,6 +518,12 @@
 			min-height: 100%;
 			@include adaptive(767) {
 				min-height: 35px;
+			}
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				min-height: 30px;
+			}
+			@media screen and (max-width: 667px) and (orientation: landscape) {
+				min-height: 25px;
 			}
 
 			> a {
@@ -448,6 +540,12 @@
 					color: #ffffff;
 					font-size: 25px;
 					@media screen and (max-width: 575px) and (orientation: portrait) {
+						font-size: 18px;
+					}
+					@media screen and (max-width: 812px) and (orientation: landscape) {
+						font-size: 20px;
+					}
+					@media screen and (max-width: 667px) and (orientation: landscape) {
 						font-size: 18px;
 					}
 				}

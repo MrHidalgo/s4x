@@ -22,16 +22,16 @@
  */
 var initPreventBehavior = function initPreventBehavior() {
 
-  var link = document.querySelectorAll("a");
+		var link = document.querySelectorAll("a");
 
-  link.forEach(function (val, idx) {
+		link.forEach(function (val, idx) {
 
-    val.addEventListener("click", function (e) {
-      if (val.getAttribute("href") === "#") {
-        e.preventDefault();
-      }
-    });
-  });
+				val.addEventListener("click", function (e) {
+						if (val.getAttribute("href") === "#") {
+								e.preventDefault();
+						}
+				});
+		});
 };
 
 /**
@@ -41,55 +41,61 @@ var initPreventBehavior = function initPreventBehavior() {
  */
 var initWebFontLoader = function initWebFontLoader() {
 
-  /**
+		/**
     * @description
    */
-  // WebFont.load({
-  //   google: {
-  //     families: [
-  //       'Roboto:100,300,400,500,700,900'
-  //     ]
-  //   }
-  // });
+		// WebFont.load({
+		//   google: {
+		//     families: [
+		//       'Roboto:100,300,400,500,700,900'
+		//     ]
+		//   }
+		// });
 
-  /**
+		/**
     * @description
    */
-  var WebFontConfig = {
-    custom: {
-      families: ['Replica:n3,n4,n5']
-    }
-  };
+		var WebFontConfig = {
+				custom: {
+						families: ['Replica:n3,n4,n5']
+				}
+		};
 };
 
 /**
  * @description Document DOM ready.
  */
 (function () {
-  /*
+		/*
   * =============================================
   * CALLBACK :: start
   * ============================================= */
-  /*
+		var initCustomScroll = function initCustomScroll() {
+				// result__box-scroll
+				var container = document.getElementsByClassName('result__box-scroll')[0];
+				var ps = new PerfectScrollbar(container);
+		};
+		/*
   * CALLBACK :: end
   * ============================================= */
 
-  /**
+		/**
    * @name initNative
    *
    * @description Init all method
    */
-  var initNative = function initNative() {
-    // default
-    initWebFontLoader();
-    initPreventBehavior();
-    // ==========================================
+		var initNative = function initNative() {
+				// default
+				initWebFontLoader();
+				initPreventBehavior();
+				// ==========================================
 
-    // lib
-    // ==========================================
+				// lib
+				// ==========================================
 
-    // callback
-    // ==========================================
-  };
-  initNative();
+				// callback
+				// ==========================================
+				initCustomScroll();
+		};
+		initNative();
 })();
