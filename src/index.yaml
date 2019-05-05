@@ -7,3 +7,6 @@ PageList:
 - file: result.html
   titleName: S4X | Result
   ready: 90
+- file: detail.html
+  titleName: S4X | Detail
+  ready: 1

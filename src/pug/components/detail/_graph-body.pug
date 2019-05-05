@@ -1,0 +1,115 @@
+// SECTION :: START
+
+.graph__wrapper-body
+	.graph__wrapper-body--left
+		div
+			.graph__wrapper-body--top
+
+			.graph__wrapper-body--bottom
+
+				ul.graph__export
+					li.graph__export-item
+						a.graph__export-btn.graph__export-btn--to(href="#" class="" title="")
+							i.icon-font.icon-export
+					li.graph__export-item
+						a.graph__export-btn.graph__export-btn--pdf(href="#" class="" title="")
+							span!= "PDF"
+					li.graph__export-item
+						a.graph__export-btn.graph__export-btn--excel(href="#" class="" title="")
+							i.icon-font.icon-excel
+
+		div
+			.graph__wrapper-body--top
+
+				.detail__title
+					p.detail__title-zero
+						span!= "0"
+					span.detail__title-text!= "253,329"
+					sub!= "U/WEEK"
+
+			.graph__wrapper-body--middle
+				#graph__node
+
+			.graph__wrapper-body--bottom
+
+				.graph__btn-wrapper
+					a.graph__btn.is-active(href="#" class="" title="")
+						span!= ""
+						p!= "DAY"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "WEEK"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "MONTH"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "QUARTERLY"
+					a.graph__btn(href="#" class="" title="")
+						span!= ""
+						p!= "ANNUALLY"
+
+				.detail__btn-wrapper
+					div
+						a.detail__btn.detail__btn--arrow(href="#" class="" title="")
+							i.icon-font.icon-resize-width
+							i.icon-font.icon-resize-width
+
+					div
+						a.detail__btn.detail__btn--zero.is-active(href="#" class="" title="")
+							span!= "0"
+					div
+					div
+					div
+
+	.graph__wrapper-body--right
+
+		.graph__info
+			p.graph__info-title.graph__info-title--plus
+				span!= "MATERIAL INFO"
+				i!= "+"
+
+			.graph__info-row
+				.graph__info-col
+					p
+						i
+						span!= "ID JHS21SKLX"
+
+				.graph__info-col
+					p
+						i
+						span!= "PART# M16 x 40"
+
+			p.graph__info-title.graph__info-title--plus
+				span!= "PROGNOSIS"
+				i!= "+"
+
+			.graph__info-block--wrapper
+
+				.detail__info-wrapper
+					.detail__info.detail__info-0
+
+						p.detail__info-name
+							span!= "KW: 24"
+							i.icon-font.icon-resize-width
+							span!= "25"
+
+						p.detail__info-desc
+							span!= "PROGNOSIS:"
+							span
+								i
+								!= "XY"
+
+					.detail__info.detail__info-1
+
+						.detail__info-percent
+							i.icon-font.icon-resize-width
+							p!= "7%"
+							sub!= "U/WEEK"
+
+					.detail__info.detail__info-2
+						a.graph__info-logo(href="#" class="" title="")
+							img(src="/img/logo-text.svg" alt="" title="")
+
+
+// SECTION :: END

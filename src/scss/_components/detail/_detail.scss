@@ -1,0 +1,336 @@
+// SECTION detail :: START
+
+.detail {
+	.graph {
+		&__info {
+			&-row {}
+			&-col {
+				margin-bottom: 10px;
+				max-width: 100%;
+
+				&:last-of-type {
+					margin-bottom: 30px;
+				}
+			}
+		}
+
+		&__wrapper {
+			&-body {
+				&--left {
+					> div {
+						&:nth-of-type(2) {
+							.graph__wrapper-body--top {
+								display: flex;
+								align-items: center;
+								height: 150px;
+							}
+							.graph__wrapper-body--middle {
+								height: calc(100% - (150px + 170px));
+							}
+							.graph__wrapper-body--bottom {
+								display: flex;
+								flex-direction: column;
+								height: 170px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+		color: #ffffff;
+
+		&-zero {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			border-radius: 100%;
+			background-color: #6666ff;
+
+			span {
+				position: relative;
+				line-height: 40px;
+				color: #000000;
+				font-size: 36px;
+				font-weight: bold;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 17px;
+					left: -5px;
+					width: calc(100% + 10px);
+					height: 5px;
+					background-color: #000000;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+
+		&-text {
+			padding-left: 10px;
+			font-size: 50px;
+			line-height: 1;
+			letter-spacing: -1.9px;
+			font-weight: 500;
+		}
+
+		sub {
+			position: relative;
+			top: -2px;
+			padding-left: 5px;
+			font-size: 18px;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		position: relative;
+		width: 60px;
+		height: 60px;
+		background-color: #6666ff;
+		@include transition(background-color);
+		@include adaptive(575) {
+			width: 50px;
+			height: 50px;
+		}
+		@media screen and (max-width: 812px) and (orientation: landscape) {
+			width: 30px;
+			height: 30px;
+		}
+
+		&:hover {
+			background-color: rgba(#ffffff, 0.75);
+			@include transition(background-color);
+		}
+
+		&.is-active {
+			background-color: #ffffff;
+		}
+
+		&--arrow {
+			i {
+				&:nth-of-type(1),
+				&:nth-of-type(2) {
+					position: absolute;
+				}
+
+				&:nth-of-type(1) {
+					bottom: 7px;
+					left: 0;
+					transform: rotate(-90deg);
+				}
+				&:nth-of-type(2) {
+					top: 7px;
+					right: 0;
+					transform: rotate(90deg);
+				}
+			}
+		}
+		&--zero {
+			align-items: center;
+			justify-content: center;
+
+			span {
+				position: relative;
+				line-height: 1;
+				color: #000000;
+				font-size: 50px;
+				font-weight: bold;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 22px;
+					left: -7px;
+					width: calc(100% + 14px);
+					height: 6px;
+					background-color: #000000;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+
+		&-wrapper {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 30px;
+
+			> div {
+				width: 100%;
+				max-width: calc((100% - (30px * 4)) / 5);
+				@include adaptive(1023) {
+					max-width: calc((100% - (15px * 4)) / 5);
+				}
+				@include adaptive(767) {
+					max-width: calc((100% - (10px * 4)) / 5);
+				}
+				@include adaptive(575) {
+					max-width: calc((100% - (5px * 4)) / 5);
+				}
+			}
+		}
+
+		.icon-font {
+			line-height: 1;
+			color: #000;
+			font-size: 25px;
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				font-size: 18px;
+			}
+		}
+	}
+
+	&__info {
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding-left: 54px;
+		}
+
+		&-name {
+			display: flex;
+			align-items: center;
+			font-weight: 500;
+			line-height: 1.05;
+			letter-spacing: -2.5px;
+			color: #ffffff;
+			font-size: 40px;
+			padding-bottom: 30px;
+			@include adaptive(1199) {
+				font-size: 36px;
+			}
+			@include adaptive(575) {
+				font-size: 32px;
+			}
+			@media screen and (max-height: 863px) {
+				font-size: 28px;
+			}
+			@media screen and (max-height: 720px) {
+				font-size: 24px;
+			}
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				font-size: 16px;
+				letter-spacing: -1px;
+			}
+			@media screen and (max-width: 568px) and (orientation: landscape) {
+				font-size: 12px;
+			}
+
+			.icon-font {
+				margin-left: 8px;
+				font-size: 26px;
+				transform: scale(-1);
+			}
+		}
+
+		&-desc {
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 60px;
+
+			span {
+				display: flex;
+				align-items: center;
+				font-weight: 500;
+				line-height: 1.05;
+				letter-spacing: -2.5px;
+				color: #ffffff;
+				font-size: 35px;
+				@include adaptive(1199) {
+					font-size: 32px;
+				}
+				@include adaptive(575) {
+					font-size: 29px;
+				}
+				@media screen and (max-height: 863px) {
+					font-size: 30px;
+				}
+				@media screen and (max-height: 720px) {
+					font-size: 22px;
+				}
+				@media screen and (max-width: 812px) and (orientation: landscape) {
+					font-size: 14px;
+					letter-spacing: -1px;
+				}
+				@media screen and (max-width: 568px) and (orientation: landscape) {
+					font-size: 10px;
+				}
+
+				i {
+					border-radius: 100%;
+					background-color: #6666FF;
+					width: 26px;
+					height: 26px;
+					@include adaptive(575) {
+						width: 22px;
+						height: 22px;
+					}
+					@media screen and (max-height: 720px) {
+						width: 16px;
+						height: 16px;
+					}
+					@media screen and (max-width: 812px) and (orientation: landscape) {
+						width: 12px !important;
+						height: 12px !important;
+					}
+				}
+			}
+		}
+
+		&-percent {
+			display: flex;
+			align-items: center;
+			color: #ffffff;
+
+			.icon-font {
+				color: #00ff99;
+				font-size: 34px;
+				transform: rotate(90deg);
+			}
+
+			p {
+				font-weight: 500;
+				line-height: 1.05;
+				letter-spacing: -2.5px;
+				color: #ffffff;
+				font-size: 65px;
+				@include adaptive(1199) {
+					font-size: 36px;
+				}
+				@include adaptive(575) {
+					font-size: 32px;
+				}
+				@media screen and (max-height: 863px) {
+					font-size: 28px;
+				}
+				@media screen and (max-height: 720px) {
+					font-size: 24px;
+				}
+				@media screen and (max-width: 812px) and (orientation: landscape) {
+					font-size: 16px;
+					letter-spacing: -1px;
+				}
+				@media screen and (max-width: 568px) and (orientation: landscape) {
+					font-size: 12px;
+				}
+			}
+
+			sub {
+				position: relative;
+				top: -5px;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+// SECTION detail :: END

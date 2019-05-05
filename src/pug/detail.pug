@@ -1,0 +1,13 @@
+---
+title: S4X | Detail
+
+pageClassName: p-detail
+---
+extends shared/_layout
+
+block header
+block footer
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/detail/_detail
