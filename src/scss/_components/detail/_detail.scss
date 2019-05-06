@@ -4,10 +4,10 @@
 	.graph {
 		&__wrapper-body {
 			@media screen and (max-width: 767px){
-				height: auto;
+				//height: auto;
 			}
 			@media screen and (max-width: 812px) and (orientation: landscape) {
-				height: auto;
+				//height: auto;
 			}
 		}
 		&__info {
@@ -24,7 +24,7 @@
 				}
 			}
 			&-logo {
-				@media screen and (max-width: 767px) {
+				@media screen and (max-width: 767px) and (orientation: portrait) {
 					position: static;
 					padding-top: 30px;
 				}
@@ -41,17 +41,16 @@
 								align-items: center;
 								height: 80px;
 								padding-bottom: 0;
+								@media screen and (max-width: 812px) and (orientation: landscape) {
+									height: 40px;
+								}
+								@media screen and (max-width: 568px) and (orientation: landscape) {
+									//height: calc(100% - (33px + 66px));
+									//min-height: calc(100% - (33px + 66px));
+								}
 							}
 							.graph__wrapper-body--middle {
 								height: calc(100% - (80px + 170px));
-								@include adaptive(1199) {
-									height: calc(100% - (80px + 150px));
-									min-height: calc(100% - (80px + 150px));
-								}
-								@include adaptive(767) {
-									height: calc(100% - (80px + 110px));
-									min-height: calc(100% - (80px + 110px));
-								}
 								@include adaptive(767) {
 									min-height: 500px;
 								}
@@ -61,18 +60,24 @@
 								@media screen and (max-height: 720px) {
 									min-height: 300px;
 								}
+								@media screen and (max-width: 812px) and (orientation: landscape) {
+									height: calc(100% - (40px + 90px));
+									min-height: calc(100% - (40px + 90px));
+								}
+								@media screen and (max-width: 568px) and (orientation: landscape) {
+									height: calc(100% - (40px + 90px));
+									min-height: calc(100% - (40px + 90px));
+								}
 							}
 							.graph__wrapper-body--bottom {
 								display: flex;
 								flex-direction: column;
 								height: 170px;
-								@include adaptive(1199) {
-									height: 150px;
-									min-height: 150px;
+								@media screen and (max-width: 812px) and (orientation: landscape) {
+									height: 90px;
 								}
-								@include adaptive(767) {
-									height: 110px;
-									min-height: 110px;
+								@media screen and (max-width: 568px) and (orientation: landscape) {
+									height: 90px;
 								}
 							}
 						}
@@ -145,10 +150,10 @@
 				font-size: 45px;
 			}
 			@include adaptive(1023) {
-				font-size: 40px;
+				font-size: 30px;
 			}
 			@include adaptive(575) {
-				font-size: 30px;
+				font-size: 25px;
 			}
 		}
 
@@ -159,6 +164,9 @@
 			font-size: 18px;
 			@include adaptive(1199) {
 				font-size: 16px;
+			}
+			@include adaptive(767) {
+				font-size: 14px;
 			}
 		}
 	}
@@ -231,6 +239,8 @@
 
 			span {
 				position: relative;
+				padding-left: 5px;
+				padding-right: 5px;
 				line-height: 1;
 				color: #000000;
 				font-size: 50px;
@@ -240,6 +250,8 @@
 				}
 				@include adaptive(1023) {
 					font-size: 40px;
+					padding-left: 4px;
+					padding-right: 4px;
 				}
 				@include adaptive(575) {
 					font-size: 30px;
@@ -248,17 +260,12 @@
 				&:after {
 					content: '';
 					position: absolute;
-					top: 22px;
-					left: -7px;
-					width: calc(100% + 14px);
+					top: 50%;
+					left: 0;
+					transform: translateY(-50%) rotate(-45deg);
+					width: 100%;
 					height: 6px;
 					background-color: #000000;
-					transform: rotate(-45deg);
-					@include adaptive(1199) {
-						top: 19px;
-						left: -4px;
-						width: calc(100% + 9px);
-					}
 				}
 			}
 		}
@@ -267,6 +274,15 @@
 			display: flex;
 			justify-content: space-between;
 			padding-top: 30px;
+			@include adaptive(767) {
+				padding-top: 10px;
+			}
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				padding-top: 10px;
+			}
+			@media screen and (max-width: 568px) and (orientation: landscape) {
+				padding-top: 5px;
+			}
 
 			> div {
 				width: 100%;
@@ -332,6 +348,9 @@
 			@include adaptive(1199) {
 				font-size: 36px;
 			}
+			@include adaptive(767) {
+				padding-bottom: 15px;
+			}
 			@include adaptive(575) {
 				font-size: 32px;
 			}
@@ -351,8 +370,24 @@
 
 			.icon-font {
 				margin-left: 8px;
+				margin-right: 5px;
 				font-size: 26px;
 				transform: scale(-1);
+				@include adaptive(767) {
+					font-size: 22px;
+				}
+				@include adaptive(575) {
+					font-size: 18px;
+				}
+				@media screen and (max-height: 720px) {
+					font-size: 16px;
+				}
+				@media screen and (max-width: 812px) and (orientation: landscape) {
+					font-size: 12px;
+				}
+				@media screen and (max-width: 568px) and (orientation: landscape) {
+					font-size: 10px;
+				}
 			}
 		}
 
@@ -360,6 +395,9 @@
 			display: flex;
 			flex-direction: column;
 			padding-bottom: 60px;
+			@include adaptive(767) {
+				padding-bottom: 30px;
+			}
 
 			span {
 				display: flex;
@@ -414,19 +452,29 @@
 			display: flex;
 			align-items: center;
 			color: #ffffff;
+			padding-top: 30px;
+			@include adaptive(767) {
+				padding-top: 0;
+			}
 
 			.icon-font {
 				color: #00ff99;
-				font-size: 34px;
+				font-size: 30px;
 				transform: rotate(90deg);
 				@include adaptive(1199) {
-					font-size: 32px;
-				}
-				@include adaptive(767) {
 					font-size: 28px;
 				}
-				@include adaptive(575) {
+				@include adaptive(767) {
 					font-size: 26px;
+				}
+				@include adaptive(575) {
+					font-size: 24px;
+				}
+				@media screen and (max-height: 720px) {
+					font-size: 24px;
+				}
+				@media screen and (max-width: 812px) and (orientation: landscape) {
+					font-size: 20px;
 				}
 			}
 
@@ -445,6 +493,12 @@
 				@include adaptive(575) {
 					font-size: 40px;
 				}
+				@media screen and (max-height: 720px) {
+					font-size: 40px;
+				}
+				@media screen and (max-width: 812px) and (orientation: landscape) {
+					font-size: 35px;
+				}
 			}
 
 			sub {
@@ -459,6 +513,15 @@
 				}
 				@include adaptive(575) {
 					font-size: 14px;
+				}
+				@media screen and (max-height: 720px) {
+					font-size: 16px;
+				}
+				@media screen and (max-width: 812px) and (orientation: landscape) {
+					font-size: 12px;
+				}
+				@media screen and (max-width: 568px) and (orientation: landscape) {
+					font-size: 10px;
 				}
 			}
 		}
