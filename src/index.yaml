@@ -3,10 +3,10 @@ ProjectTitle: S4X
 PageList:
 - file: index.html
   titleName: S4X
-  ready: 90
+  ready: 95
 - file: result.html
   titleName: S4X | Result
-  ready: 90
+  ready: 95
 - file: detail.html
   titleName: S4X | Detail
-  ready: 75
+  ready: 90
