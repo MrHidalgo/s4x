@@ -2,14 +2,31 @@
 
 .detail {
 	.graph {
+		&__wrapper-body {
+			@media screen and (max-width: 767px){
+				height: auto;
+			}
+			@media screen and (max-width: 812px) and (orientation: landscape) {
+				height: auto;
+			}
+		}
 		&__info {
-			&-row {}
+			&-block--wrapper {
+				min-height: 100%;
+			}
+
 			&-col {
 				margin-bottom: 10px;
 				max-width: 100%;
 
 				&:last-of-type {
 					margin-bottom: 30px;
+				}
+			}
+			&-logo {
+				@media screen and (max-width: 767px) {
+					position: static;
+					padding-top: 30px;
 				}
 			}
 		}
@@ -22,15 +39,41 @@
 							.graph__wrapper-body--top {
 								display: flex;
 								align-items: center;
-								height: 150px;
+								height: 80px;
+								padding-bottom: 0;
 							}
 							.graph__wrapper-body--middle {
-								height: calc(100% - (150px + 170px));
+								height: calc(100% - (80px + 170px));
+								@include adaptive(1199) {
+									height: calc(100% - (80px + 150px));
+									min-height: calc(100% - (80px + 150px));
+								}
+								@include adaptive(767) {
+									height: calc(100% - (80px + 110px));
+									min-height: calc(100% - (80px + 110px));
+								}
+								@include adaptive(767) {
+									min-height: 500px;
+								}
+								@include adaptive(575) {
+									min-height: 300px;
+								}
+								@media screen and (max-height: 720px) {
+									min-height: 300px;
+								}
 							}
 							.graph__wrapper-body--bottom {
 								display: flex;
 								flex-direction: column;
 								height: 170px;
+								@include adaptive(1199) {
+									height: 150px;
+									min-height: 150px;
+								}
+								@include adaptive(767) {
+									height: 110px;
+									min-height: 110px;
+								}
 							}
 						}
 					}
@@ -53,6 +96,14 @@
 			height: 40px;
 			border-radius: 100%;
 			background-color: #6666ff;
+			@include adaptive(1199) {
+				width: 30px;
+				height: 30px;
+			}
+			@include adaptive(1023) {
+				width: 25px;
+				height: 25px;
+			}
 
 			span {
 				position: relative;
@@ -60,6 +111,12 @@
 				color: #000000;
 				font-size: 36px;
 				font-weight: bold;
+				@include adaptive(1199) {
+					font-size: 28px;
+				}
+				@include adaptive(1023) {
+					font-size: 24px;
+				}
 
 				&:after {
 					content: '';
@@ -70,6 +127,10 @@
 					height: 5px;
 					background-color: #000000;
 					transform: rotate(-45deg);
+					@include adaptive(1199) {
+						left: -3px;
+						width: calc(100% + 6px);
+					}
 				}
 			}
 		}
@@ -80,6 +141,15 @@
 			line-height: 1;
 			letter-spacing: -1.9px;
 			font-weight: 500;
+			@include adaptive(1199) {
+				font-size: 45px;
+			}
+			@include adaptive(1023) {
+				font-size: 40px;
+			}
+			@include adaptive(575) {
+				font-size: 30px;
+			}
 		}
 
 		sub {
@@ -87,6 +157,9 @@
 			top: -2px;
 			padding-left: 5px;
 			font-size: 18px;
+			@include adaptive(1199) {
+				font-size: 16px;
+			}
 		}
 	}
 
@@ -97,11 +170,15 @@
 		height: 60px;
 		background-color: #6666ff;
 		@include transition(background-color);
-		@include adaptive(575) {
+		@include adaptive(1199) {
 			width: 50px;
 			height: 50px;
 		}
-		@media screen and (max-width: 812px) and (orientation: landscape) {
+		@include adaptive(1023) {
+			width: 40px;
+			height: 40px;
+		}
+		@include adaptive(575) {
 			width: 30px;
 			height: 30px;
 		}
@@ -126,11 +203,25 @@
 					bottom: 7px;
 					left: 0;
 					transform: rotate(-90deg);
+					@include adaptive(767) {
+						bottom: 4px;
+					}
+					@include adaptive(575) {
+						//bottom: 1px;
+						left: -1px;
+					}
 				}
 				&:nth-of-type(2) {
 					top: 7px;
 					right: 0;
 					transform: rotate(90deg);
+					@include adaptive(767) {
+						top: 4px;
+					}
+					@include adaptive(575) {
+						//top: px;
+						right: -1px;
+					}
 				}
 			}
 		}
@@ -144,6 +235,15 @@
 				color: #000000;
 				font-size: 50px;
 				font-weight: bold;
+				@include adaptive(1199) {
+					font-size: 45px;
+				}
+				@include adaptive(1023) {
+					font-size: 40px;
+				}
+				@include adaptive(575) {
+					font-size: 30px;
+				}
 
 				&:after {
 					content: '';
@@ -154,6 +254,11 @@
 					height: 6px;
 					background-color: #000000;
 					transform: rotate(-45deg);
+					@include adaptive(1199) {
+						top: 19px;
+						left: -4px;
+						width: calc(100% + 9px);
+					}
 				}
 			}
 		}
@@ -182,18 +287,37 @@
 			line-height: 1;
 			color: #000;
 			font-size: 25px;
-			@media screen and (max-width: 812px) and (orientation: landscape) {
-				font-size: 18px;
+			@include adaptive(1199) {
+				font-size: 22px;
+			}
+			@include adaptive(1023) {
+				font-size: 20px;
+			}
+			@include adaptive(767) {
+				font-size: 16px;
+			}
+			@include adaptive(575) {
+				font-size: 14px;
 			}
 		}
 	}
 
 	&__info {
+		&-2 {
+			display: flex;
+			justify-content: flex-end;
+		}
+
 		&-wrapper {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			padding-left: 54px;
+			width: 100%;
+			min-height: 100%;
+			@include adaptive(1279) {
+				padding-left: 0;
+			}
 		}
 
 		&-name {
@@ -295,6 +419,15 @@
 				color: #00ff99;
 				font-size: 34px;
 				transform: rotate(90deg);
+				@include adaptive(1199) {
+					font-size: 32px;
+				}
+				@include adaptive(767) {
+					font-size: 28px;
+				}
+				@include adaptive(575) {
+					font-size: 26px;
+				}
 			}
 
 			p {
@@ -304,23 +437,13 @@
 				color: #ffffff;
 				font-size: 65px;
 				@include adaptive(1199) {
-					font-size: 36px;
+					font-size: 60px;
+				}
+				@include adaptive(767) {
+					font-size: 50px;
 				}
 				@include adaptive(575) {
-					font-size: 32px;
-				}
-				@media screen and (max-height: 863px) {
-					font-size: 28px;
-				}
-				@media screen and (max-height: 720px) {
-					font-size: 24px;
-				}
-				@media screen and (max-width: 812px) and (orientation: landscape) {
-					font-size: 16px;
-					letter-spacing: -1px;
-				}
-				@media screen and (max-width: 568px) and (orientation: landscape) {
-					font-size: 12px;
+					font-size: 40px;
 				}
 			}
 
@@ -328,6 +451,15 @@
 				position: relative;
 				top: -5px;
 				font-size: 20px;
+				@include adaptive(1199) {
+					font-size: 18px;
+				}
+				@include adaptive(767) {
+					font-size: 16px;
+				}
+				@include adaptive(575) {
+					font-size: 14px;
+				}
 			}
 		}
 	}
