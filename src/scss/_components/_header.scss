@@ -13,6 +13,9 @@
 		display: flex;
 		align-items: center;
 		height: 85px;
+		@include adaptive(767) {
+			height: 75px;
+		}
 
 		&-left,
 		&-right {
@@ -25,6 +28,9 @@
 			display: flex;
 			align-items: flex-start;
 			width: 120px;
+			@include adaptive(767) {
+				width: 90px;
+			}
 		}
 
 		&-img {
@@ -42,6 +48,9 @@
 		max-width: 200px;
 		margin-left: auto;
 		margin-right: auto;
+		@include adaptive(767) {
+			align-items: flex-end;
+		}
 
 		&-btn {
 			position: relative;
@@ -53,6 +62,9 @@
 			color: #ffffff;
 			font-size: 16px;
 			font-weight: bold;
+			@include adaptive(767) {
+				font-size: 14px;
+			}
 
 			&:before {
 				opacity: 0;

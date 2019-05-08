@@ -11,6 +11,11 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	@include adaptive(767) {
+		min-height: 0;
+		height: 100%;
+		margin-top: 75px;
+	}
 
 	.c-grid {
 		display: flex;
@@ -22,15 +27,34 @@
 	&__wrapper {
 		padding-top: 50px;
 		padding-bottom: 200px;
+		@include adaptive(767) {
+			padding-top: 300px;
+			padding-bottom: 100px;
+		}
 	}
 
 	&__title {
 		color: #6666ff;
 		font-size: 110px;
 		font-weight: bold;
+		@include adaptive(1439) {
+			font-size: 90px;
+		}
+		@include adaptive(1023) {
+			font-size: 75px;
+		}
+		@include adaptive(767) {
+			font-size: 60px;
+		}
+		@include adaptive(374) {
+			font-size: 50px;
+		}
 
 		span {
 			letter-spacing: -10px;
+			@include adaptive(767) {
+				letter-spacing: 0;
+			}
 		}
 	}
 }

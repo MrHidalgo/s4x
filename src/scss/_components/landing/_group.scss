@@ -3,6 +3,10 @@
 .group {
 	padding-top: 75px;
 	padding-bottom: 45px;
+	@include adaptive(767) {
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
 
 	&__title {
 		padding-bottom: 50px;
@@ -10,6 +14,25 @@
 		color: #ffffff;
 		font-size: 110px;
 		font-weight: bold;
+		@include adaptive(1535) {
+			font-size: 90px;
+		}
+		@include adaptive(1439) {
+			font-size: 75px;
+		}
+		@include adaptive(1023) {
+			font-size: 65px;
+		}
+		@include adaptive(767) {
+			padding-bottom: 30px;
+			letter-spacing: 0;
+			line-height: 1.2;
+			text-align: center;
+			font-size: 50px;
+		}
+		@include adaptive(374) {
+			font-size: 40px;
+		}
 	}
 
 	&__text {
@@ -19,12 +42,22 @@
 		color: #ffffff;
 		font-size: 18px;
 		line-height: 1.8;
+		@include adaptive(767) {
+			max-width: 100%;
+			font-size: 16px;
+		}
 
 		&:nth-of-type(odd) {
 			padding-right: 10px;
+			@include adaptive(767) {
+				padding-right: 0;
+			}
 		}
 		&:nth-of-type(even) {
 			padding-left: 10px;
+			@include adaptive(767) {
+				padding-left: 0;
+			}
 		}
 
 		&-wrapper {
