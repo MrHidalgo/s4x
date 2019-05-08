@@ -1,0 +1,26 @@
+// SECTION description :: START
+
+section#description.description
+	.c-grid
+
+		p.description__title!= "L1"
+
+		.description__wrapper
+			.description__wrapper-left
+
+				p.description__text.description__text-0!= "Joy ryokan Boeing 787, Airbus A380 destination handsome business class Toto the highest quality Marylebone hand-crafted. Finest Comme des Garçons premium, intricate Swiss Marylebone impeccable Muji boutique hub. Carefully curated Comme des Garçons artisanal business class soft power, conversation the best. Tsutaya Washlet classic K-pop Fast Lane the best eclectic bureaux. Handsome Sunspel wardrobe Porter exquisite Lufthansa alluring discerning. Elegant Sunspel Fast Lane conversation discerning, the best sophisticated. Finest exquisite flat white Swiss carefully curated."
+				p.description__text.description__text-1!= "The best Boeing 787 hub the highest quality Marylebone perfect. Finest izakaya iconic Boeing 787, ryokan sophisticated ANA efficient conversation soft power Lufthansa destination Toto Ettinger K-pop. K-pop remarkable artisanal conversation global. Boulevard remarkable hub, first-class bespoke Melbourne intricate espresso the best."
+
+			.description__wrapper-right
+
+				mixin swiperContent()
+					.swiper-slide
+						img(src="img/img-description-1.png" alt="" title="")
+					.swiper-slide
+						img(src="img/img-description-2.png" alt="" title="")
+					.swiper-slide
+						img(src="img/img-description-3.png" alt="" title="")
+
+				+swiper('swiper-container-description', 'swiperContent', true, false, false)
+
+// SECTION description :: END

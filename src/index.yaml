@@ -2,11 +2,14 @@ ProjectTitle: S4X
 
 PageList:
 - file: index.html
-  titleName: S4X
+  titleName: Main
   ready: 95
 - file: result.html
-  titleName: S4X | Result
+  titleName: Result
   ready: 95
 - file: detail.html
-  titleName: S4X | Detail
+  titleName: Detail
+  ready: 95
+- file: landing.html
+  titleName: Landing
   ready: 90

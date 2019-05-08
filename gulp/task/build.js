@@ -11,6 +11,7 @@ gulp.task("build", function(callback) {
     'scss',
     'pug',
     'js',
+    'separate-js',
     'fonts',
 		'iconfont',
     'spritePNG',

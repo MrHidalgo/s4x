@@ -1,0 +1,37 @@
+// SECTION group :: START
+
+.group {
+	padding-top: 75px;
+	padding-bottom: 45px;
+
+	&__title {
+		padding-bottom: 50px;
+		letter-spacing: -1px;
+		color: #ffffff;
+		font-size: 110px;
+		font-weight: bold;
+	}
+
+	&__text {
+		width: 100%;
+		max-width: 50%;
+		padding-bottom: 30px;
+		color: #ffffff;
+		font-size: 18px;
+		line-height: 1.8;
+
+		&:nth-of-type(odd) {
+			padding-right: 10px;
+		}
+		&:nth-of-type(even) {
+			padding-left: 10px;
+		}
+
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+// SECTION group :: END

@@ -1,0 +1,586 @@
+@font-face {
+  font-family: "Replica";
+  src: url("../fonts/Replica-Regular.woff2") format("woff2"), url("../fonts/Replica-Regular.woff") format("woff"), url("../fonts/Replica-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Replica";
+  src: url("../fonts/Replica-Light.woff2") format("woff2"), url("../fonts/Replica-Light.woff") format("woff"), url("../fonts/Replica-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Replica";
+  src: url("../fonts/Replica-Bold.woff2") format("woff2"), url("../fonts/Replica-Bold.woff") format("woff"), url("../fonts/Replica-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* line 1, src/scss/_shared/_main-setting-reset.scss */
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* line 6, src/scss/_shared/_main-setting-reset.scss */
+html.is-hideScroll,
+body.is-hideScroll {
+  width: 100%;
+  overflow: hidden !important;
+}
+
+/* line 13, src/scss/_shared/_main-setting-reset.scss */
+html {
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 19, src/scss/_shared/_main-setting-reset.scss */
+body {
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #1A1A1A;
+  line-height: 1.42857143;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Replica", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 33, src/scss/_shared/_main-setting-reset.scss */
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+/* line 38, src/scss/_shared/_main-setting-reset.scss */
+body > .body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+/* line 44, src/scss/_shared/_main-setting-reset.scss */
+body > .body--start {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* line 51, src/scss/_shared/_main-setting-reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 54, src/scss/_shared/_main-setting-reset.scss */
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 61, src/scss/_shared/_main-setting-reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 71, src/scss/_shared/_main-setting-reset.scss */
+button,
+input {
+  overflow: visible;
+}
+
+/* line 77, src/scss/_shared/_main-setting-reset.scss */
+button[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* line 83, src/scss/_shared/_main-setting-reset.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/* line 89, src/scss/_shared/_main-setting-reset.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 95, src/scss/_shared/_main-setting-reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 100, src/scss/_shared/_main-setting-reset.scss */
+p,
+h1, h2, h3, h4, h5, h6,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 108, src/scss/_shared/_main-setting-reset.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 113, src/scss/_shared/_main-setting-reset.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 119, src/scss/_shared/_main-setting-reset.scss */
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 124, src/scss/_shared/_main-setting-reset.scss */
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* line 131, src/scss/_shared/_main-setting-reset.scss */
+input[type="text"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* line 135, src/scss/_shared/_main-setting-reset.scss */
+picture {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 8, src/scss/_shared/_grid.scss */
+.c-grid, .c-grid-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* line 20, src/scss/_shared/_grid.scss */
+.c-grid {
+  max-width: 1280px;
+}
+
+/* line 27, src/scss/_shared/_grid.scss */
+.c-grid-fluid {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 1280px;
+  }
+}
+
+/* line 1, src/scss/_shared/_swiper.scss */
+.swiper-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 6, src/scss/_shared/_swiper.scss */
+.swiper-container-description {
+  padding-bottom: 50px;
+}
+
+/* line 11, src/scss/_shared/_swiper.scss */
+.swiper-container-description .swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 18, src/scss/_shared/_swiper.scss */
+.swiper-container-description .swiper-pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  bottom: 0;
+}
+
+/* line 25, src/scss/_shared/_swiper.scss */
+.swiper-container-description .swiper-pagination-bullet {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+}
+
+/* line 31, src/scss/_shared/_swiper.scss */
+.swiper-container-description .swiper-pagination-bullet-active {
+  background-color: #6666ff;
+}
+
+/* line 3, src/scss/_components/_header.scss */
+.header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1A1A1A;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(255, 255, 255, 0.05);
+          box-shadow: 0 1px 5px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* line 12, src/scss/_components/_header.scss */
+.header__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85px;
+}
+
+/* line 17, src/scss/_components/_header.scss */
+.header__wrapper-left, .header__wrapper-right {
+  width: 50%;
+}
+
+/* line 24, src/scss/_components/_header.scss */
+.header__logo-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 120px;
+}
+
+/* line 30, src/scss/_components/_header.scss */
+.header__logo-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+/* line 38, src/scss/_components/_header.scss */
+.header__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 46, src/scss/_components/_header.scss */
+.header__nav-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 20px;
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 57, src/scss/_components/_header.scss */
+.header__nav-btn:before {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ffffff;
+}
+
+/* line 71, src/scss/_components/_header.scss */
+.header__nav-btn.is-active:before {
+  opacity: 1;
+}
+
+/* line 3, src/scss/_components/landing/_main.scss */
+.main {
+  overflow: hidden;
+  position: relative;
+  margin-top: 85px;
+  min-height: 585px;
+  height: -webkit-calc(100vh - 85px);
+  height: calc(100vh - 85px);
+  background-color: #ffffff;
+  background-image: url("../img/img-main-bg.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+}
+
+/* line 15, src/scss/_components/landing/_main.scss */
+.main .c-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-height: 100%;
+}
+
+/* line 22, src/scss/_components/landing/_main.scss */
+.main__wrapper {
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+/* line 27, src/scss/_components/landing/_main.scss */
+.main__title {
+  color: #6666ff;
+  font-size: 110px;
+  font-weight: bold;
+}
+
+/* line 32, src/scss/_components/landing/_main.scss */
+.main__title span {
+  letter-spacing: -10px;
+}
+
+/* line 3, src/scss/_components/landing/_description.scss */
+.description {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+/* line 7, src/scss/_components/landing/_description.scss */
+.description__title {
+  padding-bottom: 50px;
+  letter-spacing: -10px;
+  color: #ffffff;
+  font-size: 110px;
+  font-weight: bold;
+}
+
+/* line 15, src/scss/_components/landing/_description.scss */
+.description__text {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* line 20, src/scss/_components/landing/_description.scss */
+.description__text-0 {
+  padding-bottom: 30px;
+}
+
+/* line 25, src/scss/_components/landing/_description.scss */
+.description__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 29, src/scss/_components/landing/_description.scss */
+.description__wrapper-left {
+  width: 45%;
+  padding-right: 20px;
+}
+
+/* line 34, src/scss/_components/landing/_description.scss */
+.description__wrapper-right {
+  width: 55%;
+}
+
+/* line 3, src/scss/_components/landing/_group.scss */
+.group {
+  padding-top: 75px;
+  padding-bottom: 45px;
+}
+
+/* line 7, src/scss/_components/landing/_group.scss */
+.group__title {
+  padding-bottom: 50px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  font-size: 110px;
+  font-weight: bold;
+}
+
+/* line 15, src/scss/_components/landing/_group.scss */
+.group__text {
+  width: 100%;
+  max-width: 50%;
+  padding-bottom: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* line 23, src/scss/_components/landing/_group.scss */
+.group__text:nth-of-type(odd) {
+  padding-right: 10px;
+}
+
+/* line 26, src/scss/_components/landing/_group.scss */
+.group__text:nth-of-type(even) {
+  padding-left: 10px;
+}
+
+/* line 30, src/scss/_components/landing/_group.scss */
+.group__text-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 3, src/scss/_components/landing/_contact.scss */
+.contact {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+/* line 7, src/scss/_components/landing/_contact.scss */
+.contact__title {
+  padding-bottom: 50px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  font-size: 110px;
+  font-weight: bold;
+}
+
+/* line 15, src/scss/_components/landing/_contact.scss */
+.contact__subtitle {
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/*# sourceMappingURL=maps/landing.css.map */

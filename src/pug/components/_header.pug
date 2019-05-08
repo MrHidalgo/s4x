@@ -1,7 +1,23 @@
 // HEADER :: START
 
 header#header.header
-  .c-grid
-    .header__wrapper
+	.c-grid
+
+		.header__wrapper
+			.header__wrapper-left
+
+				.header__logo
+					a.header__logo-btn(href="#" class="" title="")
+						img.header__logo-img(src="img/img-main-logo.svg" alt="" title="")
+
+			.header__wrapper-right
+
+				ul.header__nav
+					li.header__nav-item
+						a.header__nav-btn.is-active(href="#" class="" title="")!= "Product"
+					li.header__nav-item
+						a.header__nav-btn(href="#" class="" title="")!= "Company"
+					li.header__nav-item
+						a.header__nav-btn(href="#" class="" title="")!= "Contact"
 
 // HEADER :: END

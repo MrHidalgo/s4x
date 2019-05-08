@@ -12,6 +12,7 @@ const configPath = {
     scss          : srcPath + '/scss',
     vendorStyle   : srcPath + '/vendorStyle',
     js            : srcPath + '/js',
+    separateJs    : srcPath + '/separateJS',
     vendorScript  : srcPath + '/vendorScript',
     image         : srcPath + '/img',
     icon          : srcPath + '/icon',

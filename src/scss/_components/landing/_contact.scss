@@ -1,0 +1,24 @@
+// SECTION contact :: START
+
+.contact {
+	padding-top: 75px;
+	padding-bottom: 75px;
+
+	&__title {
+		padding-bottom: 50px;
+		letter-spacing: -1px;
+		color: #ffffff;
+		font-size: 110px;
+		font-weight: bold;
+	}
+
+	&__subtitle {
+		padding-bottom: 25px;
+		text-transform: uppercase;
+		color: #ffffff;
+		font-size: 18px;
+		line-height: 1.8;
+	}
+}
+
+// SECTION contact :: END

@@ -1,0 +1,38 @@
+// SECTION main :: START
+
+.main {
+	overflow: hidden;
+	position: relative;
+	margin-top: 85px;
+	min-height: 585px;
+	height: calc(100vh - 85px);
+	background-color: #ffffff;
+	background-image: url('../img/img-main-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.c-grid {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		min-height: 100%;
+	}
+
+	&__wrapper {
+		padding-top: 50px;
+		padding-bottom: 200px;
+	}
+
+	&__title {
+		color: #6666ff;
+		font-size: 110px;
+		font-weight: bold;
+
+		span {
+			letter-spacing: -10px;
+		}
+	}
+}
+
+// SECTION main :: END

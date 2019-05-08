@@ -2,6 +2,10 @@
 
 if(env)
 	link(rel="stylesheet" href="css/bundle.min.css")
+else if(pageClassName === "p-landing")
+	link(rel="stylesheet" href="css/vendor.css")
+	link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css")
+	link(rel="stylesheet" href="css/landing.css")
 else
 	link(rel="stylesheet" href="css/vendor.css")
 	link(rel="stylesheet" href="css/app.css")

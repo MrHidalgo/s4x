@@ -1,0 +1,15 @@
+---
+title: S4X | Landing
+
+pageClassName: p-landing
+---
+extends shared/_layout
+
+block footer
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/landing/_main
+		include components/landing/_description
+		include components/landing/_group
+		include components/landing/_contact
